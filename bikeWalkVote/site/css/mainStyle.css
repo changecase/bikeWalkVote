@@ -1,0 +1,115 @@
+html, body {
+	height: 100%;
+}
+#container {
+	font: 1em/1.5em Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;	
+	position: relative;
+	width: 100%;	
+}
+header {
+	position: relative;
+	padding: 0;
+	background: #8DC63F url('../images/cardboard_green.png') repeat 0px;
+	}
+#logo {
+	position: relative;
+	top: 0;
+	right: 0px;
+	margin: 0;
+}	
+	#logo a { 
+		display: block;
+		position: relative;
+		top:  0;
+		right: 0;
+		height: 160px;
+		margin: 0;
+		z-index: 0;
+		padding-right: 20000px;
+		left: -20000px;
+		width: 160px;
+		overflow: hidden;
+		background: transparent url('../images/bikeWalkVoteLogo_textured.png') no-repeat top right;
+	}
+	#main {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		width: 75%;
+	}
+		#main a, #main form {
+			float: right;
+			margin-right: 2px;
+			padding: 10px;
+			display: block;
+			background-color: #b6d986;
+			height: 10px;
+		}
+		#main a {
+			color: #FFFFFF;
+			font-weight: bold;
+			font-variant: small-caps;
+			letter-spacing: .125em;
+			text-decoration: none;
+		}
+		#main form * {
+			height: 10px;
+			color: #aaaaaa;
+		}
+	#content {
+		position: relative;
+		background: white url('../images/cardboard.png') repeat -160px 0px;
+		clear: both;
+		float: left;
+		padding-left: 10px;
+		min-height: 100%;
+		height: auto !important;
+		height: 100%;
+		margin: 0 auto -4em;
+	}	
+	#content ul {
+		display: block;
+		float: left;
+		margin: 0px;
+		padding: 0;
+	}
+			#candidates, #mission {
+			float: left;
+			background: #8DC63F url('../images/cardboard_darkGreen.png') repeat-x -160px -160px;
+			width: 100%;
+			}
+			#candidates li, #mission {
+				display: block;
+				float: left;
+				padding-right: 10px;
+			}
+				#candidates img {
+					background-color: #5776CF;
+				}
+			#issues {
+				height: 100%;
+			}
+			#issues li {
+				width: 40%;
+				margin: 0 2% 0 2%;
+				display: block;
+				float: left;
+			}
+	div.push {
+		height: 8em;
+		border: 3px solid #333;
+	}
+	footer {
+		clear: both;
+		float: left;
+		background: #8DC63F url('../images/cardboard_green.png') repeat 0px;
+		width: 100%;
+		postion: absolute;
+		bottom: 0px;
+		height: 4em;
+		
+	}
+	footer a {
+		display: inline-block;
+	}
