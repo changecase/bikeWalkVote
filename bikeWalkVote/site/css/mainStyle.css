@@ -1,6 +1,8 @@
 html, body {
 	height: 100%;
 }
+
+/* Main page container where all content goes. */
 #container {
 	font: 1em/1.5em Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;	
 	position: relative;
