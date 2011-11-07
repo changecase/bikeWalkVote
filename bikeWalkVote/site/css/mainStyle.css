@@ -1,22 +1,26 @@
 html, body {
 	height: 100%;
 }
-
-/* Main page container where all content goes. */
+body { 
+	font-size: 62.5%; /* makes 1em = 10px (so 1.4em = 14px, etc.) */
+}
 #container {
-	font: 1em/1.5em Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;	
+/*	em conversion
+	font: 1em/1.5em Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;	*/
+	font: 1.8em/2.0em "Josefin Sans", Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;	
+	font-weight: 400;
 	position: relative;
 	width: 100%;	
 }
 header {
 	position: relative;
 	padding: 0;
-	background: #8DC63F url('../images/cardboard_green.png') repeat 0px;
+	background: #8DC63F url('../images/cardboard_green.png') repeat 0em;
 	}
 #logo {
 	position: relative;
 	top: 0;
-	right: 0px;
+	right: 0;
 	margin: 0;
 }	
 	#logo a { 
@@ -27,7 +31,8 @@ header {
 		height: 160px;
 		margin: 0;
 		z-index: 0;
-		padding-right: 20000px;
+		padding: 0 20000px 0 0;
+		padding-right: ;
 		left: -20000px;
 		width: 160px;
 		overflow: hidden;
@@ -43,14 +48,16 @@ header {
 		#main a, #main form {
 			float: right;
 			margin-right: 2px;
-			padding: 10px;
+			padding: 10px 10px 20px;
 			display: block;
 			background-color: #b6d986;
+			-moz-border-radius: 0 0 5px 5px;
+			border-radius: 0 0 5px 5px;
 			height: 10px;
 		}
 		#main a {
 			color: #FFFFFF;
-			font-weight: bold;
+			font-weight: 700;
 			font-variant: small-caps;
 			letter-spacing: .125em;
 			text-decoration: none;
@@ -61,10 +68,10 @@ header {
 		}
 	#content {
 		position: relative;
-		background: white url('../images/cardboard.png') repeat -160px 0px;
+		background: white url('../images/cardboard_white.png') repeat -160px 0px;
 		clear: both;
 		float: left;
-		padding-left: 10px;
+		padding-left: -160px;
 		min-height: 100%;
 		height: auto !important;
 		height: 100%;
@@ -74,12 +81,12 @@ header {
 		display: block;
 		float: left;
 		margin: 0px;
-		padding: 0;
 	}
 			#candidates, #mission {
 			float: left;
-			background: #8DC63F url('../images/cardboard_darkGreen.png') repeat-x -160px -160px;
+			background: transparent url('../images/cardboard_darkGreen.png') repeat-x -160px -160px;
 			width: 100%;
+			padding-top: 20px;
 			}
 			#candidates li, #mission {
 				display: block;
@@ -89,29 +96,70 @@ header {
 				#candidates img {
 					background-color: #5776CF;
 				}
-			#issues {
+			#issues, #news {
 				height: 100%;
 			}
-			#issues li {
+			#issues li, #news li {
 				width: 40%;
 				margin: 0 2% 0 2%;
 				display: block;
 				float: left;
 			}
-	div.push {
-		height: 8em;
-		border: 3px solid #333;
+	#mission {
+		font-size: 2.8em;
+		line-height: 3.2em;
+		font-weight: 700;
+		padding: 0 18% 0 2%;
+		margin: 0;
+		width: 80%;
+	}
+	#mission + p {
+		width: 80%;
+		margin: 0 2% 0 2%;
+		font-size: 1.6em;
+		line-height: 2.0em;
+	}
+	#push {
+		position: relative;
+		height: 4em;
+		clear: both;
+		float: ;
 	}
 	footer {
+		position: relative;
 		clear: both;
 		float: left;
 		background: #8DC63F url('../images/cardboard_green.png') repeat 0px;
 		width: 100%;
-		postion: absolute;
-		bottom: 0px;
-		height: 4em;
+		height: 5em;
 		
 	}
 	footer a {
-		display: inline-block;
+		float: left;
+		margin-left: 4px;
+		padding: 10px 10px 20px;
+		height: 1.0em;
+		display: block;
+		background: white url('../images/cardboard_white.png') repeat -160px 0px;
+		-moz-border-radius: 0 0 5px 5px;
+		border-radius: 0 0 5px 5px;
+		color: #51791B;
+		font-weight: 700;
+		font-variant: small-caps;
+		letter-spacing: .125em;
+		text-decoration: none;
+	}
+	#main a#contribute {
+		position: fixed;
+		float: right;
+		right: -20%;
+		top: 0%;
+		padding-top: 50%;
+		-webkit-transform: rotate(90deg); 
+		-moz-transform: rotate(90deg);	
+		filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+		background-color: #933720;
+		-moz-border-radius: 0 0 5px 5px;
+		border-radius: 0 0 5px 0px;
+		border-left: 5px solid #793221;
 	}
