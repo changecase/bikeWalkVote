@@ -14,13 +14,10 @@ body {
 }
 header {
 	position: relative;
-//	padding: 0;
 	background: #8DC63F url('../images/cardboard_green.png') repeat 0em;
 	}
 #logo {
 	position: relative;
-//	top: 0;
-//	right: 0;
 	margin: 0;
 }	
 	#logo a { 
@@ -86,7 +83,7 @@ header {
 			#candidates, #mission {
 			float: left;
 			background: transparent url('../images/cardboard_darkGreen.png') repeat-x -160px -160px;
-			width: 100%;
+			width: 70.5%;
 			padding-top: 20px;
 			}
 			#candidates li, #mission {
@@ -100,9 +97,10 @@ header {
 				}
 			#issues, #news {
 				height: 100%;
+				width: 60%;
 			}
 			#issues li, #news li {
-				width: 40%;
+				width: 48%;
 				margin-right: 2%;
 				display: block;
 				float: left;
@@ -112,20 +110,19 @@ header {
 		font-weight: 700;
 		padding-right: 18%;
 		padding-top: 1.4em;
-		width: 80%;
 		margin: 0;
 	}
 	#mission + p {
-		width: 80%;
+		width: 58.8%;
 		font-size: 1.6em;
 //		line-height: 2.0em;
-		padding-left: 160px;
+		margin-left: 160px;
+		padding-right: 1.2%;
 	}
 	#push {
 		position: relative;
 		height: 4em;
 		clear: both;
-		float: ;
 	}
 	footer {
 		position: relative;
