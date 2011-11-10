@@ -7,7 +7,7 @@
 	<key>ESProjectWindowState</key>
 	<dict>
 		<key>ContentSize</key>
-		<string>{1639, 911}</string>
+		<string>{1680, 911}</string>
 		<key>ProjectURL</key>
 		<string>file://localhost/Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/site.esproj/</string>
 		<key>StateType</key>
@@ -31,22 +31,28 @@
 		<key>Tabs</key>
 		<array>
 			<dict>
-				<key>StateType</key>
-				<string>PreviewTab</string>
-				<key>Title</key>
-				<string>bike walk vote</string>
-				<key>URL</key>
-				<string>file:///Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/index2.html</string>
-			</dict>
-			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/index2.html</string>
+				<string>file://localhost/Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/css/newStyle.css</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/css/newStyle.css</string>
+				<string>file://localhost/Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/index.html</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>StateType</key>
+				<string>PreviewTab</string>
+				<key>Title</key>
+				<string>bike walk vote</string>
+				<key>URL</key>
+				<string>file:///Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/index.html</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/bikeWalkVote_feed.xml</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
