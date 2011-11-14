@@ -24,13 +24,17 @@
 	</guid>
 </item>
 <item>
-<description>
-Sky watchers in Europe, Asia, and parts of Alaska and Canada will experience a <a href="http://science.nasa.gov/headlines/y2003/30may_solareclipse.htm">partial eclipse of the Sun</a> on Saturday, May 31st.
-</description>
-<pubDate>Fri, 30 May 2003 11:06:42 GMT</pubDate>
-<guid>
-http://liftoff.msfc.nasa.gov/2003/05/30.html#item572
-</guid>
+	<title>Another Story</title>
+	<link>
+	http://bikewalkvote.org/another-story.html
+	</link>
+	<description>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="/news/one-story.html" title="read the complete story 'one story'">more&ensp;&hellip;</a>
+	</description>
+	<pubDate>Fri, 30 May 2003 11:06:42 GMT</pubDate>
+	<guid>
+	http://liftoff.msfc.nasa.gov/2003/05/30.html#item572
+	</guid>
 </item>
 <item>
 <title>The Engine That Does More</title>

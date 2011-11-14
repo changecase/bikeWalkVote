@@ -32,13 +32,25 @@
 		<array>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/css/newStyle.css</string>
+				<string>file://localhost/Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/index.html</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
 			<dict>
 				<key>DocumentURL</key>
-				<string>file://localhost/Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/index.html</string>
+				<string>file://localhost/Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/bikeWalkVote_feed.xml</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/stylesheets/less/style.less</string>
+				<key>StateType</key>
+				<string>DefaultTab</string>
+			</dict>
+			<dict>
+				<key>DocumentURL</key>
+				<string>file://localhost/Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/stylesheets/less/newStyle.less</string>
 				<key>StateType</key>
 				<string>DefaultTab</string>
 			</dict>
@@ -49,12 +61,6 @@
 				<string>bike walk vote</string>
 				<key>URL</key>
 				<string>file:///Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/index.html</string>
-			</dict>
-			<dict>
-				<key>DocumentURL</key>
-				<string>file://localhost/Users/jacobson/github/bikeWalkVote/bikeWalkVote/site/bikeWalkVote_feed.xml</string>
-				<key>StateType</key>
-				<string>DefaultTab</string>
 			</dict>
 		</array>
 	</dict>
