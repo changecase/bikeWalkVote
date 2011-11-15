@@ -64,6 +64,7 @@ body #container {
   position: relative;
   width: 100%;
   font: 0.9em "Josefin Sans", Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+  background: white url('../../images/cardboard_white.png') repeat -160px 0px;
 }
 body #container header {
   position: relative;
@@ -87,6 +88,143 @@ body #container header #logo a {
   width: 160px;
   overflow: hidden;
   background: transparent url('../../images/bikeWalkVoteLogo_textured.png') no-repeat top right;
+}
+body #container #main {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 75%;
+}
+body #container #main a, body #container #main form {
+  float: right;
+  margin-right: 2px;
+  padding: 15px 10px 20px;
+  display: block;
+  background-color: #b6d986;
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  height: 10px;
+}
+body #container #main a {
+  color: #FFFFFF;
+  font-weight: 700;
+  letter-spacing: .125em;
+  text-decoration: none;
+  margin-bottom: 8px;
+}
+body #container #main #contribute {
+  position: fixed;
+  top: 280px;
+  border-radius: 20px 0 0 20px;
+  border-top: 5px solid #793221;
+  right: 0;
+  margin: 0;
+  width: 100px;
+  height: 2.6em;
+  background-color: #933720;
+}
+body #container #main form {
+  padding-top: 11px;
+  padding-bottom: 24px;
+}
+body #container #main form input {
+  padding-top: .3em;
+  height: .8em;
+  color: #aaaaaa;
+}
+body #container #content {
+  position: relative;
+  background: transparent url('../../images/cardboard_darkGreen.png') repeat-x -160px -160px;
+  clear: both;
+  float: left;
+  padding-left: -160px;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -4em;
+  min-width: 40.0em;
+  width: 100%;
+}
+body #container #content #candidates, body #container #content #mission {
+  float: left;
+  padding-top: 20px;
+  font-size: 6.6em;
+  font-weight: 700;
+  padding-left: 160px;
+  padding-top: 1.4em;
+  margin: 0;
+}
+body #container #content #candidates img {
+  background-color: #5776cf;
+}
+body #container #content #mission + p {
+  clear: left;
+  max-width: 25em;
+  margin-right: 4em;
+  font-size: 3.4em;
+  line-height: 1.8em;
+  padding-left: 160px;
+}
+body #container #content ul {
+  display: block;
+  float: left;
+  margin-left: 160px;
+  max-width: 96em;
+  padding-bottom: 10em;
+}
+body #container #content #issues, body #container #content #news {
+  height: 100%;
+}
+body #container #content #news li, body #container #content #issues li {
+  max-width: 48em;
+  margin-right: display: block;
+  list-style: none;
+  float: left;
+}
+body #container #content #news li h3, body #container #content #issues li h3 {
+  margin-bottom: 0;
+  font-size: 3.4em;
+}
+body #container #content #news li p, body #container #content #issues li p {
+  font-size: 1.6em;
+  margin-top: 0;
+  margin-right: 2em;
+  padding-left: 0;
+  border: none;
+}
+body #container #push {
+  position: relative;
+  height: 4em;
+  clear: both;
+}
+body #container footer {
+  position: relative;
+  clear: both;
+  float: left;
+  background: #8dc63f url('../../images/cardboard_green.png') repeat 0em;
+  width: 100%;
+  height: 5em;
+}
+body #container footer :first-child {
+  margin-left: 160px;
+}
+body #container footer a {
+  float: left;
+  margin-left: 4px;
+  padding: 10px 10px 20px;
+  height: 1.0em;
+  display: block;
+  background: white url('../../images/cardboard_white.png') repeat -160px 0px;
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  color: #51791B;
+  font-weight: 700;
+  font-variant: small-caps;
+  letter-spacing: .125em;
+  text-decoration: none;
 }
 body,
 button,

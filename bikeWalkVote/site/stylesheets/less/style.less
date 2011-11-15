@@ -20,7 +20,18 @@
 @baseFont: 1.8em/2.0em "Josefin Sans", Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 @baseFontFamily: "Josefin Sans", Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 @greenBackground: #8DC63F url('../../images/cardboard_green.png') repeat 0em;
-@logo: transparent url('../../images/bikeWalkVoteLogo_textured.png') no-repeat top right;
+@logo: transparent url('../../images/bikeWalkVoteLogo_textured.png') no-repeat top right; 
+.rounded-corners (@radius: 0 0 5px 5px) {
+	  border-radius: @radius;
+	  -webkit-border-radius: @radius;
+	  -moz-border-radius: @radius;
+}
+@whiteBackground: white url('../../images/cardboard_white.png') repeat -160px 0px;
+@greenBackgroundOnWhite: transparent url('../../images/cardboard_darkGreen.png') repeat-x -160px -160px;
+@blue: #5776CF;
+@testBorder: 3px solid red;
+
+
 
 /* =============================================================================
    HTML5 display definitions
@@ -60,6 +71,7 @@ body {
 			position: relative;
 			width: 100%;	
 			font: @baseFont;
+			background: @whiteBackground;
 			header {
 				position: relative;
 				background: @greenBackground;
@@ -81,6 +93,141 @@ body {
 						overflow: hidden;
 						background: @logo;
 					}
+				}
+			}
+			#main {
+				position: absolute;
+				top: 0;
+				right: 0;
+				z-index: 1;
+				width: 75%;
+				a, form {
+					float: right;
+					margin-right: 2px;
+					padding: 15px 10px 20px;
+					display: block;
+					background-color: #b6d986;
+					.rounded-corners;
+					height: 10px;
+				}
+				a {
+					color: #FFFFFF;
+					font-weight: 700;
+					letter-spacing: .125em;
+					text-decoration: none;
+					margin-bottom: 8px;
+				}
+				#contribute {
+					position: fixed;
+					top: 280px;
+					border-radius: 20px 0 0 20px;
+					border-top: 5px solid #793221;
+					right: 0;
+					margin: 0;
+					width: 100px;
+					height: 2.6em;
+					background-color: #933720;
+				}
+				form {
+					padding-top: 11px;
+					padding-bottom: 24px;
+					input {
+						padding-top: .3em;
+						height: .8em;
+						color: #aaaaaa;
+					}
+				}
+			}
+			#content { 
+				position: relative;
+				background: @greenBackgroundOnWhite;
+				clear: both;
+				float: left;
+				padding-left: -160px;
+				min-height: 100%;
+				height: auto !important;
+				height: 100%;
+				margin: 0 auto -4em;
+				min-width: 40.0em;
+				width: 100%;
+				#candidates, #mission {
+					float: left;
+					padding-top: 20px;
+					font-size: 6.6em;	
+					font-weight: 700;
+					padding-left: 160px;
+					padding-top: 1.4em;
+					margin: 0;
+				}
+				#candidates img {
+					background-color: @blue;
+				}
+				#mission + p {
+					clear: left;
+					max-width: 25em;
+					margin-right: 4em;
+					font-size: 3.4em;
+					line-height: 1.8em;
+					padding-left: 160px;
+				}
+				ul {
+					display: block;
+					float: left;
+					margin-left: 160px;
+					max-width: 96em;
+					padding-bottom: 10em;
+				}
+				#issues, #news {
+					height: 100%;
+				}
+				#news, #issues {
+					li {
+						max-width: 48em;
+						margin-right: 
+						display: block;
+						list-style: none;
+						float: left;						
+						h3 {
+							margin-bottom: 0;
+							font-size: 3.4em;
+						}
+						p {
+							font-size: 1.6em;
+							margin-top: 0;
+							margin-right: 2em;
+							padding-left: 0;
+							border: none;
+							
+						}
+					}
+				}
+			}
+			#push {
+				position: relative;
+				height: 4em;
+				clear: both;
+			}
+			footer {
+				position: relative;
+				clear: both;
+				float: left;
+				background: @greenBackground;
+				width: 100%;
+				height: 5em;
+				:first-child { margin-left: 160px; }
+				a {
+					float: left;
+					margin-left: 4px;
+					padding: 10px 10px 20px;
+					height: 1.0em;
+					display: block;
+					background: @whiteBackground;
+					.rounded-corners;
+					color: #51791B;
+					font-weight: 700;
+					font-variant: small-caps;
+					letter-spacing: .125em;
+					text-decoration: none;
 				}
 			}
 		}
