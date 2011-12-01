@@ -31,14 +31,14 @@
 	.bwvFontSize .bwvLineHeight @baseFontFamily
 }
 @greenBackground: #8DC63F url('../../images/cardboard_green.png') repeat 0em;
-@logo: transparent url('../../images/bikeWalkVoteLogo_textured.png') no-repeat top right; 
+@logo: transparent url('../../images/bikeWalkVoteLogo_longTextured.png') no-repeat top right; 
 .rounded-corners (@radius: 0 0 5px 5px) {
 	border-radius: @radius;
 	-webkit-border-radius: @radius;
 	-moz-border-radius: @radius;
 }
 @whiteBackground: white url('../../images/cardboard_white.png') repeat -160px -50px;
-@greenBackgroundOnWhite: transparent url('../../images/cardboard_darkGreen.png') repeat-x -160px 0px;
+@greenBackgroundOnWhite: transparent url('../../images/cardboard_darkGreen.png') repeat-x -491px -111px;
 @blue: #5776CF;
 @testBorder: 3px solid red;
 
@@ -83,6 +83,7 @@ body {
 			width: 100%;	
 			background: @whiteBackground;
 			padding-bottom: 8em;
+			padding-top: 6px;
 			header {
 				position: relative;
 				background: @greenBackgroundOnWhite;
@@ -96,13 +97,13 @@ body {
 						position: relative;
 						top:  0;
 						right: 0;
-						height: 160px;
+						height: 49px;
 						margin: 0;
 						z-index: 0;
 						padding: 0 20000px 0 0;
 						padding-right: ;
 						left: -20000px;
-						width: 160px;
+						width: 491px;
 						overflow: hidden;
 						background: @logo;
 					}
@@ -177,6 +178,16 @@ body {
 					padding-top: 1.4em;
 					margin: 0;
 				}
+				h2 {
+					margin-bottom: 0;
+					.bwvFontSize(24);
+					.bwvLineHeight(36);
+				}
+				h3 {
+					margin-bottom: 0;
+					.bwvFontSize(18);
+					.bwvLineHeight(24)
+				}
 				#candidates img {
 					background-color: @blue;
 				}
@@ -206,20 +217,32 @@ body {
 						display: block;
 						list-style: none;
 						float: left;
-						h3 {
-							margin-bottom: 0;
-							.bwvFontSize(24);
-							.bwvLineHeight(36);
-						}
-						p {
-							.bwvFontSize(18);
-							.bwvLineHeight(24);
-							margin-top: 0;
-							padding-left: 0;
-							border: none;
-							padding-bottom: 1em;
-						}
 					}
+					li:nth-child(2n+1) {
+						float: left;
+						clear: left;
+					}
+					li:nth-child(2n) {
+						float: right;
+						clear: right;
+					}
+					h3, h2 {
+						margin-bottom: 0;
+						.bwvFontSize(24);
+						.bwvLineHeight(36);
+					}
+					p {
+						.bwvFontSize(18);
+						.bwvLineHeight(24);
+						margin-top: 0;
+						padding-left: 0;
+						border: none;
+						padding-bottom: 1em;
+					}
+				}
+				#steering p, #volunteers p {
+					.bwvFontSize(18);
+					.bwvLineHeight(24);
 				}
 				#questions {
 					margin-bottom: 25px;

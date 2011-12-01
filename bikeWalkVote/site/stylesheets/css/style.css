@@ -64,10 +64,11 @@ body #container {
   width: 100%;
   background: white url('../../images/cardboard_white.png') repeat -160px -50px;
   padding-bottom: 8em;
+  padding-top: 6px;
 }
 body #container header {
   position: relative;
-  background: transparent url('../../images/cardboard_darkGreen.png') repeat-x -160px 0px;
+  background: transparent url('../../images/cardboard_darkGreen.png') repeat-x -491px -111px;
   padding-bottom: 50px;
 }
 body #container header #logo {
@@ -80,15 +81,15 @@ body #container header #logo a {
   position: relative;
   top: 0;
   right: 0;
-  height: 160px;
+  height: 49px;
   margin: 0;
   z-index: 0;
   padding: 0 20000px 0 0;
   padding-right: ;
   left: -20000px;
-  width: 160px;
+  width: 491px;
   overflow: hidden;
-  background: transparent url('../../images/bikeWalkVoteLogo_textured.png') no-repeat top right;
+  background: transparent url('../../images/bikeWalkVoteLogo_longTextured.png') no-repeat top right;
 }
 body #container #main {
   position: absolute;
@@ -165,6 +166,20 @@ body #container #content #candidates, body #container #content #mission {
   padding-top: 1.4em;
   margin: 0;
 }
+body #container #content h2 {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-size: 2.4000000000000004 rem;
+  line-height: 36px;
+  line-height: 3.6 rem;
+}
+body #container #content h3 {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-size: 1.8 rem;
+  line-height: 24px;
+  line-height: 2.4000000000000004 rem;
+}
 body #container #content #candidates img {
   background-color: #5776cf;
 }
@@ -201,20 +216,38 @@ body #container #content #volunteers li {
   list-style: none;
   float: left;
 }
-body #container #content #news li h3,
-body #container #content #issues li h3,
-body #container #content #steering li h3,
-body #container #content #volunteers li h3 {
+body #container #content #news li:nth-child(2n+1),
+body #container #content #issues li:nth-child(2n+1),
+body #container #content #steering li:nth-child(2n+1),
+body #container #content #volunteers li:nth-child(2n+1) {
+  float: left;
+  clear: left;
+}
+body #container #content #news li:nth-child(2n),
+body #container #content #issues li:nth-child(2n),
+body #container #content #steering li:nth-child(2n),
+body #container #content #volunteers li:nth-child(2n) {
+  float: right;
+  clear: right;
+}
+body #container #content #news h3,
+body #container #content #issues h3,
+body #container #content #steering h3,
+body #container #content #volunteers h3,
+body #container #content #news h2,
+body #container #content #issues h2,
+body #container #content #steering h2,
+body #container #content #volunteers h2 {
   margin-bottom: 0;
   font-size: 24px;
   font-size: 2.4000000000000004 rem;
   line-height: 36px;
   line-height: 3.6 rem;
 }
-body #container #content #news li p,
-body #container #content #issues li p,
-body #container #content #steering li p,
-body #container #content #volunteers li p {
+body #container #content #news p,
+body #container #content #issues p,
+body #container #content #steering p,
+body #container #content #volunteers p {
   font-size: 18px;
   font-size: 1.8 rem;
   line-height: 24px;
@@ -223,6 +256,12 @@ body #container #content #volunteers li p {
   padding-left: 0;
   border: none;
   padding-bottom: 1em;
+}
+body #container #content #steering p, body #container #content #volunteers p {
+  font-size: 18px;
+  font-size: 1.8 rem;
+  line-height: 24px;
+  line-height: 2.4000000000000004 rem;
 }
 body #container #content #questions {
   margin-bottom: 25px;
