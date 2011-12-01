@@ -60,23 +60,52 @@
     </div>
 <section id="content">
 	<h2>Contribute!</h2>
-	<p>Take advantage of Oregon's State political contribution tax credit, donate!</p>
+	<p>Take advantage of Oregon's State <a href="http://oregontaxcredit.com/" title="about the Oregon Political Tax Credit">political contribution tax credit</a>, donate! You can find all of the legal mumbo jumbo on the <a href="http://www.oregon.gov/DOR/PERTAX/2009_piti/credits_political_contributions.shtml" title="Oregon's department of revenue on political contributions">oregon.gov website.</a></p>
 	<p>Bike Walk Vote is required to report this information to the Elections Office. The information is publicly available in order to ensure campaign finance transparency as required by law. Bike Walk Vote will never use or give away this information outside of what is legally required of us as a Political Action Committee.</p>
 	<script type="text/javascript">
 	
 	</script>
+	<form method="post" action="#">
+		<fieldset id="fn">
+			<h3>Your identity</h3>
+			<label for="given-name">First Name</label>
+			<input type="text" id="given-name" name="given-name" value="first name" class="required" />
+			<label for="additional-name">Middle Initial</label>
+			<input type="text" id="additional-name " name="additional-name" value="middle" /> <!-- FYI Peter: this is intentionally not a required field -->
+			<label for="family-name">Last Name</label>
+			<input type="text" id="family-name" name="family-name" value="last name" class="required" />
+		</fieldset>
+		<fieldset id="adr">
+			<h3>Where you live</h3>
+			<label for="street-address">Street Address</label>
+			<input type="text" id="street-address" name="street-address" value="street address" class="required" />
+			<label for="locality">City</label>
+			<input type="text" id="locality" name="locality" value="city" class="required" />
+			<label for="region">State</label>
+			<input type="text" id="region" name="region" value="state" class="required" />
+			<label for="postal-code">Zip</label>
+			<input type="text" id="postal-code" name="postal-code" value="zip code" class="required" />
+		</fieldset>
+		<fieldset id="job">
+			<h3>About your employment</h3>
+			<label for="title">Occupation</label>
+			<input type="text" id="title" name="title" value="occupation" class="required" />
+			<label for="org">Employer</label>
+			<input type="text" id="org" name="org" value="employer" class="required" />
+			<label for="employer-locality">Employer's City</label>
+			<input type="text" id="employer-locality" name="employer-locality" value="employer's city" class="required" />
+			<label for="employer-region">Employer's State</label>
+			<input type="text" id="employer-state" name="employer-state" value="employer's state" class="required" />
+		</fieldset>
+		<fieldset id="contact"> <!-- Peter: again, the info in this fieldset is intentionally not required... we'd just like to have it if we can get it -->
+			<h3>How we can contact you</h3>
+			<label for="email">Email</label>
+			<input type="text" id="email" name="email" value="your email" />
+			<label for="tel">Phone</label>
+			<input type="text" id="tel" name="tel" value="your phone number" />
+		</fieldset>
+	</form>
 	<!-- BEGIN google checkout donate button -->
-	<script type="text/javascript"> 
-	function validateAmount(amount){
-		if(amount.value.match( /^[0-9]+(\.([0-9]+))?$/)){
-			return true;
-		}else{
-			alert('You must enter a valid contribution amount.');
-			amount.focus();
-			return false;
-		}
-	}
-	</script>
 	<form action="https://checkout.google.com/cws/v2/Political/857463963626185/checkout" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" onSubmit="return validateAmount(this.donationAmount)" target="_top">
 	    <input name="cart" type="hidden" value="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxjaGVja291dC1zaG9wcGluZy1jYXJ0IHhtbG5zPSJodHRwOi8vY2hlY2tvdXQuZ29vZ2xlLmNvbS9zY2hlbWEvMiI+DQogIDxzaG9wcGluZy1jYXJ0Pg0KICAgIDxpdGVtcz4NCiAgICAgIDxpdGVtPg0KICAgICAgICA8bW9kaWZpYWJsZS1wcmljZT4NCiAgICAgICAgICA8bWF4LXByaWNlIGN1cnJlbmN5PSJVU0QiPjI1MDAwLjA8L21heC1wcmljZT4NCiAgICAgICAgICA8bWluLXByaWNlIGN1cnJlbmN5PSJVU0QiPjUuMDwvbWluLXByaWNlPg0KICAgICAgICAgIDxpcy1tb2RpZmlhYmxlPnRydWU8L2lzLW1vZGlmaWFibGU+DQogICAgICAgIDwvbW9kaWZpYWJsZS1wcmljZT4NCiAgICAgICAgPGl0ZW0tbmFtZT5Db250cmlidXRpb24gdG8gQmlrZSBXYWxrIFZvdGU8L2l0ZW0tbmFtZT4NCiAgICAgICAgPGl0ZW0tZGVzY3JpcHRpb24+WW91ciBjb250cmlidXRpb24gd2lsbCBiZSB1c2VkIHRvIGhlbHAgZWxlY3QgdGhlIGNhbmRpZGF0ZXMgd2hvIHN1cHBvcnQgYmlraW5nIHdhbGtpbmcgYW5kIHRyYW5zaXQuPC9pdGVtLWRlc2NyaXB0aW9uPg0KICAgICAgICA8dW5pdC1wcmljZSBjdXJyZW5jeT0iVVNEIj41MC4wPC91bml0LXByaWNlPg0KICAgICAgICA8cXVhbnRpdHk+MTwvcXVhbnRpdHk+DQogICAgICAgIDxtZXJjaGFudC1pdGVtLWlkPjwvbWVyY2hhbnQtaXRlbS1pZD4NCiAgICAgIDwvaXRlbT4NCiAgICA8L2l0ZW1zPg0KICA8L3Nob3BwaW5nLWNhcnQ+DQogIDxjaGVja291dC1mbG93LXN1cHBvcnQ+DQogICAgPG1lcmNoYW50LWNoZWNrb3V0LWZsb3ctc3VwcG9ydCAvPg0KICA8L2NoZWNrb3V0LWZsb3ctc3VwcG9ydD4NCjwvY2hlY2tvdXQtc2hvcHBpbmctY2FydD4NCg0K"/>
 	    <input name="signature" type="hidden" value="Tz4tFPQhLJ8J8k8bfn/B2+83SC0="/>
@@ -130,6 +159,9 @@
     <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
     <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
   <![endif]-->
+  
+  <!-- Google checkout button script -->
+  	<script src="js/google-chekcout-donate-button.js" type="text/javascript"></script>
   
 </body>
 </html>
