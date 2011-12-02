@@ -47,47 +47,49 @@ audio:not([controls]) {
  * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
  */
 html {
-  font-size: 100%;
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   height: 100%;
+  font-size: 100%;
 }
 body {
   margin: 0;
-  font-size: 62.5%;
-  line-height: 1.231;
-  font: 0.9em "Josefin Sans", Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
   font-weight: 400;
+  height: 100%;
 }
 body #container {
   position: relative;
+  min-height: 100%;
   width: 100%;
-  font: 0.9em "Josefin Sans", Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-  background: white url('../../images/cardboard_white.png') repeat -160px 0px;
+  background: white url('../../images/cardboard_white.png') repeat -160px -50px;
+  padding-bottom: 8em;
+  padding-top: 6px;
 }
 body #container header {
   position: relative;
-  background: #8dc63f url('../../images/cardboard_green.png') repeat 0em;
+  background: transparent url('../../images/cardboard_darkGreen.png') repeat-x -491px -111px;
+  padding-bottom: 50px;
 }
 body #container header #logo {
   position: relative;
   margin: 0;
+  background: #8dc63f url('../../images/cardboard_green.png') repeat 0em;
 }
 body #container header #logo a {
   display: block;
   position: relative;
   top: 0;
   right: 0;
-  height: 160px;
+  height: 49px;
   margin: 0;
   z-index: 0;
   padding: 0 20000px 0 0;
   padding-right: ;
   left: -20000px;
-  width: 160px;
+  width: 491px;
   overflow: hidden;
-  background: transparent url('../../images/bikeWalkVoteLogo_textured.png') no-repeat top right;
+  background: transparent url('../../images/bikeWalkVoteLogo_longTextured.png') no-repeat top right;
 }
 body #container #main {
   position: absolute;
@@ -95,6 +97,8 @@ body #container #main {
   right: 0;
   z-index: 1;
   width: 75%;
+  font-size: 14px;
+  font-size: 1.4000000000000001 rem;
 }
 body #container #main a, body #container #main form {
   float: right;
@@ -106,11 +110,13 @@ body #container #main a, body #container #main form {
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   height: 10px;
+  height: 1rem;
 }
 body #container #main a {
   color: #FFFFFF;
   font-weight: 700;
-  letter-spacing: .125em;
+  letter-spacing: 2px;
+  letter-spacing: .2em;
   text-decoration: none;
   margin-bottom: 8px;
 }
@@ -136,71 +142,147 @@ body #container #main form input {
 }
 body #container #content {
   position: relative;
-  background: transparent url('../../images/cardboard_darkGreen.png') repeat-x -160px -160px;
   clear: both;
   float: left;
-  padding-left: -160px;
+  padding-left: 160px;
+  padding-right: 160px;
+  padding-bottom: 40px;
+  padding-bottom: 4rem;
   min-height: 100%;
   height: auto !important;
   height: 100%;
   margin: 0 auto -4em;
   min-width: 40.0em;
-  width: 100%;
+  max-width: 75.0em;
+  width: auto;
 }
 body #container #content #candidates, body #container #content #mission {
   float: left;
-  padding-top: 20px;
-  font-size: 6.6em;
+  font-size: 48px;
+  font-size: 4.800000000000001 rem;
+  line-height: 72px;
+  line-height: 7.2 rem;
   font-weight: 700;
-  padding-left: 160px;
   padding-top: 1.4em;
   margin: 0;
+}
+body #container #content h2 {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-size: 2.4000000000000004 rem;
+  line-height: 36px;
+  line-height: 3.6 rem;
+}
+body #container #content h3 {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-size: 1.8 rem;
+  line-height: 24px;
+  line-height: 2.4000000000000004 rem;
 }
 body #container #content #candidates img {
   background-color: #5776cf;
 }
 body #container #content #mission + p {
   clear: left;
-  max-width: 25em;
-  margin-right: 4em;
-  font-size: 3.4em;
-  line-height: 1.8em;
-  padding-left: 160px;
+  font-size: 36px;
+  font-size: 3.6 rem;
+  line-height: 48px;
+  line-height: 4.800000000000001 rem;
+  min-width: 200px;
+  min-width: 20rem;
 }
 body #container #content ul {
   display: block;
   float: left;
-  margin-left: 160px;
-  max-width: 96em;
-  padding-bottom: 10em;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 body #container #content #issues, body #container #content #news {
   height: 100%;
+  font-size: 9px;
+  font-size: 0.9 rem;
+  line-height: 14px;
+  line-height: 1.4000000000000001 rem;
 }
-body #container #content #news li, body #container #content #issues li {
-  max-width: 48em;
-  margin-right: display: block;
+body #container #content #news li,
+body #container #content #issues li,
+body #container #content #steering li,
+body #container #content #volunteers li {
+  width: 48%;
+  padding-right: 1%;
+  display: block;
   list-style: none;
   float: left;
 }
-body #container #content #news li h3, body #container #content #issues li h3 {
-  margin-bottom: 0;
-  font-size: 3.4em;
+body #container #content #news li:nth-child(2n+1),
+body #container #content #issues li:nth-child(2n+1),
+body #container #content #steering li:nth-child(2n+1),
+body #container #content #volunteers li:nth-child(2n+1) {
+  float: left;
+  clear: left;
 }
-body #container #content #news li p, body #container #content #issues li p {
-  font-size: 1.6em;
+body #container #content #news li:nth-child(2n),
+body #container #content #issues li:nth-child(2n),
+body #container #content #steering li:nth-child(2n),
+body #container #content #volunteers li:nth-child(2n) {
+  float: right;
+  clear: right;
+}
+body #container #content #news h3,
+body #container #content #issues h3,
+body #container #content #steering h3,
+body #container #content #volunteers h3,
+body #container #content #news h2,
+body #container #content #issues h2,
+body #container #content #steering h2,
+body #container #content #volunteers h2 {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-size: 2.4000000000000004 rem;
+  line-height: 36px;
+  line-height: 3.6 rem;
+}
+body #container #content #news p,
+body #container #content #issues p,
+body #container #content #steering p,
+body #container #content #volunteers p {
+  font-size: 18px;
+  font-size: 1.8 rem;
+  line-height: 24px;
+  line-height: 2.4000000000000004 rem;
   margin-top: 0;
-  margin-right: 2em;
   padding-left: 0;
   border: none;
+  padding-bottom: 1em;
+}
+body #container #content #steering p, body #container #content #volunteers p {
+  font-size: 18px;
+  font-size: 1.8 rem;
+  line-height: 24px;
+  line-height: 2.4000000000000004 rem;
+}
+body #container #content #questions {
+  margin-bottom: 25px;
+}
+body #container #content #questions ul {
+  margin-left: 25px;
+  clear: both;
+  height: auto;
+  float: none;
+  margin-bottom: 0px;
 }
 body #container #push {
   position: relative;
-  height: 4em;
+  display: block;
+  height: auto !important;
+  height: 100%;
   clear: both;
 }
 body #container footer {
-  position: relative;
+  position: absolute;
+  bottom: 0;
   clear: both;
   float: left;
   background: #8dc63f url('../../images/cardboard_green.png') repeat 0em;
@@ -216,7 +298,7 @@ body #container footer a {
   padding: 10px 10px 20px;
   height: 1.0em;
   display: block;
-  background: white url('../../images/cardboard_white.png') repeat -160px 0px;
+  background: white url('../../images/cardboard_white.png') repeat -160px -50px;
   border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
@@ -345,7 +427,7 @@ sub {
    ========================================================================== */
 ul, ol {
   margin: 1em 0;
-  padding: 0 0 040px;
+  padding: 0 0 0 40px;
 }
 dd {
   margin: 0 0 0 40px;

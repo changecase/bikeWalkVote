@@ -15,19 +15,30 @@
    Less variable definitions
    ===========================================================================*/
 
-@baseFontSize: 62.5%; // makes 1em = 10px (so 1.4em = 14px, etc.)
-@baseLineHeight: 1.231;
-@baseFont: 1.8em/2.0em "Josefin Sans", Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+@baseFontSize: 100%;
+@baseLineHeight: 1.4;
+//@baseFont: 100%/1.4 "Josefin Sans", Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 @baseFontFamily: "Josefin Sans", Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-@greenBackground: #8DC63F url('../../images/cardboard_green.png') repeat 0em;
-@logo: transparent url('../../images/bikeWalkVoteLogo_textured.png') no-repeat top right; 
-.rounded-corners (@radius: 0 0 5px 5px) {
-	  border-radius: @radius;
-	  -webkit-border-radius: @radius;
-	  -moz-border-radius: @radius;
+.bwvFontSize (@capHeight: 9) {
+	font-size: @capHeight * 1px;
+	font-size: @capHeight * 0.1rem;
 }
-@whiteBackground: white url('../../images/cardboard_white.png') repeat -160px 0px;
-@greenBackgroundOnWhite: transparent url('../../images/cardboard_darkGreen.png') repeat-x -160px -160px;
+.bwvLineHeight (@leading: 14) {
+	line-height: @leading * 1px;
+	line-height: @leading * 0.1rem;
+}
+.baseFont {
+	.bwvFontSize .bwvLineHeight @baseFontFamily
+}
+@greenBackground: #8DC63F url('../../images/cardboard_green.png') repeat 0em;
+@logo: transparent url('../../images/bikeWalkVoteLogo_longTextured.png') no-repeat top right; 
+.rounded-corners (@radius: 0 0 5px 5px) {
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+}
+@whiteBackground: white url('../../images/cardboard_white.png') repeat -160px -50px;
+@greenBackgroundOnWhite: transparent url('../../images/cardboard_darkGreen.png') repeat-x -491px -111px;
 @blue: #5776CF;
 @testBorder: 3px solid red;
 
@@ -53,43 +64,46 @@ audio:not([controls]) { display: none; }
  */
 
 html { 
-		font-size: 100%; 
 		overflow-y: scroll; 
 		-webkit-text-size-adjust: 100%; 
 		-ms-text-size-adjust: 100%; 
-		height: 100%; 
+		height: 100%;
+		font-size: @baseFontSize;
 	}
 
 body { 
 		margin: 0; 
 	//	font-size: 13px; boilerplate default, removed for now
-		font-size: @baseFontSize;
-		line-height: @baseLineHeight; 
-		font: @baseFont;
+		.baseFont;
 		font-weight: 400;
+		height: 100%;
 		#container {
 			position: relative;
+			min-height: 100%;
 			width: 100%;	
-			font: @baseFont;
 			background: @whiteBackground;
+			padding-bottom: 8em;
+			padding-top: 6px;
 			header {
 				position: relative;
-				background: @greenBackground;
+				background: @greenBackgroundOnWhite;
+				padding-bottom: 50px;
 				#logo {
 					position: relative;
 					margin: 0;
+					background: @greenBackground;
 					a { 
 						display: block;
 						position: relative;
 						top:  0;
 						right: 0;
-						height: 160px;
+						height: 49px;
 						margin: 0;
 						z-index: 0;
 						padding: 0 20000px 0 0;
 						padding-right: ;
 						left: -20000px;
-						width: 160px;
+						width: 491px;
 						overflow: hidden;
 						background: @logo;
 					}
@@ -101,6 +115,7 @@ body {
 				right: 0;
 				z-index: 1;
 				width: 75%;
+				.bwvFontSize(14);
 				a, form {
 					float: right;
 					margin-right: 2px;
@@ -109,11 +124,13 @@ body {
 					background-color: #b6d986;
 					.rounded-corners;
 					height: 10px;
+					height: 1rem;
 				}
 				a {
 					color: #FFFFFF;
 					font-weight: 700;
-					letter-spacing: .125em;
+					letter-spacing: 2px;
+					letter-spacing: .2em;
 					text-decoration: none;
 					margin-bottom: 8px;
 				}
@@ -140,75 +157,114 @@ body {
 			}
 			#content { 
 				position: relative;
-				background: @greenBackgroundOnWhite;
 				clear: both;
 				float: left;
-				padding-left: -160px;
+				padding-left: 160px;
+				padding-right: 160px;
+				padding-bottom: 40px;
+				padding-bottom: 4rem;
 				min-height: 100%;
 				height: auto !important;
 				height: 100%;
 				margin: 0 auto -4em;
 				min-width: 40.0em;
-				width: 100%;
+				max-width: 75.0em;
+				width: auto;
 				#candidates, #mission {
 					float: left;
-					padding-top: 20px;
-					font-size: 6.6em;	
+					.bwvFontSize(48);
+					.bwvLineHeight(72);	
 					font-weight: 700;
-					padding-left: 160px;
 					padding-top: 1.4em;
 					margin: 0;
+				}
+				h2 {
+					margin-bottom: 0;
+					.bwvFontSize(24);
+					.bwvLineHeight(36);
+				}
+				h3 {
+					margin-bottom: 0;
+					.bwvFontSize(18);
+					.bwvLineHeight(24)
 				}
 				#candidates img {
 					background-color: @blue;
 				}
 				#mission + p {
 					clear: left;
-					max-width: 25em;
-					margin-right: 4em;
-					font-size: 3.4em;
-					line-height: 1.8em;
-					padding-left: 160px;
+					.bwvFontSize(36);
+					.bwvLineHeight(48);
+					min-width: 200px;
+					min-width: 20rem;
 				}
 				ul {
 					display: block;
 					float: left;
-					margin-left: 160px;
-					max-width: 96em;
-					padding-bottom: 10em;
+					padding: 0;
+					margin-top: 0;
+					margin-bottom: 0;
 				}
 				#issues, #news {
 					height: 100%;
+					.bwvFontSize;
+					.bwvLineHeight;
 				}
-				#news, #issues {
+				#news, #issues, #steering, #volunteers {
 					li {
-						max-width: 48em;
-						margin-right: 
+						width: 48%;
+						padding-right: 1%;
 						display: block;
 						list-style: none;
-						float: left;						
-						h3 {
-							margin-bottom: 0;
-							font-size: 3.4em;
-						}
-						p {
-							font-size: 1.6em;
-							margin-top: 0;
-							margin-right: 2em;
-							padding-left: 0;
-							border: none;
-							
-						}
+						float: left;
+					}
+					li:nth-child(2n+1) {
+						float: left;
+						clear: left;
+					}
+					li:nth-child(2n) {
+						float: right;
+						clear: right;
+					}
+					h3, h2 {
+						margin-bottom: 0;
+						.bwvFontSize(24);
+						.bwvLineHeight(36);
+					}
+					p {
+						.bwvFontSize(18);
+						.bwvLineHeight(24);
+						margin-top: 0;
+						padding-left: 0;
+						border: none;
+						padding-bottom: 1em;
+					}
+				}
+				#steering p, #volunteers p {
+					.bwvFontSize(18);
+					.bwvLineHeight(24);
+				}
+				#questions {
+					margin-bottom: 25px;
+					ul {
+						margin-left: 25px;
+						clear: both;
+						height: auto;
+						float: none;
+						margin-bottom: 0px;
 					}
 				}
 			}
 			#push {
 				position: relative;
-				height: 4em;
+				display: block;
+				height: auto !important;
+				height: 100%;
 				clear: both;
 			}
 			footer {
-				position: relative;
+				position: absolute;
+				bottom: 0;
 				clear: both;
 				float: left;
 				background: @greenBackground;
@@ -297,7 +353,7 @@ sub { bottom: -0.25em; }
    Lists
    ========================================================================== */
 
-ul, ol { margin: 1em 0; padding: 0 0 040px; }
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
 dd { margin: 0 0 0 40px; }
 nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
 
