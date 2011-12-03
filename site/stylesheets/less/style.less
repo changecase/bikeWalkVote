@@ -24,8 +24,7 @@
 	font-size: @capHeight * 0.1rem;
 }
 .bwvLineHeight (@leading: 14) {
-	line-height: @leading * 1px;
-	line-height: @leading * 0.1rem;
+	line-height: @leading * .0642857142857143;
 }
 .baseFont {
 	.bwvFontSize .bwvLineHeight @baseFontFamily
@@ -39,7 +38,7 @@
 }
 @whiteBackground: white url('../../images/cardboard_white.png') repeat -160px -50px;
 @greenBackgroundOnWhite: transparent url('../../images/cardboard_darkGreen.png') repeat-x -491px -111px;
-@blueBackground: #5776CF url('../../images/roughcloth_blue.png') repeat 0;
+@blueBackground: #5776CF url('../../images/cardboard_blue.png') repeat 0;
 @blue: #5776CF;
 @testBorder: 3px solid red;
 
@@ -220,14 +219,6 @@ body {
 						list-style: none;
 						float: left;
 					}
-			/*		li:nth-child(2n+1) {
-						float: left;
-						clear: left;
-					}
-					li:nth-child(2n) {
-						float: right;
-						clear: right;
-					}*/
 					h3, h2 {
 						margin-bottom: 0;
 						.bwvFontSize(24);
@@ -256,9 +247,20 @@ body {
 						margin-bottom: 0px;
 					}
 				}
-				form {
+				fieldset {
 					background: @blueBackground;
-					border: blue;
+					display: block;
+					padding: 1px 80px 24px;
+					margin-top: 11px;
+					margin-bottom: 24px;
+					.bwvLineHeight(32);
+					.rounded-corners(0 0 10px 10px);
+					h3, label {
+						color: #ffffff;
+					}
+					#additional-name {
+						width: 2rem;
+					}
 				}
 			}
 			#push {
