@@ -39,6 +39,7 @@
 }
 @whiteBackground: white url('../../images/cardboard_white.png') repeat -160px -50px;
 @greenBackgroundOnWhite: transparent url('../../images/cardboard_darkGreen.png') repeat-x -491px -111px;
+@blueBackground: #5776CF url('../../images/roughcloth_blue.png') repeat 0;
 @blue: #5776CF;
 @testBorder: 3px solid red;
 
@@ -211,21 +212,22 @@ body {
 					.bwvLineHeight;
 				}
 				#news, #issues, #steering, #volunteers {
+						-moz-column-count: 2;
+						-webkit-column-count: 2;
+						-moz-column-gap: 59px;
+						-webkit-column-gap: 59px;
 					li {
-						width: 48%;
-						padding-right: 1%;
-						display: block;
 						list-style: none;
 						float: left;
 					}
-					li:nth-child(2n+1) {
+			/*		li:nth-child(2n+1) {
 						float: left;
 						clear: left;
 					}
 					li:nth-child(2n) {
 						float: right;
 						clear: right;
-					}
+					}*/
 					h3, h2 {
 						margin-bottom: 0;
 						.bwvFontSize(24);
@@ -253,6 +255,10 @@ body {
 						float: none;
 						margin-bottom: 0px;
 					}
+				}
+				form {
+					background: @blueBackground;
+					border: blue;
 				}
 			}
 			#push {
