@@ -184,7 +184,7 @@ body #container #content #mission + p {
   clear: left;
   font-size: 36px;
   font-size: 3.6 rem;
-  line-height: 3.0857142857142863;
+  line-height: 1.5428571428571431;
   min-width: 200px;
   min-width: 20rem;
 }
