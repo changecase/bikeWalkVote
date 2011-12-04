@@ -257,22 +257,42 @@ body #container #content #questions ul {
   float: none;
   margin-bottom: 0px;
 }
-body #container #content fieldset {
+body #container #content form {
   background: #5776cf url('../../images/cardboard_blue.png') repeat 0;
   display: block;
-  padding: 1px 80px 24px;
+  padding: 1px 0 24px;
   margin-top: 11px;
   margin-bottom: 24px;
   line-height: 2.0571428571428574;
-  border-radius: 0 0 10px 10px;
-  -webkit-border-radius: 0 0 10px 10px;
-  -moz-border-radius: 0 0 10px 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  float: left;
 }
-body #container #content fieldset h3, body #container #content fieldset label {
-  color: #ffffff;
-}
-body #container #content fieldset #additional-name {
+body #container #content form #additional-name {
   width: 2rem;
+}
+body #container #content form h3, body #container #content form fieldset {
+  padding-left: 80px;
+  padding-right: 80px;
+  float: left;
+  clear: both;
+}
+body #container #content form h3#google-checkout, body #container #content form fieldset#google-checkout {
+  padding-left: 61px;
+}
+body #container #content form h3 input, body #container #content form fieldset input {
+  background: white url('../../images/cardboard_white.png') repeat -160px -50px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+body #container #content form h3 input#contribute-button, body #container #content form fieldset input#contribute-button {
+  background: inherit;
+}
+body #container #content form h3 {
+  letter-spacing: .125rem;
+  font-weight: 400;
 }
 body #container #push {
   position: relative;

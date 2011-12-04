@@ -47,14 +47,14 @@
 		<h1 id="logo"><a href="index.html" title="home">Bike Walk Vote</a></h1>
     </header>
     <div id="main" role="main">
-			<form method="get" action="http://www.google.com/search">
-				<input type="text" name="q" value="search" />
+			<!-- don't need for now <form method="get" action="http://www.google.com/search">
+				<input type="text" name="q" value="search" /> -->
 				<!-- Do we need a "go" button?
 				<input type="submit" value="Search" />
 				-->
 				</form>
 			<a href="about.html" title="about bike walk vote">ABOUT</a>
-			<a href="news.html" title="bike walk vote news">NEWS</a>
+			<!-- <a href="news.html" title="bike walk vote news">NEWS</a> -->
 			<a id="contribute" href="contribute.html" title="contribute to bike walk vote">CONTRIBUTE</a> 
 			<a href="index.html" title="back to the bike walk vote main page">HOME</a>
     </div>
@@ -63,56 +63,46 @@
 	<p>Take advantage of Oregon's State <a href="http://oregontaxcredit.com/" title="about the Oregon Political Tax Credit">political contribution tax credit</a>, donate! You can find all of the legal mumbo jumbo on the <a href="http://www.oregon.gov/DOR/PERTAX/2009_piti/credits_political_contributions.shtml" title="Oregon's department of revenue on political contributions">oregon.gov website.</a></p>
 	<p>Bike Walk Vote is required to report this information to the Elections Office. The information is publicly available in order to ensure campaign finance transparency as required by law. Bike Walk Vote will never use or give away this information outside of what is legally required of us as a Political Action Committee.</p>
 	<form action="https://checkout.google.com/cws/v2/Political/857463963626185/checkout" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" onSubmit="return validateAmount(this.donationAmount)" target="_top">
+		<h3>Your Name</h3>
 		<fieldset id="fn">
-			<h3>Your identity</h3>
-			<label for="given-name">First Name</label>
-			<input type="text" id="given-name" name="given-name" value="first name" class="required" />
-			<label for="additional-name">Middle Initial</label>
-			<input type="text" id="additional-name " name="additional-name" value="middle" /> <!-- FYI Peter: this is intentionally not a required field -->
-			<label for="family-name">Last Name</label>
-			<input type="text" id="family-name" name="family-name" value="last name" class="required" />
+			<input type="text" id="given-name" name="given-name" onfocus="this.style.color='black'; this.value='';" value="first name" size="10" class="required" />
+			<input type="text" id="additional-name " name="additional-name" onfocus="this.style.color='black'; this.value='';" value="initial" size="4" /> <!-- FYI Peter: this is intentionally not a required field -->
+			<input type="text" id="family-name" name="family-name" onfocus="this.style.color='black'; this.value='';" value="last name" size="20" class="required" />
 		</fieldset>
+		<h3>Your Address</h3>
 		<fieldset id="adr">
-			<h3>Where you live</h3>
-			<label for="street-address">Street Address</label>
-			<input type="text" id="street-address" name="street-address" value="street address" class="required" />
-			<label for="locality">City</label>
-			<input type="text" id="locality" name="locality" value="city" class="required" />
-			<label for="region">State</label>
-			<input type="text" id="region" name="region" value="state" class="required" />
-			<label for="postal-code">Zip</label>
-			<input type="text" id="postal-code" name="postal-code" value="zip code" class="required" />
+			<input type="text" id="street-address" name="street-address" onfocus="this.style.color='black'; this.value='';" value="street address" size="60" class="required" />
+			<input type="text" id="locality" name="locality" onfocus="this.style.color='black'; this.value='';" value="city" size="20" class="required" />
+			<input type="text" id="region" name="region" onfocus="this.style.color='black'; this.value='';" value="state" size="4" class="required" />
+			<input type="text" id="postal-code" name="postal-code" onfocus="this.style.color='black'; this.value='';" value="zip code" size="10" class="required" />
 		</fieldset>
+		<h3>Your Employment</h3>
 		<fieldset id="job">
-			<h3>About your employment</h3>
-			<label for="title">Occupation</label>
-			<input type="text" id="title" name="title" value="occupation" class="required" />
-			<label for="org">Employer</label>
-			<input type="text" id="org" name="org" value="employer" class="required" />
-			<label for="employer-locality">Employer's City</label>
-			<input type="text" id="employer-locality" name="employer-locality" value="employer's city" class="required" />
-			<label for="employer-region">Employer's State</label>
-			<input type="text" id="employer-state" name="employer-state" value="employer's state" class="required" />
+			<input type="text" id="title" name="title" onfocus="this.style.color='black'; this.value='';" value="occupation" size="57" class="required" />
+			<input type="text" id="org" name="org" onfocus="this.style.color='black'; this.value='';" value="employer" size="20" class="required" />
+			<input type="text" id="employer-locality" name="employer-locality" onfocus="this.style.color='black'; this.value='';" value="employer's city" size="20" class="required" />
+			<input type="text" id="employer-state" name="employer-state" onfocus="this.style.color='black'; this.value='';" value="state" size="4" class="required" />
 		</fieldset>
+		<h3>Contact Info</h3>
 		<fieldset id="contact"> <!-- Peter: again, the info in this fieldset is intentionally not required... we'd just like to have it if we can get it -->
-			<h3>How we can contact you</h3>
-			<label for="email">Email</label>
-			<input type="text" id="email" name="email" value="your email" />
-			<label for="tel">Phone</label>
-			<input type="text" id="tel" name="tel" value="your phone number" />
+			<input type="text" id="email" name="email" onfocus="this.style.color='black'; this.value='';" value="email" size="20" />
+			<input type="text" id="tel" name="tel" onfocus="this.style.color='black'; this.value='';" value="phone" size="12" />
 		</fieldset>
 	<!-- BEGIN google checkout donate button -->
-	    <input name="cart" type="hidden" value="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxjaGVja291dC1zaG9wcGluZy1jYXJ0IHhtbG5zPSJodHRwOi8vY2hlY2tvdXQuZ29vZ2xlLmNvbS9zY2hlbWEvMiI+DQogIDxzaG9wcGluZy1jYXJ0Pg0KICAgIDxpdGVtcz4NCiAgICAgIDxpdGVtPg0KICAgICAgICA8bW9kaWZpYWJsZS1wcmljZT4NCiAgICAgICAgICA8bWF4LXByaWNlIGN1cnJlbmN5PSJVU0QiPjI1MDAwLjA8L21heC1wcmljZT4NCiAgICAgICAgICA8bWluLXByaWNlIGN1cnJlbmN5PSJVU0QiPjUuMDwvbWluLXByaWNlPg0KICAgICAgICAgIDxpcy1tb2RpZmlhYmxlPnRydWU8L2lzLW1vZGlmaWFibGU+DQogICAgICAgIDwvbW9kaWZpYWJsZS1wcmljZT4NCiAgICAgICAgPGl0ZW0tbmFtZT5Db250cmlidXRpb24gdG8gQmlrZSBXYWxrIFZvdGU8L2l0ZW0tbmFtZT4NCiAgICAgICAgPGl0ZW0tZGVzY3JpcHRpb24+WW91ciBjb250cmlidXRpb24gd2lsbCBiZSB1c2VkIHRvIGhlbHAgZWxlY3QgdGhlIGNhbmRpZGF0ZXMgd2hvIHN1cHBvcnQgYmlraW5nIHdhbGtpbmcgYW5kIHRyYW5zaXQuPC9pdGVtLWRlc2NyaXB0aW9uPg0KICAgICAgICA8dW5pdC1wcmljZSBjdXJyZW5jeT0iVVNEIj41MC4wPC91bml0LXByaWNlPg0KICAgICAgICA8cXVhbnRpdHk+MTwvcXVhbnRpdHk+DQogICAgICAgIDxtZXJjaGFudC1pdGVtLWlkPjwvbWVyY2hhbnQtaXRlbS1pZD4NCiAgICAgIDwvaXRlbT4NCiAgICA8L2l0ZW1zPg0KICA8L3Nob3BwaW5nLWNhcnQ+DQogIDxjaGVja291dC1mbG93LXN1cHBvcnQ+DQogICAgPG1lcmNoYW50LWNoZWNrb3V0LWZsb3ctc3VwcG9ydCAvPg0KICA8L2NoZWNrb3V0LWZsb3ctc3VwcG9ydD4NCjwvY2hlY2tvdXQtc2hvcHBpbmctY2FydD4NCg0K"/>
-	    <input name="signature" type="hidden" value="Tz4tFPQhLJ8J8k8bfn/B2+83SC0="/>
-	    <table cellpadding="5" cellspacing="0" width="1%">
-	        <tr>
-	            <td align="right" nowrap="nowrap" width="1%">&#x24; <input id="donationAmount" name="donationAmount" onfocus="this.style.color='black'; this.value='';" size="6" type="text" value="50.00"/>
-	            </td>
-	            <td align="left" width="1%">
-	                <input alt="Contribute" src="https://checkout.google.com/buttons/contributeNow.gif?merchant_id=857463963626185&amp;w=117&amp;h=48&amp;style=trans&amp;variant=text&amp;loc=en_US" type="image"/>
-	            </td>
-	        </tr>
-	    </table>
+		<h3>Donate!</h3>
+	    <fieldset id="google-checkout">
+		    <input name="cart" type="hidden" value="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxjaGVja291dC1zaG9wcGluZy1jYXJ0IHhtbG5zPSJodHRwOi8vY2hlY2tvdXQuZ29vZ2xlLmNvbS9zY2hlbWEvMiI+DQogIDxzaG9wcGluZy1jYXJ0Pg0KICAgIDxpdGVtcz4NCiAgICAgIDxpdGVtPg0KICAgICAgICA8bW9kaWZpYWJsZS1wcmljZT4NCiAgICAgICAgICA8bWF4LXByaWNlIGN1cnJlbmN5PSJVU0QiPjI1MDAwLjA8L21heC1wcmljZT4NCiAgICAgICAgICA8bWluLXByaWNlIGN1cnJlbmN5PSJVU0QiPjUuMDwvbWluLXByaWNlPg0KICAgICAgICAgIDxpcy1tb2RpZmlhYmxlPnRydWU8L2lzLW1vZGlmaWFibGU+DQogICAgICAgIDwvbW9kaWZpYWJsZS1wcmljZT4NCiAgICAgICAgPGl0ZW0tbmFtZT5Db250cmlidXRpb24gdG8gQmlrZSBXYWxrIFZvdGU8L2l0ZW0tbmFtZT4NCiAgICAgICAgPGl0ZW0tZGVzY3JpcHRpb24+WW91ciBjb250cmlidXRpb24gd2lsbCBiZSB1c2VkIHRvIGhlbHAgZWxlY3QgdGhlIGNhbmRpZGF0ZXMgd2hvIHN1cHBvcnQgYmlraW5nIHdhbGtpbmcgYW5kIHRyYW5zaXQuPC9pdGVtLWRlc2NyaXB0aW9uPg0KICAgICAgICA8dW5pdC1wcmljZSBjdXJyZW5jeT0iVVNEIj41MC4wPC91bml0LXByaWNlPg0KICAgICAgICA8cXVhbnRpdHk+MTwvcXVhbnRpdHk+DQogICAgICAgIDxtZXJjaGFudC1pdGVtLWlkPjwvbWVyY2hhbnQtaXRlbS1pZD4NCiAgICAgIDwvaXRlbT4NCiAgICA8L2l0ZW1zPg0KICA8L3Nob3BwaW5nLWNhcnQ+DQogIDxjaGVja291dC1mbG93LXN1cHBvcnQ+DQogICAgPG1lcmNoYW50LWNoZWNrb3V0LWZsb3ctc3VwcG9ydCAvPg0KICA8L2NoZWNrb3V0LWZsb3ctc3VwcG9ydD4NCjwvY2hlY2tvdXQtc2hvcHBpbmctY2FydD4NCg0K"/>
+		    <input name="signature" type="hidden" value="Tz4tFPQhLJ8J8k8bfn/B2+83SC0="/>
+		    <table cellpadding="5" cellspacing="0" width="1%">
+		        <tr>
+		            <td align="right" nowrap="nowrap" width="1%">&#x24; <input id="donationAmount" name="donationAmount" onfocus="this.style.color='black'; this.value='';" size="6" type="text" value="50.00"/>
+		            </td>
+		            <td align="left" width="1%">
+		                <input alt="Contribute" src="https://checkout.google.com/buttons/contributeNow.gif?merchant_id=857463963626185&amp;w=117&amp;h=48&amp;style=trans&amp;variant=text&amp;loc=en_US" type="image" id="contribute-button" />
+		            </td>
+		        </tr>
+		    </table>
+	    </fieldset>
 	</form>
 	<!-- END google checkout donate button -->
 </section>

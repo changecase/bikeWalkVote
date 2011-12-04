@@ -40,6 +40,7 @@
 @greenBackgroundOnWhite: transparent url('../../images/cardboard_darkGreen.png') repeat-x -491px -111px;
 @blueBackground: #5776CF url('../../images/cardboard_blue.png') repeat 0;
 @blue: #5776CF;
+@green: #8DC63F;
 @testBorder: 3px solid red;
 
 
@@ -247,19 +248,37 @@ body {
 						margin-bottom: 0px;
 					}
 				}
-				fieldset {
+				form {
 					background: @blueBackground;
 					display: block;
-					padding: 1px 80px 24px;
+					padding: 1px 0 24px;
 					margin-top: 11px;
 					margin-bottom: 24px;
 					.bwvLineHeight(32);
-					.rounded-corners(0 0 10px 10px);
-					h3, label {
-						color: #ffffff;
-					}
+					.rounded-corners(20px);
+					float: left;
 					#additional-name {
 						width: 2rem;
+					}
+					h3, fieldset {
+						padding-left: 80px;
+						padding-right: 80px;
+						float: left;
+						clear: both;
+						&#google-checkout {
+							padding-left: 61px;
+						}
+						input {
+							background: @whiteBackground;
+							.rounded-corners(3px);
+							&#contribute-button {
+								background: inherit;
+							}
+						}
+					}
+					h3 {
+						letter-spacing: .125rem;
+						font-weight: 400;
 					}
 				}
 			}
