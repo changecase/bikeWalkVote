@@ -40,7 +40,10 @@
 @greenBackgroundOnWhite: transparent url('../../images/cardboard_darkGreen.png') repeat-x -491px -111px;
 @blueBackground: #5776CF url('../../images/cardboard_blue.png') repeat 0;
 @blue: #5776CF;
+@transparentBlue: rgba(87, 118, 207, 0.3);
 @green: #8DC63F;
+@red: #933720;
+@transparentRed: rgba(147, 55, 32, 0.3);
 @testBorder: 3px solid red;
 
 
@@ -139,12 +142,12 @@ body {
 					position: fixed;
 					top: 280px;
 					border-radius: 20px 0 0 20px;
-					border-top: 5px solid #793221;
+					border-bottom: 5px solid @transparentRed;
 					right: 0;
 					margin: 0;
 					width: 100px;
 					height: 2.6em;
-					background-color: #933720;
+					background-color: @red;
 				}
 				form {
 					padding-top: 11px;
@@ -171,35 +174,61 @@ body {
 				min-width: 40.0em;
 				max-width: 75.0em;
 				width: auto;
+				p {
+					padding-bottom: 0;
+					margin-bottom: 0;
+					.bwvFontSize(18);
+					.bwvLineHeight(24);
+					& + p {
+						text-indent: 1em;
+						padding: 0;
+						margin: 0;
+					}	
+				}
 				#candidates, #mission {
 					float: left;
-					.bwvFontSize(48);
-					.bwvLineHeight(72);	
-					font-weight: 700;
-					padding-top: 1.4em;
+					font-weight: 400;
 					margin: 0;
+					clear: both;
+					.bwvFontSize(48);
+					.bwvLineHeight(24);
+					min-width: 200px;
+					min-width: 20rem;
+					margin-bottom: 1em;
+					padding-left: 1em;
+					padding-right: 2em;
+					border-bottom: 3px solid @blue;
+					border-bottom: 3px solid @transparentBlue;
+					background: @blueBackground;
+					.rounded-corners(1em);
 				}
 				h2 {
-					margin-bottom: 0;
-					.bwvFontSize(24);
-					.bwvLineHeight(36);
+					.bwvFontSize(36);
+					.bwvLineHeight(48);
+					font-weight: 400;
 				}
 				h3 {
 					margin-bottom: 0;
+					.bwvFontSize(24);
+					.bwvLineHeight(36);
+					font-weight: 500;
+				}
+				h4 {
 					.bwvFontSize(18);
-					.bwvLineHeight(24)
+					.bwvLineHeight(24);
+					font-weight: 500;
 				}
 				#candidates img {
 					background-color: @blue;
 				}
-				#mission + p {
+			/*	#mission + p {
 					clear: left;
-					.bwvFontSize(36);
+					.bwvFontSize(48);
 					.bwvLineHeight(24);
 					min-width: 200px;
 					min-width: 20rem;
 				}
-				ul {
+			*/	ul {
 					display: block;
 					float: left;
 					padding: 0;
@@ -218,7 +247,6 @@ body {
 						-webkit-column-gap: 59px;
 					li {
 						list-style: none;
-						float: left;
 					}
 					h3, h2 {
 						margin-bottom: 0;
@@ -231,7 +259,6 @@ body {
 						margin-top: 0;
 						padding-left: 0;
 						border: none;
-						padding-bottom: 1em;
 					}
 				}
 				#steering p, #volunteers p {

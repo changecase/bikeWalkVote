@@ -124,7 +124,7 @@ body #container #main #contribute {
   position: fixed;
   top: 280px;
   border-radius: 20px 0 0 20px;
-  border-top: 5px solid #793221;
+  border-bottom: 5px solid rgba(147, 55, 32, 0.3);
   right: 0;
   margin: 0;
   width: 100px;
@@ -155,38 +155,68 @@ body #container #content {
   min-width: 40.0em;
   max-width: 75.0em;
   width: auto;
+  /*	#mission + p {
+					clear: left;
+					.bwvFontSize(48);
+					.bwvLineHeight(24);
+					min-width: 200px;
+					min-width: 20rem;
+				}
+			*/
 }
-body #container #content #candidates, body #container #content #mission {
-  float: left;
-  font-size: 48px;
-  font-size: 4.800000000000001 rem;
-  line-height: 4.628571428571429;
-  font-weight: 700;
-  padding-top: 1.4em;
-  margin: 0;
-}
-body #container #content h2 {
-  margin-bottom: 0;
-  font-size: 24px;
-  font-size: 2.4000000000000004 rem;
-  line-height: 2.3142857142857145;
-}
-body #container #content h3 {
+body #container #content p {
+  padding-bottom: 0;
   margin-bottom: 0;
   font-size: 18px;
   font-size: 1.8 rem;
   line-height: 1.5428571428571431;
 }
-body #container #content #candidates img {
-  background-color: #5776cf;
+body #container #content p  + p {
+  text-indent: 1em;
+  padding: 0;
+  margin: 0;
 }
-body #container #content #mission + p {
-  clear: left;
-  font-size: 36px;
-  font-size: 3.6 rem;
+body #container #content #candidates, body #container #content #mission {
+  float: left;
+  font-weight: 400;
+  margin: 0;
+  clear: both;
+  font-size: 48px;
+  font-size: 4.800000000000001 rem;
   line-height: 1.5428571428571431;
   min-width: 200px;
   min-width: 20rem;
+  margin-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 2em;
+  border-bottom: 3px solid #5776cf;
+  border-bottom: 3px solid rgba(87, 118, 207, 0.3);
+  background: #5776cf url('../../images/cardboard_blue.png') repeat 0;
+  border-radius: 1em;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+}
+body #container #content h2 {
+  font-size: 36px;
+  font-size: 3.6 rem;
+  line-height: 3.0857142857142863;
+  font-weight: 400;
+}
+body #container #content h3 {
+  margin-bottom: 0;
+  font-size: 24px;
+  font-size: 2.4000000000000004 rem;
+  line-height: 2.3142857142857145;
+  font-weight: 500;
+}
+body #container #content h4 {
+  font-size: 18px;
+  font-size: 1.8 rem;
+  line-height: 1.5428571428571431;
+  font-weight: 500;
+}
+body #container #content #candidates img {
+  background-color: #5776cf;
 }
 body #container #content ul {
   display: block;
@@ -215,7 +245,6 @@ body #container #content #issues li,
 body #container #content #steering li,
 body #container #content #volunteers li {
   list-style: none;
-  float: left;
 }
 body #container #content #news h3,
 body #container #content #issues h3,
@@ -240,7 +269,6 @@ body #container #content #volunteers p {
   margin-top: 0;
   padding-left: 0;
   border: none;
-  padding-bottom: 1em;
 }
 body #container #content #steering p, body #container #content #volunteers p {
   font-size: 18px;
