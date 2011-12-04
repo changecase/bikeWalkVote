@@ -39,9 +39,12 @@
 @whiteBackground: white url('../../images/cardboard_white.png') repeat -160px -50px;
 @greenBackgroundOnWhite: transparent url('../../images/cardboard_darkGreen.png') repeat-x -491px -111px;
 @blueBackground: #5776CF url('../../images/cardboard_blue.png') repeat 0;
+@redBackground: #933720 url('../../images/cardboard_red.png') repeat 0;
 @blue: #5776CF;
 @transparentBlue: rgba(87, 118, 207, 0.3);
 @green: #8DC63F;
+@lightGreen: #b6d986;
+@transparentLightGreen: rgba(182, 217, 134, 0.7);
 @red: #933720;
 @transparentRed: rgba(147, 55, 32, 0.3);
 @testBorder: 3px solid red;
@@ -125,10 +128,18 @@ body {
 					margin-right: 2px;
 					padding: 15px 10px 20px;
 					display: block;
-					background-color: #b6d986;
-					.rounded-corners;
+					background-color: @transparentLightGreen;
+					.rounded-corners(0 0 15px 15px);
 					height: 10px;
 					height: 1rem;
+					&:hover {
+						background-color: @lightGreen;
+					}
+					&:active {
+						background-color: #ffffff;
+						color: @green;
+					}
+					
 				}
 				a {
 					color: #FFFFFF;
@@ -137,17 +148,30 @@ body {
 					letter-spacing: .2em;
 					text-decoration: none;
 					margin-bottom: 8px;
-				}
-				#contribute {
-					position: fixed;
-					top: 280px;
-					border-radius: 20px 0 0 20px;
-					border-bottom: 5px solid @transparentRed;
-					right: 0;
-					margin: 0;
-					width: 100px;
-					height: 2.6em;
-					background-color: @red;
+					&#contribute {
+						color: @red;
+						position: fixed;
+						top: 280px;
+						border-radius: 20px 0 0 20px;
+						border-left: 1px solid @transparentRed;
+						border-bottom: 3px solid @transparentRed;
+						right: 0;
+						margin: 0;
+						width: 100px;
+						height: 2.6em;
+						background: @redBackground;	
+						&:hover {
+							color: white;
+							background: @transparentRed;
+						}
+						&:active {
+							color: white;
+							background: @red;
+							border-left: none;
+							border-bottom: none;
+							border-top: 3px solid @transparentRed;
+						}
+					}
 				}
 				form {
 					padding-top: 11px;
@@ -199,6 +223,7 @@ body {
 					padding-right: 2em;
 					border-bottom: 3px solid @blue;
 					border-bottom: 3px solid @transparentBlue;
+					border-left: 1px solid @transparentBlue;
 					background: @blueBackground;
 					.rounded-corners(1em);
 				}
@@ -278,8 +303,8 @@ body {
 				form {
 					background: @blueBackground;
 					display: block;
-					padding: 1px 0 24px;
-					margin-top: 11px;
+					padding: 1em 0 2em;
+					margin-top: 3em;
 					margin-bottom: 24px;
 					.bwvLineHeight(32);
 					.rounded-corners(20px);
@@ -332,7 +357,7 @@ body {
 					height: 1.0em;
 					display: block;
 					background: @whiteBackground;
-					.rounded-corners;
+					.rounded-corners(0 0 15px 15px);
 					color: #51791B;
 					font-weight: 700;
 					font-variant: small-caps;
