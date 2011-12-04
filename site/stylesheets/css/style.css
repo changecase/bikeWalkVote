@@ -229,12 +229,16 @@ body #container #content h3 {
   font-size: 2.4000000000000004 rem;
   line-height: 2.3142857142857145;
   font-weight: 500;
+  color: #27a41d;
 }
 body #container #content h4 {
   font-size: 18px;
   font-size: 1.8 rem;
   line-height: 1.5428571428571431;
   font-weight: 500;
+  color: #27a41d;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 body #container #content #candidates img {
   background-color: #5776cf;
@@ -298,6 +302,18 @@ body #container #content #steering p, body #container #content #volunteers p {
 }
 body #container #content #questions {
   margin-bottom: 25px;
+  margin-top: 18px;
+  font-size: 18px;
+  font-size: 1.8 rem;
+  line-height: 1.5428571428571431;
+}
+body #container #content #questions p {
+  padding: 0;
+  margin: 0;
+}
+body #container #content #questions p strong {
+  font-weight: 500;
+  color: #27a41d;
 }
 body #container #content #questions ul {
   margin-left: 25px;

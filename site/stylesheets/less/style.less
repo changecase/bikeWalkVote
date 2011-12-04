@@ -44,6 +44,7 @@
 @transparentBlue: rgba(87, 118, 207, 0.3);
 @green: #8DC63F;
 @lightGreen: #b6d986;
+@darkGreen: @green - #662222;
 @transparentLightGreen: rgba(182, 217, 134, 0.7);
 @red: #933720;
 @transparentRed: rgba(147, 55, 32, 0.3);
@@ -237,11 +238,15 @@ body {
 					.bwvFontSize(24);
 					.bwvLineHeight(36);
 					font-weight: 500;
+					color: @darkGreen;
 				}
 				h4 {
 					.bwvFontSize(18);
 					.bwvLineHeight(24);
 					font-weight: 500;
+					color: @darkGreen;
+					margin-bottom: 0;
+					padding-bottom: 0;
 				}
 				#candidates img {
 					background-color: @blue;
@@ -292,6 +297,17 @@ body {
 				}
 				#questions {
 					margin-bottom: 25px;
+					margin-top: 18px;
+					.bwvFontSize(18);
+					.bwvLineHeight(24);
+					p {
+						padding: 0;
+						margin: 0;
+						strong {
+							font-weight: 500;
+							color: @darkGreen;
+						}
+					}
 					ul {
 						margin-left: 25px;
 						clear: both;
