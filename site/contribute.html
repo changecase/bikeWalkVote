@@ -65,20 +65,11 @@
 	<p>We also need your volunteer time to help build our organization and elect the candidates we endorse. To volunteer, email us at <a href="mailto:bikewalkvote@gmail.com?subject=I want to volunteer!" title="volunteer for bike walk vote">bikewalkvote@gmail.com.</a></p>
 	<h3>Donating</h3>
 	<p>Bike Walk Vote is required to report donation information to the Elections Office. The information is publicly available in order to ensure campaign finance transparency as required by law. Bike Walk Vote will never use or give away this information outside of what is legally required of us as a Political Action Committee.</p>
+
+
 	<form action="https://checkout.google.com/cws/v2/Political/857463963626185/checkout" id="BB_BuyButtonForm" method="post" name="BB_BuyButtonForm" onSubmit="return validateAmount(this.donationAmount)" target="_top">
-		<h3>Your Name</h3>
-		<fieldset id="fn">
-			<input type="text" id="given-name" name="given-name" onfocus="this.style.color='black'; this.value='';" value="first name" size="10" class="required" />
-			<input type="text" id="additional-name " name="additional-name" onfocus="this.style.color='black'; this.value='';" value="initial" size="4" /> <!-- FYI Peter: this is intentionally not a required field -->
-			<input type="text" id="family-name" name="family-name" onfocus="this.style.color='black'; this.value='';" value="last name" size="20" class="required" />
-		</fieldset>
-		<h3>Your Address</h3>
-		<fieldset id="adr">
-			<input type="text" id="street-address" name="street-address" onfocus="this.style.color='black'; this.value='';" value="street address" size="60" class="required" />
-			<input type="text" id="locality" name="locality" onfocus="this.style.color='black'; this.value='';" value="city" size="20" class="required" />
-			<input type="text" id="region" name="region" onfocus="this.style.color='black'; this.value='';" value="state" size="4" class="required" />
-			<input type="text" id="postal-code" name="postal-code" onfocus="this.style.color='black'; this.value='';" value="zip code" size="10" class="required" />
-		</fieldset>
+
+		<!--
 		<h3>Your Employment</h3>
 		<fieldset id="job">
 			<input type="text" id="title" name="title" onfocus="this.style.color='black'; this.value='';" value="occupation" size="57" class="required" />
@@ -86,16 +77,18 @@
 			<input type="text" id="employer-locality" name="employer-locality" onfocus="this.style.color='black'; this.value='';" value="employer's city" size="20" class="required" />
 			<input type="text" id="employer-state" name="employer-state" onfocus="this.style.color='black'; this.value='';" value="state" size="4" class="required" />
 		</fieldset>
-		<h3>Contact Info</h3>
-		<fieldset id="contact"> <!-- Peter: again, the info in this fieldset is intentionally not required... we'd just like to have it if we can get it -->
-			<input type="text" id="email" name="email" onfocus="this.style.color='black'; this.value='';" value="email" size="20" />
-			<input type="text" id="tel" name="tel" onfocus="this.style.color='black'; this.value='';" value="phone" size="12" />
-		</fieldset>
+		-->
+		
+	
 	<!-- BEGIN google checkout donate button -->
 		<h3>Donate!</h3>
 	    <fieldset id="google-checkout">
-		    <input name="cart" type="hidden" value="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxjaGVja291dC1zaG9wcGluZy1jYXJ0IHhtbG5zPSJodHRwOi8vY2hlY2tvdXQuZ29vZ2xlLmNvbS9zY2hlbWEvMiI+DQogIDxzaG9wcGluZy1jYXJ0Pg0KICAgIDxpdGVtcz4NCiAgICAgIDxpdGVtPg0KICAgICAgICA8bW9kaWZpYWJsZS1wcmljZT4NCiAgICAgICAgICA8bWF4LXByaWNlIGN1cnJlbmN5PSJVU0QiPjI1MDAwLjA8L21heC1wcmljZT4NCiAgICAgICAgICA8bWluLXByaWNlIGN1cnJlbmN5PSJVU0QiPjUuMDwvbWluLXByaWNlPg0KICAgICAgICAgIDxpcy1tb2RpZmlhYmxlPnRydWU8L2lzLW1vZGlmaWFibGU+DQogICAgICAgIDwvbW9kaWZpYWJsZS1wcmljZT4NCiAgICAgICAgPGl0ZW0tbmFtZT5Db250cmlidXRpb24gdG8gQmlrZSBXYWxrIFZvdGU8L2l0ZW0tbmFtZT4NCiAgICAgICAgPGl0ZW0tZGVzY3JpcHRpb24+WW91ciBjb250cmlidXRpb24gd2lsbCBiZSB1c2VkIHRvIGhlbHAgZWxlY3QgdGhlIGNhbmRpZGF0ZXMgd2hvIHN1cHBvcnQgYmlraW5nIHdhbGtpbmcgYW5kIHRyYW5zaXQuPC9pdGVtLWRlc2NyaXB0aW9uPg0KICAgICAgICA8dW5pdC1wcmljZSBjdXJyZW5jeT0iVVNEIj41MC4wPC91bml0LXByaWNlPg0KICAgICAgICA8cXVhbnRpdHk+MTwvcXVhbnRpdHk+DQogICAgICAgIDxtZXJjaGFudC1pdGVtLWlkPjwvbWVyY2hhbnQtaXRlbS1pZD4NCiAgICAgIDwvaXRlbT4NCiAgICA8L2l0ZW1zPg0KICA8L3Nob3BwaW5nLWNhcnQ+DQogIDxjaGVja291dC1mbG93LXN1cHBvcnQ+DQogICAgPG1lcmNoYW50LWNoZWNrb3V0LWZsb3ctc3VwcG9ydCAvPg0KICA8L2NoZWNrb3V0LWZsb3ctc3VwcG9ydD4NCjwvY2hlY2tvdXQtc2hvcHBpbmctY2FydD4NCg0K"/>
-		    <input name="signature" type="hidden" value="Tz4tFPQhLJ8J8k8bfn/B2+83SC0="/>
+
+
+<input name="cart" type="hidden" value="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjxjaGVja291dC1zaG9wcGluZy1jYXJ0IHhtbG5zPSJodHRwOi8vY2hlY2tvdXQuZ29vZ2xlLmNvbS9zY2hlbWEvMiI+DQogIDxzaG9wcGluZy1jYXJ0Pg0KICAgIDxpdGVtcz4NCiAgICAgIDxpdGVtPg0KICAgICAgICA8bW9kaWZpYWJsZS1wcmljZT4NCiAgICAgICAgICA8bWF4LXByaWNlIGN1cnJlbmN5PSJVU0QiPjI1MDAwLjA8L21heC1wcmljZT4NCiAgICAgICAgICA8bWluLXByaWNlIGN1cnJlbmN5PSJVU0QiPjAuMDE8L21pbi1wcmljZT4NCiAgICAgICAgICA8aXMtbW9kaWZpYWJsZT50cnVlPC9pcy1tb2RpZmlhYmxlPg0KICAgICAgICA8L21vZGlmaWFibGUtcHJpY2U+DQogICAgICAgIDxpdGVtLW5hbWU+RG9uYXRpb24gdG8gQmlrZSBXYWxrIFZvdGU8L2l0ZW0tbmFtZT4NCiAgICAgICAgPGl0ZW0tZGVzY3JpcHRpb24+RWxldmF0aW5nIGFjdGl2ZSB0cmFuc3BvcnRhdGlvbiBvcHRpb25zIGluIGxvY2FsIHBvbGl0aWNzPC9pdGVtLWRlc2NyaXB0aW9uPg0KICAgICAgICA8dW5pdC1wcmljZSBjdXJyZW5jeT0iVVNEIj41MC4wPC91bml0LXByaWNlPg0KICAgICAgICA8cXVhbnRpdHk+MTwvcXVhbnRpdHk+DQogICAgICAgIDxtZXJjaGFudC1pdGVtLWlkPjwvbWVyY2hhbnQtaXRlbS1pZD4NCiAgICAgIDwvaXRlbT4NCiAgICA8L2l0ZW1zPg0KICA8L3Nob3BwaW5nLWNhcnQ+DQogIDxjaGVja291dC1mbG93LXN1cHBvcnQ+DQogICAgPG1lcmNoYW50LWNoZWNrb3V0LWZsb3ctc3VwcG9ydCAvPg0KICA8L2NoZWNrb3V0LWZsb3ctc3VwcG9ydD4NCjwvY2hlY2tvdXQtc2hvcHBpbmctY2FydD4NCg0K"/>
+
+<input name="signature" type="hidden" value="UL0Pep83gVe4TRwjOSpVIBGcTdM="/>
+
 		    <table cellpadding="5" cellspacing="0" width="1%">
 		        <tr>
 		            <td align="right" nowrap="nowrap" width="1%">&#x24; <input id="donationAmount" name="donationAmount" onfocus="this.style.color='black'; this.value='';" size="6" type="text" value="50.00"/>
