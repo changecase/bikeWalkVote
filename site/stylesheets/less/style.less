@@ -279,6 +279,10 @@ body {
 					margin-top: 1em;
 					margin-bottom: 1em;
 					background: @blueBackground;
+					border-left: 1px solid @blue;
+					border-left: 1px solid @transparentBlue;
+					border-bottom: 3px solid @blue;
+					border-bottom: 3px solid @transparentBlue;
 					.rounded-corners(20px);
 					li {
 						list-style: none;
@@ -332,6 +336,11 @@ body {
 					margin-top: 3em;
 					margin-bottom: 24px;
 					.bwvLineHeight(32);
+					background: @blueBackground;
+					border-left: 1px solid @blue;
+					border-left: 1px solid @transparentBlue;
+					border-bottom: 3px solid @blue;
+					border-bottom: 3px solid @transparentBlue;
 					.rounded-corners(20px);
 					float: left;
 					#additional-name {
@@ -348,8 +357,15 @@ body {
 						input {
 							background: @whiteBackground;
 							.rounded-corners(3px);
+							border-top: 2px solid @blue;
+							border-top: 2px solid @transparentBlue;
+							border-right: 2px solid @blue;
+							border-right: 2px solid @transparentBlue;
+							border-bottom: 2px solid #eeeeee;
+							border-left: 2px solid #eeeeee;
 							&#contribute-button {
 								background: inherit;
+								border: none;
 							}
 						}
 					}
