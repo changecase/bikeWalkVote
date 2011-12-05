@@ -127,7 +127,7 @@ body #container #main a {
   text-decoration: none;
   margin-bottom: 8px;
 }
-body #container #main a#contribute {
+body #container #main a#contribute:link {
   color: #933720;
   position: fixed;
   top: 280px;
@@ -141,10 +141,32 @@ body #container #main a#contribute {
   background: #933720 url('../../images/cardboard_red.png') repeat 0;
 }
 body #container #main a#contribute:hover {
+  color: #933720;
+  position: fixed;
+  top: 280px;
+  border-radius: 20px 0 0 20px;
+  border-left: 1px solid rgba(147, 55, 32, 0.3);
+  border-bottom: 3px solid rgba(147, 55, 32, 0.3);
+  right: 0;
+  margin: 0;
+  width: 100px;
+  height: 2.6em;
+  background: #933720 url('../../images/cardboard_red.png') repeat 0;
   color: white;
   background: rgba(147, 55, 32, 0.3);
 }
 body #container #main a#contribute:active {
+  color: #933720;
+  position: fixed;
+  top: 280px;
+  border-radius: 20px 0 0 20px;
+  border-left: 1px solid rgba(147, 55, 32, 0.3);
+  border-bottom: 3px solid rgba(147, 55, 32, 0.3);
+  right: 0;
+  margin: 0;
+  width: 100px;
+  height: 2.6em;
+  background: #933720 url('../../images/cardboard_red.png') repeat 0;
   color: white;
   background: #933720;
   border-left: none;
