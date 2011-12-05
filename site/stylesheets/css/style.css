@@ -127,6 +127,9 @@ body #container #main a {
   text-decoration: none;
   margin-bottom: 8px;
 }
+body #container #main a#contribute {
+  color: #933720;
+}
 body #container #main a#contribute:link {
   color: #933720;
   position: fixed;
