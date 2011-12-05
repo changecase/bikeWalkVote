@@ -260,16 +260,23 @@ body #container #content #news,
 body #container #content #issues,
 body #container #content #steering,
 body #container #content #volunteers {
-  -moz-column-count: 2;
-  -webkit-column-count: 2;
-  -moz-column-gap: 59px;
-  -webkit-column-gap: 59px;
+  padding-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background: #5776cf url('../../images/cardboard_blue.png') repeat 0;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
 }
 body #container #content #news li,
 body #container #content #issues li,
 body #container #content #steering li,
 body #container #content #volunteers li {
   list-style: none;
+  width: 45%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  float: left;
 }
 body #container #content #news h3,
 body #container #content #issues h3,
