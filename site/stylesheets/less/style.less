@@ -85,6 +85,9 @@ body {
 		.baseFont;
 		font-weight: 400;
 		height: 100%;
+		width: 100%;
+		max-width: 100%;
+		float: left;
 		#container {
 			position: relative;
 			min-height: 100%;
@@ -221,7 +224,6 @@ body {
 				height: auto !important;
 				height: 100%;
 				margin: 0 auto -4em;
-				min-width: 40.0em;
 				max-width: 75.0em;
 				width: auto;
 				p {
@@ -664,9 +666,32 @@ td { vertical-align: top; }
 
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
-
+	body {
+		#container {
+			#main {
+				a {
+					&#contribute {
+						&:link {
+							top: auto;
+							bottom: 0px;
+							height: 1em;
+							width: 100%;
+							padding-right: 10px;
+							text-align: right;
+							.rounded-corners(0 20px 0 0);
+							border: none;
+							border-top: 2px solid @transparentRed;
+						}
+					}
+				}
+			}
+			#content {
+				padding-left: 10px;
+			}
+		}
+	}
 }
 
 

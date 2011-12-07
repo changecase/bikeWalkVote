@@ -58,7 +58,6 @@ body {
   font-weight: 400;
   height: 100%;
   width: 100%;
-  max-width: 100%;
   float: left;
 }
 body #container {
@@ -773,24 +772,8 @@ td {
 @media only screen and (min-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   /* Style adjustments for viewports 768px and over go here */
-  body #container #main a#contribute:link {
-    top: auto;
-    bottom: 0px;
-    height: 1em;
-    width: 100%;
-    padding-right: 10px;
-    text-align: right;
-    border-radius: 0 20px 0 0;
-    -webkit-border-radius: 0 20px 0 0;
-    -moz-border-radius: 0 20px 0 0;
-    border: none;
-    border-top: 2px solid rgba(147, 55, 32, 0.3);
-  }
-  body #container #content {
-    padding-left: 10px;
-  }
 }
 /* ==|== print styles =======================================================
    Print styles.
