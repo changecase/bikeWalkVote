@@ -316,6 +316,9 @@ body {
 						padding-left: 2.5%;
 						padding-right: 2.5%;
 						float: left;
+						&:nth-child(odd) {
+							clear: left;
+						}
 					}
 					h3, h2 {
 						margin-bottom: 0;
@@ -746,7 +749,7 @@ td { vertical-align: top; }
 		}
 	}
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
 	body {
 		#container {
 			#content {

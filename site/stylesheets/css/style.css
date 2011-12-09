@@ -308,6 +308,12 @@ body #container #content #volunteers li {
   padding-right: 2.5%;
   float: left;
 }
+body #container #content #news li:nth-child(odd),
+body #container #content #issues li:nth-child(odd),
+body #container #content #steering li:nth-child(odd),
+body #container #content #volunteers li:nth-child(odd) {
+  clear: left;
+}
 body #container #content #news h3,
 body #container #content #issues h3,
 body #container #content #steering h3,
@@ -845,7 +851,7 @@ td {
     padding-right: 10px;
   }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
   body #container #content #steering li {
     clear: both;
     width: auto;
