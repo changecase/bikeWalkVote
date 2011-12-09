@@ -200,7 +200,7 @@ body #container #content {
   height: auto !important;
   height: 100%;
   margin: 0 auto -4em;
-  max-width: 75.0em;
+  max-width: 40em;
   width: auto;
   /*	#mission + p {
 					clear: left;
@@ -231,11 +231,10 @@ body #container #content #candidates, body #container #content #mission {
   font-size: 48px;
   font-size: 4.800000000000001 rem;
   line-height: 1.5428571428571431;
-  min-width: 200px;
-  min-width: 20rem;
+  width: 90%;
   margin-bottom: 1em;
-  padding-left: 1em;
-  padding-right: 2em;
+  padding-left: 5%;
+  padding-right: 5%;
   border-bottom: 3px solid #5776cf;
   border-bottom: 3px solid rgba(87, 118, 207, 0.3);
   border-left: 1px solid rgba(87, 118, 207, 0.3);
@@ -770,26 +769,86 @@ td {
    These override the primary ('mobile first') styles
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
-}
-@media only screen and (max-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
-  body #container #main a#contribute:link {
-    top: auto;
-    bottom: 0px;
-    height: 1em;
+  body {
     width: 100%;
+  }
+  body #container #content #mission {
+    font-size: 39px;
+    font-size: 3.9000000000000004 rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* Style adjustments for viewports 768px and over go here */
+  body #container header #logo {
+    margin-top: .125em;
+  }
+  body #container header #logo a {
+    /*	padding-right: 100%;
+  						left: -100%;
+  						padding-left: 0;
+  						width: 100%;
+  						background: transparent url('../../images/bikeWalkVoteLogo_miniTextured.png') no-repeat 50% 0%; */
+  
+    padding-right: 0;
+    left: 0;
+    padding-left: 0;
+    width: 100%;
+    background: none;
+    background-color: transparent;
+    text-decoration: none;
+    line-height: 0.31500000000000006;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 400;
+    font-variant: small-caps;
+  }
+  body #container #main a {
+    float: right;
+    clear: left;
+    border-radius: 0 0 15px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+  }
+  body #container #main a#contribute {
+    color: #FFFFFF;
+    background-color: rgba(147, 55, 32, 0.7);
+  }
+  body #container #main a#contribute:link {
+    color: #FFFFFF;
+    position: static;
+    top: auto;
+    right: auto;
+    height: 1em;
+    width: auto;
     padding-right: 10px;
     text-align: right;
-    border-radius: 0 20px 0 0;
-    -webkit-border-radius: 0 20px 0 0;
-    -moz-border-radius: 0 20px 0 0;
+    border-radius: 0 0 15px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    background: none;
+    background-image: none;
+    background-color: rgba(147, 55, 32, 0.7);
     border: none;
-    border-top: 2px solid rgba(147, 55, 32, 0.3);
+  }
+  body #container #main a#contribute:hover {
+    position: static;
+    border: none;
+    background-color: #933720;
+  }
+  body #container #main a#contribute:active {
+    position: static;
+    border: none;
   }
   body #container #content {
     padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  body #container #content #steering li {
+    clear: both;
+    width: auto;
   }
 }
 /* ==|== print styles =======================================================

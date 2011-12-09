@@ -224,7 +224,7 @@ body {
 				height: auto !important;
 				height: 100%;
 				margin: 0 auto -4em;
-				max-width: 75.0em;
+				max-width: 40em;
 				width: auto;
 				p {
 					padding-bottom: 0;
@@ -244,11 +244,10 @@ body {
 					clear: both;
 					.bwvFontSize(48);
 					.bwvLineHeight(24);
-					min-width: 200px;
-					min-width: 20rem;
+					width: 90%;
 					margin-bottom: 1em;
-					padding-left: 1em;
-					padding-right: 2em;
+					padding-left: 5%;
+					padding-right: 5%;
 					border-bottom: 3px solid @blue;
 					border-bottom: 3px solid @transparentBlue;
 					border-left: 1px solid @transparentBlue;
@@ -661,39 +660,106 @@ td { vertical-align: top; }
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 480px) {
   /* Style adjustments for viewports 480px and over go here */
-
-}
-
-@media only screen and (max-width: 768px) {
-  /* Style adjustments for viewports 768px and over go here */
 	body {
+		width: 100%;
 		#container {
-			#main {
-				a {
-					&#contribute {
-						&:link {
-							top: auto;
-							bottom: 0px;
-							height: 1em;
-							width: 100%;
-							padding-right: 10px;
-							text-align: right;
-							.rounded-corners(0 20px 0 0);
-							border: none;
-							border-top: 2px solid @transparentRed;
-						}
-					}
-				}
-			}
 			#content {
-				padding-left: 10px;
+				#mission {
+					.bwvFontSize(39);
+				}
 			}
 		}
 	}
 }
 
+@media only screen and (max-width: 600px) {
+  /* Style adjustments for viewports 768px and over go here */
+	body {
+		#container {
+			header {
+				#logo {
+				margin-top: .125em;
+					a {
+					/*	padding-right: 100%;
+						left: -100%;
+						padding-left: 0;
+						width: 100%;
+						background: transparent url('../../images/bikeWalkVoteLogo_miniTextured.png') no-repeat 50% 0%; */
+						padding-right: 0;
+						left: 0;
+						padding-left: 0;
+						width: 100%;
+						background: none;
+						background-color: transparent;
+						text-decoration: none;
+						.bwvLineHeight(4.9);
+						color: rgba(255, 255, 255, .9);
+						font-weight: 400;
+						font-variant: small-caps;
+					}
+				}
+			}
+			#main {
+				a {
+					float: right;
+					clear: left;
+					.rounded-corners(0 0 15px 15px);
+					&#contribute {
+						color: #FFFFFF;
+						background-color: rgba(147, 55, 32, 0.7);
+						&:link {
+							color:#FFFFFF;
+							position: static;
+							top: auto;
+							right: auto;
+							height: 1em;
+							width: auto;
+							padding-right: 10px;
+							text-align: right;
+							.rounded-corners(0 0 15px 15px);
+							background: none;
+							background-image: none;
+							background-color: rgba(147, 55, 32, 0.7);
+							border: none;
+						}
+						&:visited {
+						}
+						&:hover {
+							position: static;
+							border: none;
+							background-color: @red;
+						}
+						&:active {
+							position: static;
+							border: none;
+						}
+						
+					}
+				}
+			}
+			#content {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+		}
+	}
+}
+@media only screen and (max-width: 900px) {
+	body {
+		#container {
+			#content {
+				#steering {
+					li {
+						clear: both;
+						width: auto;
+					}
+				}
+			}
+		}
+	}
+}
 
 
 /* ==|== print styles =======================================================
