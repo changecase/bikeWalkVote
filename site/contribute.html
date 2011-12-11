@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
@@ -43,19 +43,36 @@
 
 <body>
 
+<!-- BEGIN JavaScript SDK (neccessary for HTML5 like button to work)
+	I don't know why loading this from a .js file is not working. -->
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<!-- END JavaScript SDK -->
+  
   <div id="container">
     <header>
 		<h1 id="logo"><a href="index.html" title="home">bike walk vote</a></h1>
     </header>
     <div id="main" role="main">
-			<!-- don't need for now <form method="get" action="http://www.google.com/search">
+			<!-- don't need for now 
+			<form method="get" action="http://www.google.com/search">
 				<input type="text" name="q" value="search" /> -->
 				<!-- Do we need a "go" button?
 				<input type="submit" value="Search" />
 				-->
 				</form>
-			<!-- <a href="about.html" title="about bike walk vote">ABOUT</a>
-			<a href="news.html" title="bike walk vote news">NEWS</a> -->
+			<!-- 
+			<a href="about.html" title="about bike walk vote">ABOUT</a>
+			<a href="news.html" title="bike walk vote news">NEWS</a> 
+			-->
 			<a id="contribute" href="contribute.html" title="contribute to bike walk vote">CONTRIBUTE</a> 
 			<a href="index.html" title="back to the bike walk vote main page">HOME</a>
     </div>
@@ -67,6 +84,11 @@
 	<p>Thanks for your patience.</p>
 	
 </section>
+<aside>
+	<div class="fb-like" data-href="http://www.bikewalkvote.org/" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-font="trebuchet ms">
+	</div>
+	<div></div>
+</aside>
 <div id="push"></div>
     <footer>
 		<!-- <a href="legal.html">legal</a>

@@ -414,6 +414,27 @@ body #container #content form h3 {
   letter-spacing: .125rem;
   font-weight: 400;
 }
+body #container aside {
+  position: absolute;
+  top: 280px;
+  left: 0;
+  width: 95%;
+  margin: 0 2.5%;
+  padding: 0 1%;
+  /*	div {
+					&.fb-like, .fb_edge_widget_with_comment, .fb_iframe_widget  #LikePluginPagelet {
+						width: 100px;
+						span {
+							iframe {
+								&#fec132b3c {
+									width: 100px;
+								}
+							}
+						}
+					}
+				} */
+
+}
 body #container #push {
   position: relative;
   display: block;
@@ -849,6 +870,13 @@ td {
   body #container #content {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  body #container aside {
+    position: static;
+    margin-top: 40px;
+    padding-top: 20px;
+    float: left;
+    border-top: 3px dotted #8dc63f;
   }
 }
 @media only screen and (max-width: 800px) {

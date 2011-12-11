@@ -16,7 +16,15 @@
 <title>bike walk vote</title>
 <meta name="description" content="bike walk vote overview" />
 <meta name="author" content="bike walk vote" />
-
+<!-- BEGIN Open Graph (tags for Facebook integration, check out http://developers.facebook.com/docs/opengraph/) -->
+	<meta property="og:title" content="Bike Walk Vote" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="http://www.bikewalkvote.org/images/bikeWalkVoteLogo.png" />
+	<meta property="og:url" content="http://www.bikewalkvote.org" />
+	<meta property="og:site_name" content="bike walk vote" />
+	<meta property="fb:admins" content="17701902" />
+	<meta property="og:description" content="Elevating active transportation options in local politics." />
+<!-- END Open Graph -->
   <!-- Mobile viewport optimized: j.mp/bplateviewport -->
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -24,7 +32,7 @@
 
   <!-- CSS: implied media=all -->
   <!-- CSS concatenated and minified via ant build script-->
-  <link rel="stylesheet" href="stylesheets/css/style.css" />
+ <link rel="stylesheet" href="stylesheets/css/style.css" />
 <!--  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'> -->
 <!--  <link rel="stylesheet" href="/stylesheets/css/mainStyle.css"> 
   <link rel="stylesheet" href="stylesheets/css/newStyle.css"> -->
@@ -43,6 +51,20 @@
 
 <body>
 
+  <!-- BEGIN JavaScript SDK (neccessary for HTML5 like button to work)
+  	I don't know why loading this from a .js file is not working. -->
+  <div id="fb-root"></div>
+  <script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!-- END JavaScript SDK -->
+  
   <div id="container">
     <header>
 		<h1 id="logo"><a href="index.html" title="home">bike walk vote</a></h1>
@@ -95,7 +117,7 @@
 		</li>
 		<li>
 			<h4>Steph Routh</h4>
-			<p>When not working with Bike Walk Vote, you can find Steph geeking out on transporation wonkery or leading the charge for pedestrian safety with the Willamette Pedestrian Coalition.  She has also been known to throw a mad dance party.  And she speaks Chinese fluently.</p>
+			<p>When not working with Bike Walk Vote, you can find Steph geeking out on transportation wonkery or leading the charge for pedestrian safety with the Willamette Pedestrian Coalition.  She has also been known to throw a mad dance party.  And she speaks Chinese fluently.</p>
 		</li>
 		<li>
 			<h4>Beth Flanagan</h4>
@@ -107,21 +129,25 @@
 		</li>
 		<li>
 			<h4>Scott Leiuallen</h4>
-			<p>Scott is a Eugene City Councilor turned Lane County Commissioner turend Bike and Pedestrian Advocate Superhero.  You can find him leading the charge for the WPC's Getting Around On Foot neighborhood outreach project, at a local Shift or BTA volunteer gig, or sharing drinks with friends at one of Portland's great pubs.</p>
+			<p>Scott is a Eugene City Councilor turned Lane County Commissioner turned Bike and Pedestrian Advocate Superhero.  You can find him leading the charge for the WPC's Getting Around On Foot neighborhood outreach project, at a local Shift or BTA volunteer gig, or sharing drinks with friends at one of Portland's great pubs.</p>
 		</li>
 	</ul>
 	
 	<h3>The Questionnaire</h3>
 	<p>We continually work to have our questionnaires inform candidates about the most current issues in the bike, walk, and transit communities. Each race may have a different questionnaire, which helps inform our endorsement decisions. We also sometimes supplement written questionnaires with in-person interviews.</p>
 	<p>Curious what issue's we're asking about?  We'll have <a href="questions.pdf" title="questions for the next Mayor (PDF)">these Mayoral race questions</a> on display at the 2011 Launch Party.</p>
-	
 	</section>
+	<aside>
+		<div class="fb-like" data-href="http://www.bikewalkvote.org/" data-send="true" data-layout="box_count" data-width="100" data-show-faces="false" data-font="trebuchet ms">
+		</div>
+		<div></div>
+	</aside>
 <div id="push"></div>
     <footer>
 		<!-- <a href="legal.html">legal</a>
 		<a href="sitemap.html">site map</a> -->
 		<a href="contribute.html">contribute</a>
-		<!-- <a href="about.html">about us</a> -->
+		<!-- <a href="about.html">about us</a> -->		
     </footer>
   </div> <!--! end of #container -->
 
