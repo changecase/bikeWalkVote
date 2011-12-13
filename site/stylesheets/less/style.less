@@ -205,10 +205,13 @@ body {
 				form {
 					padding-top: 11px;
 					padding-bottom: 24px;
-					input {
-						padding-top: .3em;
-						height: .8em;
-						color: #aaaaaa;
+					p {
+						padding-left: 3%;
+						input {
+							padding-top: .3em;
+							height: .8em;
+							color: #aaaaaa;
+						}
 					}
 				}
 			}
@@ -237,7 +240,7 @@ body {
 						margin: 0;
 					}	
 				}
-				#candidates, #mission {
+				#candidates, #mission, #thanks {
 					float: left;
 					font-weight: 400;
 					margin: 0;
@@ -253,6 +256,10 @@ body {
 					border-left: 1px solid @transparentBlue;
 					background: @blueBackground;
 					.rounded-corners(1em);
+				}
+				#thanks {
+					text-indent: 0;
+					margin-top: 1em;
 				}
 				h2 {
 					.bwvFontSize(36);
@@ -372,6 +379,7 @@ body {
 					border-bottom: 3px solid @transparentBlue;
 					.rounded-corners(20px);
 					float: left;
+					width: 100%;
 					#additional-name {
 						width: 2rem;
 					}
@@ -392,6 +400,21 @@ body {
 							border-right: 2px solid @transparentBlue;
 							border-bottom: 2px solid #eeeeee;
 							border-left: 2px solid #eeeeee;
+							p {
+								padding-left: 20px;
+								letter-spacing: 6px;
+							}
+							&[type=submit] {
+								background: @greenBackground;
+								border-bottom: 2px solid @darkGreen;
+								border-left: 2px solid @darkGreen;
+								border-right: 2px solid @lightGreen;
+								border-top:  2px solid @lightGreen;
+								.rounded-corners(4px);
+								color: #ffffff;
+								font-weight: 500;
+								margin-top: 1em;
+							}
 							&#contribute-button {
 								background: inherit;
 								border: none;
@@ -768,7 +791,13 @@ td { vertical-align: top; }
 				margin-top: 40px;
 				padding-top: 20px;
 				float: left;
+				width: 100%;
 				border-top: 3px dotted @green;
+				div {
+					clear: none;
+					padding-left: 3.5% !important;
+					border-left: none !important;
+				}
 			}
 			footer {
 				:first-child {

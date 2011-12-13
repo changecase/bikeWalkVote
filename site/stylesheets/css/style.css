@@ -183,7 +183,10 @@ body #container #main form {
   padding-top: 11px;
   padding-bottom: 24px;
 }
-body #container #main form input {
+body #container #main form p {
+  padding-left: 3%;
+}
+body #container #main form p input {
   padding-top: .3em;
   height: .8em;
   color: #aaaaaa;
@@ -223,7 +226,7 @@ body #container #content p  + p {
   padding: 0;
   margin: 0;
 }
-body #container #content #candidates, body #container #content #mission {
+body #container #content #candidates, body #container #content #mission, body #container #content #thanks {
   float: left;
   font-weight: 400;
   margin: 0;
@@ -242,6 +245,10 @@ body #container #content #candidates, body #container #content #mission {
   border-radius: 1em;
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
+}
+body #container #content #thanks {
+  text-indent: 0;
+  margin-top: 1em;
 }
 body #container #content h2 {
   font-size: 36px;
@@ -381,6 +388,7 @@ body #container #content form {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   float: left;
+  width: 100%;
 }
 body #container #content form #additional-name {
   width: 2rem;
@@ -405,6 +413,23 @@ body #container #content form h3 input, body #container #content form fieldset i
   border-right: 2px solid rgba(87, 118, 207, 0.3);
   border-bottom: 2px solid #eeeeee;
   border-left: 2px solid #eeeeee;
+}
+body #container #content form h3 input p, body #container #content form fieldset input p {
+  padding-left: 20px;
+  letter-spacing: 6px;
+}
+body #container #content form h3 input[type=submit], body #container #content form fieldset input[type=submit] {
+  background: #8dc63f url('../../images/cardboard_green.png') repeat 0em;
+  border-bottom: 2px solid #27a41d;
+  border-left: 2px solid #27a41d;
+  border-right: 2px solid #b6d986;
+  border-top: 2px solid #b6d986;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  color: #ffffff;
+  font-weight: 500;
+  margin-top: 1em;
 }
 body #container #content form h3 input#contribute-button, body #container #content form fieldset input#contribute-button {
   background: inherit;
@@ -872,7 +897,13 @@ td {
     margin-top: 40px;
     padding-top: 20px;
     float: left;
+    width: 100%;
     border-top: 3px dotted #8dc63f;
+  }
+  body #container aside div {
+    clear: none;
+    padding-left: 3.5% !important;
+    border-left: none !important;
   }
   body #container footer :first-child {
     margin-left: 8px;
