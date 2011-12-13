@@ -51,7 +51,7 @@
 
 <body>
 
-  <!-- BEGIN JavaScript SDK (neccessary for HTML5 like button to work)
+  <!-- BEGIN JavaScript SDK (neccessary for HTML5 Facebook like button to work)
   	I don't know why loading this from a .js file is not working. -->
   <div id="fb-root"></div>
   <script>
@@ -138,9 +138,13 @@
 	<p>Curious what issue's we're asking about?  We'll have <a href="questions.pdf" title="questions for the next Mayor (PDF)">these Mayoral race questions</a> on display at the 2011 Launch Party.</p>
 	</section>
 	<aside>
+		<!-- BEGIN Facebook like button -->
 		<div class="fb-like" data-href="http://www.bikewalkvote.org/" data-send="true" data-layout="box_count" data-width="100" data-show-faces="false" data-font="trebuchet ms">
 		</div>
-		<div></div>
+		<!-- END Facebook like button -->
+		<!-- BEGIN Google +1 button -->
+		<div class="g-plusone" data-href="http://www.bikewalkvote.org/"></div>
+		<!-- END Google +1 button -->
 	</aside>
 <div id="push"></div>
     <footer>
@@ -162,6 +166,7 @@
   <!-- scripts concatenated and minified via ant build script-->
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
+  <script type="text/javascript" src="../../js/google-plus-1-button.js"></script>
   <!-- end scripts-->
 
 	

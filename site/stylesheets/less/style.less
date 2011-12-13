@@ -408,21 +408,18 @@ body {
 				position: absolute;
 				top: 280px;
 				left: 0;
-				width: 95%;
-				margin: 0 2.5%;
-				padding: 0 1%;
-			/*	div {
-					&.fb-like, .fb_edge_widget_with_comment, .fb_iframe_widget  #LikePluginPagelet {
-						width: 100px;
-						span {
-							iframe {
-								&#fec132b3c {
-									width: 100px;
-								}
-							}
-						}
-					}
-				} */
+				width: 160px;
+				margin-bottom: 1em;
+				div { //had to make several of the folowing !important so that FB and G+ buttons can be styled. The only reason for this is that both .js includes create inline styles. Annoying.
+					padding: 0 0 0 40px !important;
+					padding-top: 2px !important;
+					padding-bottom: 2px !important;
+					margin-bottom: 5em;
+					width: 100px !important;
+					border-left: 4px solid @transparentRed !important;
+					float: left;
+					clear: both;
+				}
 			}
 			#push {
 				position: relative;
@@ -772,6 +769,11 @@ td { vertical-align: top; }
 				padding-top: 20px;
 				float: left;
 				border-top: 3px dotted @green;
+			}
+			footer {
+				:first-child {
+					margin-left: 8px;
+				}
 			}
 		}
 	}

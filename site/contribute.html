@@ -1,4 +1,4 @@
-<!doctype html xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
@@ -85,9 +85,13 @@
 	
 </section>
 <aside>
-	<div class="fb-like" data-href="http://www.bikewalkvote.org/" data-send="false" data-layout="box_count" data-width="450" data-show-faces="false" data-font="trebuchet ms">
+	<!-- BEGIN Facebook like button -->
+	<div class="fb-like" data-href="http://www.bikewalkvote.org/" data-send="true" data-layout="box_count" data-width="100" data-show-faces="false" data-font="trebuchet ms">
 	</div>
-	<div></div>
+	<!-- END Facebook like button -->
+	<!-- BEGIN Google +1 button -->
+	<div class="g-plusone" data-href="http://www.bikewalkvote.org/"></div>
+	<!-- END Google +1 button -->
 </aside>
 <div id="push"></div>
     <footer>
@@ -109,6 +113,7 @@
   <!-- scripts concatenated and minified via ant build script-->
   <script defer src="js/plugins.js"></script>
   <script defer src="js/script.js"></script>
+  <script type="text/javascript" src="../../js/google-plus-1-button.js"></script>
   <!-- end scripts-->
 
 	
