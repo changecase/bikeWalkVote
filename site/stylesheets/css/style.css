@@ -393,9 +393,29 @@ body #container #content form {
 body #container #content form #additional-name {
   width: 2rem;
 }
+body #container #content form h3 {
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 80%;
+}
+body #container #content form fieldset {
+  width: 100%;
+}
+body #container #content form fieldset p {
+  padding-left: 7.5%;
+  padding-right: 10%;
+  width: 81.5%;
+}
+body #container #content form fieldset p input {
+  margin-left: 1%;
+}
+body #container #content form fieldset input {
+  margin-left: 10%;
+}
 body #container #content form h3, body #container #content form fieldset {
-  padding-left: 80px;
-  padding-right: 80px;
+  /*		padding-left: 80px;
+						padding-right: 80px;
+				*/
   float: left;
   clear: both;
 }
