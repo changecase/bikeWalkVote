@@ -51,6 +51,20 @@
 
 <body>
 
+  <!-- BEGIN JavaScript SDK (neccessary for HTML5 Facebook like button to work)
+  	I don't know why loading this from a .js file is not working. -->
+  <div id="fb-root"></div>
+  <script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!-- END JavaScript SDK -->
+  
   <div id="container">
     <header>
 		<h1 id="logo"><a href="/" title="home">Bike Walk Vote</a></h1>
