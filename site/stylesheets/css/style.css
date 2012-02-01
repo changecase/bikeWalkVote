@@ -424,6 +424,25 @@ body #container #content #images li {
 body #container #content #images li:nth-child(odd) {
   clear: none;
 }
+body #container #content #images li a img {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-bottom: 2.5px solid rgba(255, 255, 255, 0.5);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.5);
+  border-top: 2.5px solid rgba(87, 118, 207, 0.3);
+  border-right: 1.5px solid rgba(87, 118, 207, 0.3);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  /* For >= IE8 */
+
+}
+body #container #content #images li a img:hover {
+  opacity: 1;
+  filter: alpha(opacity=75);
+  /* For >= IE8 */
+
+}
 body #container #content #steering p, body #container #content #volunteers p {
   font-size: 18px;
   font-size: 1.1475rem;
@@ -555,7 +574,7 @@ body #container aside div {
   float: left;
   clear: both;
   opacity: 0.5;
-  filter: alpha(opacity=50);
+  filter: alpha(opacity=75);
   /* For >= IE8 */
 
 }
@@ -568,7 +587,7 @@ body #container aside div a {
 }
 body #container aside div:hover {
   opacity: 1;
-  filter: alpha(opacity=50);
+  filter: alpha(opacity=75);
   /* For >= IE8 */
 
 }

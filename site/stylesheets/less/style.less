@@ -48,6 +48,7 @@
 @transparentLightGreen: rgba(182, 217, 134, 0.7);
 @red: #933720;
 @transparentRed: rgba(147, 55, 32, 0.3);
+@transparentWhite: rgba(255, 255, 255, 0.5);
 @testBorder: 3px solid red;
 .transparency (@level: 100) {
 	opacity: @level * .01;
@@ -395,6 +396,19 @@ body {
 						margin-right: auto;
 						&:nth-child(odd) {
 							clear: none;
+						}
+						a {
+							img {
+								.rounded-corners(10px);
+								border-bottom: 2.5px solid @transparentWhite;
+								border-left: 1.5px solid @transparentWhite;
+								border-top: 2.5px solid @transparentBlue;
+								border-right: 1.5px solid @transparentBlue;
+								.transparency(75);
+								&:hover {
+									.transparency(100);
+								}
+							}
 						}
 					}
 				}
