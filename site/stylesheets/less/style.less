@@ -285,6 +285,7 @@ body {
 					.bwvFontSize(36);
 					.bwvLineHeight(48);
 					font-weight: 400;
+					clear: left;
 				}
 				h3 {
 					margin-bottom: 0;
@@ -323,7 +324,7 @@ body {
 					.bwvFontSize;
 					.bwvLineHeight;
 				}
-				#stories, #issues, #steering, #volunteers {
+				#stories, #issues, #steering, #volunteers, #images {
 					//	-moz-column-count: 2;
 					//	-webkit-column-count: 2;
 					//	-moz-column-gap: 59px;
@@ -358,6 +359,9 @@ body {
 								text-decoration: none;
 							}
 						}
+						img {
+							margin-top: .5em;
+						}
 						blockquote {
 							margin: 0;
 							padding-left: .5em;
@@ -380,6 +384,18 @@ body {
 						margin-top: 0;
 						padding-left: 0;
 						border: none;
+					}
+				}
+				#images {
+					width: 100%;
+					li {
+						width: auto;
+						padding-right: 2%;
+						margin-left: auto;
+						margin-right: auto;
+						&:nth-child(odd) {
+							clear: none;
+						}
 					}
 				}
 				#steering p, #volunteers p {
@@ -894,6 +910,28 @@ td { vertical-align: top; }
 					li {
 						clear: both;
 						width: auto;
+					}
+				}
+				#stories {
+					background: none;
+					border: none;
+					li {
+						padding-bottom: 1em;
+						margin-top: 1em;
+						margin-bottom: 1em;
+						background: @blueBackground;
+						border-left: 1px solid @blue;
+						border-left: 1px solid @transparentBlue;
+						border-bottom: 3px solid @blue;
+						border-bottom: 3px solid @transparentBlue;
+						.rounded-corners(20px);
+					}
+				}
+				#images {
+					li {
+						a + p {
+							display: none;
+						}
 					}
 				}
 			}

@@ -272,6 +272,7 @@ body #container #content h2 {
   font-size: 2.295rem;
   line-height: 3.0857142857142863;
   font-weight: 400;
+  clear: left;
 }
 body #container #content h3 {
   margin-bottom: 0;
@@ -309,7 +310,8 @@ body #container #content #issues, body #container #content #stories {
 body #container #content #stories,
 body #container #content #issues,
 body #container #content #steering,
-body #container #content #volunteers {
+body #container #content #volunteers,
+body #container #content #images {
   padding-bottom: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -325,7 +327,8 @@ body #container #content #volunteers {
 body #container #content #stories li,
 body #container #content #issues li,
 body #container #content #steering li,
-body #container #content #volunteers li {
+body #container #content #volunteers li,
+body #container #content #images li {
   list-style: none;
   width: 45%;
   padding-left: 2.5%;
@@ -336,13 +339,15 @@ body #container #content #volunteers li {
 body #container #content #stories li:nth-child(odd),
 body #container #content #issues li:nth-child(odd),
 body #container #content #steering li:nth-child(odd),
-body #container #content #volunteers li:nth-child(odd) {
+body #container #content #volunteers li:nth-child(odd),
+body #container #content #images li:nth-child(odd) {
   clear: left;
 }
 body #container #content #stories li h3,
 body #container #content #issues li h3,
 body #container #content #steering li h3,
-body #container #content #volunteers li h3 {
+body #container #content #volunteers li h3,
+body #container #content #images li h3 {
   font-size: 18px;
   font-size: 1.1475rem;
   line-height: 1.5428571428571431;
@@ -353,14 +358,23 @@ body #container #content #volunteers li h3 {
 body #container #content #stories li h3 a,
 body #container #content #issues li h3 a,
 body #container #content #steering li h3 a,
-body #container #content #volunteers li h3 a {
+body #container #content #volunteers li h3 a,
+body #container #content #images li h3 a {
   color: #27a41d;
   text-decoration: none;
+}
+body #container #content #stories li img,
+body #container #content #issues li img,
+body #container #content #steering li img,
+body #container #content #volunteers li img,
+body #container #content #images li img {
+  margin-top: .5em;
 }
 body #container #content #stories li blockquote,
 body #container #content #issues li blockquote,
 body #container #content #steering li blockquote,
-body #container #content #volunteers li blockquote {
+body #container #content #volunteers li blockquote,
+body #container #content #images li blockquote {
   margin: 0;
   padding-left: .5em;
   padding-right: .5em;
@@ -375,10 +389,12 @@ body #container #content #stories h3,
 body #container #content #issues h3,
 body #container #content #steering h3,
 body #container #content #volunteers h3,
+body #container #content #images h3,
 body #container #content #stories h2,
 body #container #content #issues h2,
 body #container #content #steering h2,
-body #container #content #volunteers h2 {
+body #container #content #volunteers h2,
+body #container #content #images h2 {
   margin-bottom: 0;
   font-size: 24px;
   font-size: 1.53rem;
@@ -387,13 +403,26 @@ body #container #content #volunteers h2 {
 body #container #content #stories p,
 body #container #content #issues p,
 body #container #content #steering p,
-body #container #content #volunteers p {
+body #container #content #volunteers p,
+body #container #content #images p {
   font-size: 18px;
   font-size: 1.1475rem;
   line-height: 1.5428571428571431;
   margin-top: 0;
   padding-left: 0;
   border: none;
+}
+body #container #content #images {
+  width: 100%;
+}
+body #container #content #images li {
+  width: auto;
+  padding-right: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+body #container #content #images li:nth-child(odd) {
+  clear: none;
 }
 body #container #content #steering p, body #container #content #volunteers p {
   font-size: 18px;
@@ -1006,6 +1035,26 @@ td {
   body #container #content #steering li, body #container #content #stories li {
     clear: both;
     width: auto;
+  }
+  body #container #content #stories {
+    background: none;
+    border: none;
+  }
+  body #container #content #stories li {
+    padding-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background: transparent url('../../images/cardboard_blue-.png') repeat 0;
+    border-left: 1px solid #5776cf;
+    border-left: 1px solid rgba(87, 118, 207, 0.3);
+    border-bottom: 3px solid #5776cf;
+    border-bottom: 3px solid rgba(87, 118, 207, 0.3);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+  }
+  body #container #content #images li a + p {
+    display: none;
   }
 }
 /* ==|== print styles =======================================================
