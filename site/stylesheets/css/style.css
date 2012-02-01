@@ -300,13 +300,13 @@ body #container #content ul {
   margin-top: 0;
   margin-bottom: 0;
 }
-body #container #content #issues, body #container #content #news {
+body #container #content #issues, body #container #content #stories {
   height: 100%;
   font-size: 9px;
   font-size: 0.57375rem;
   line-height: 0.9000000000000001;
 }
-body #container #content #news,
+body #container #content #stories,
 body #container #content #issues,
 body #container #content #steering,
 body #container #content #volunteers {
@@ -322,7 +322,7 @@ body #container #content #volunteers {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
 }
-body #container #content #news li,
+body #container #content #stories li,
 body #container #content #issues li,
 body #container #content #steering li,
 body #container #content #volunteers li {
@@ -333,13 +333,13 @@ body #container #content #volunteers li {
   padding-bottom: 1em;
   float: left;
 }
-body #container #content #news li:nth-child(odd),
+body #container #content #stories li:nth-child(odd),
 body #container #content #issues li:nth-child(odd),
 body #container #content #steering li:nth-child(odd),
 body #container #content #volunteers li:nth-child(odd) {
   clear: left;
 }
-body #container #content #news li h3,
+body #container #content #stories li h3,
 body #container #content #issues li h3,
 body #container #content #steering li h3,
 body #container #content #volunteers li h3 {
@@ -350,14 +350,14 @@ body #container #content #volunteers li h3 {
   margin-bottom: 0;
   padding-bottom: 0;
 }
-body #container #content #news li h3 a,
+body #container #content #stories li h3 a,
 body #container #content #issues li h3 a,
 body #container #content #steering li h3 a,
 body #container #content #volunteers li h3 a {
   color: #27a41d;
   text-decoration: none;
 }
-body #container #content #news li blockquote,
+body #container #content #stories li blockquote,
 body #container #content #issues li blockquote,
 body #container #content #steering li blockquote,
 body #container #content #volunteers li blockquote {
@@ -371,11 +371,11 @@ body #container #content #volunteers li blockquote {
   line-height: 1.5428571428571431;
   color: #2c3b68;
 }
-body #container #content #news h3,
+body #container #content #stories h3,
 body #container #content #issues h3,
 body #container #content #steering h3,
 body #container #content #volunteers h3,
-body #container #content #news h2,
+body #container #content #stories h2,
 body #container #content #issues h2,
 body #container #content #steering h2,
 body #container #content #volunteers h2 {
@@ -384,7 +384,7 @@ body #container #content #volunteers h2 {
   font-size: 1.53rem;
   line-height: 2.3142857142857145;
 }
-body #container #content #news p,
+body #container #content #stories p,
 body #container #content #issues p,
 body #container #content #steering p,
 body #container #content #volunteers p {
@@ -936,9 +936,12 @@ td {
     background-color: transparent;
     text-decoration: none;
     line-height: 0.31500000000000006;
-    color: rgba(255, 255, 255, 0.9);
-    font-weight: 400;
-    font-variant: small-caps;
+    color: rgba(250, 254, 255, 0.9);
+    font-weight: 500;
+    padding-top: .25em;
+  }
+  body #container #main {
+    width: 100%;
   }
   body #container #main a {
     float: right;
@@ -953,28 +956,26 @@ td {
   }
   body #container #main a#contribute:link {
     color: #FFFFFF;
-    position: static;
+    bottom: 0;
     top: auto;
     right: auto;
     height: 1em;
-    width: auto;
-    padding-right: 10px;
-    text-align: right;
-    border-radius: 0 0 15px 15px;
-    -webkit-border-radius: 0 0 15px 15px;
-    -moz-border-radius: 0 0 15px 15px;
+    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+    border-radius: 15px 15px 0 0;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
     background: none;
     background-image: none;
     background-color: rgba(147, 55, 32, 0.7);
     border: none;
   }
   body #container #main a#contribute:hover {
-    position: static;
     border: none;
     background-color: #933720;
   }
   body #container #main a#contribute:active {
-    position: static;
     border: none;
   }
   body #container #content {
@@ -994,12 +995,15 @@ td {
     padding-left: 3.5% !important;
     border-left: none !important;
   }
+  body #container footer {
+    padding-bottom: 1.5em;
+  }
   body #container footer :first-child {
     margin-left: 8px;
   }
 }
 @media only screen and (max-width: 800px) {
-  body #container #content #steering li, body #container #content #news li {
+  body #container #content #steering li, body #container #content #stories li {
     clear: both;
     width: auto;
   }

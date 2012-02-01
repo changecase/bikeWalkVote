@@ -318,12 +318,12 @@ body {
 					margin-top: 0;
 					margin-bottom: 0;
 				}
-				#issues, #news {
+				#issues, #stories {
 					height: 100%;
 					.bwvFontSize;
 					.bwvLineHeight;
 				}
-				#news, #issues, #steering, #volunteers {
+				#stories, #issues, #steering, #volunteers {
 					//	-moz-column-count: 2;
 					//	-webkit-column-count: 2;
 					//	-moz-column-gap: 59px;
@@ -812,13 +812,15 @@ td { vertical-align: top; }
 						background-color: transparent;
 						text-decoration: none;
 						.bwvLineHeight(4.9);
-						color: rgba(255, 255, 255, .9);
-						font-weight: 400;
-						font-variant: small-caps;
+						color: rgba(250, 254, 255, .9);
+						font-weight: 500;
+						padding-top: .25em;
+					//	font-variant: small-caps;
 					}
 				}
 			}
 			#main {
+				width: 100%;
 				a {
 					float: right;
 					clear: left;
@@ -828,14 +830,16 @@ td { vertical-align: top; }
 						background-color: rgba(147, 55, 32, 0.7);
 						&:link {
 							color:#FFFFFF;
-							position: static;
+						//	position: static;
+							bottom: 0;
 							top: auto;
 							right: auto;
 							height: 1em;
-							width: auto;
-							padding-right: 10px;
-							text-align: right;
-							.rounded-corners(0 0 15px 15px);
+							width: 80%;
+							padding-right: 10%;
+							padding-left: 10%;
+						//	text-align: right;
+							.rounded-corners(15px 15px 0 0);
 							background: none;
 							background-image: none;
 							background-color: rgba(147, 55, 32, 0.7);
@@ -844,12 +848,12 @@ td { vertical-align: top; }
 						&:visited {
 						}
 						&:hover {
-							position: static;
+						//	position: static;
 							border: none;
 							background-color: @red;
 						}
 						&:active {
-							position: static;
+						//	position: static;
 							border: none;
 						}
 						
@@ -874,6 +878,7 @@ td { vertical-align: top; }
 				}
 			}
 			footer {
+				padding-bottom: 1.5em;
 				:first-child {
 					margin-left: 8px;
 				}
@@ -885,7 +890,7 @@ td { vertical-align: top; }
 	body {
 		#container {
 			#content {
-				#steering, #news {
+				#steering, #stories {
 					li {
 						clear: both;
 						width: auto;
