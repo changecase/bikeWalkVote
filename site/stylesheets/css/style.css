@@ -65,13 +65,13 @@ body #container {
   position: relative;
   min-height: 100%;
   width: 100%;
-  background: white url('../../images/cardboard_white.png') repeat -160px -50px;
+  background: #e5e5e5 url('../../images/cardboard_white-.png') repeat -160px -50px;
   padding-bottom: 8em;
   padding-top: 6px;
 }
 body #container header {
   position: relative;
-  background: transparent url('../../images/cardboard_darkGreen.png') repeat-x -491px -111px;
+  background: transparent url('../../images/cardboard_darkGreen-.png') repeat-x -491px -111px;
   padding-bottom: 50px;
 }
 body #container header #logo {
@@ -101,7 +101,7 @@ body #container #main {
   z-index: 1;
   width: 75%;
   font-size: 14px;
-  font-size: 1.4000000000000001 rem;
+  font-size: 0.8925000000000001rem;
 }
 body #container #main a, body #container #main form {
   float: right;
@@ -144,7 +144,7 @@ body #container #main a#contribute:link {
   margin: 0;
   width: 100px;
   height: 2.6em;
-  background: #933720 url('../../images/cardboard_red.png') repeat 0;
+  background: transparent url('../../images/cardboard_red-.png') repeat 0;
 }
 body #container #main a#contribute:hover {
   color: #933720;
@@ -157,7 +157,7 @@ body #container #main a#contribute:hover {
   margin: 0;
   width: 100px;
   height: 2.6em;
-  background: #933720 url('../../images/cardboard_red.png') repeat 0;
+  background: transparent url('../../images/cardboard_red-.png') repeat 0;
   color: white;
   background: rgba(147, 55, 32, 0.3);
 }
@@ -172,7 +172,7 @@ body #container #main a#contribute:active {
   margin: 0;
   width: 100px;
   height: 2.6em;
-  background: #933720 url('../../images/cardboard_red.png') repeat 0;
+  background: transparent url('../../images/cardboard_red-.png') repeat 0;
   color: white;
   background: #933720;
   border-left: none;
@@ -218,7 +218,7 @@ body #container #content p {
   padding-bottom: 0;
   margin-bottom: 0;
   font-size: 18px;
-  font-size: 1.8 rem;
+  font-size: 1.1475rem;
   line-height: 1.5428571428571431;
 }
 body #container #content p  + p {
@@ -232,7 +232,7 @@ body #container #content #candidates, body #container #content #mission, body #c
   margin: 0;
   clear: both;
   font-size: 48px;
-  font-size: 4.800000000000001 rem;
+  font-size: 3.06rem;
   line-height: 1.5428571428571431;
   width: 90%;
   margin-bottom: 1em;
@@ -241,10 +241,27 @@ body #container #content #candidates, body #container #content #mission, body #c
   border-bottom: 3px solid #5776cf;
   border-bottom: 3px solid rgba(87, 118, 207, 0.3);
   border-left: 1px solid rgba(87, 118, 207, 0.3);
-  background: #5776cf url('../../images/cardboard_blue.png') repeat 0;
+  background: transparent url('../../images/cardboard_blue-.png') repeat 0;
   border-radius: 1em;
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
+}
+body #container #content .notice {
+  float: left;
+  width: 100%;
+  border-top: 2px solid #5776cf;
+  border-color: #5776cf;
+}
+body #container #content .notice p {
+  width: 90%;
+  padding: 1em 4.5% 1.25em;
+  margin-left: .5%;
+  margin-right: .5%;
+  margin-top: 0;
+  border-radius: 0 0 1em 1em;
+  -webkit-border-radius: 0 0 1em 1em;
+  -moz-border-radius: 0 0 1em 1em;
+  background: transparent url('../../images/cardboard_blue-.png') repeat 0;
 }
 body #container #content #thanks {
   text-indent: 0;
@@ -252,21 +269,21 @@ body #container #content #thanks {
 }
 body #container #content h2 {
   font-size: 36px;
-  font-size: 3.6 rem;
+  font-size: 2.295rem;
   line-height: 3.0857142857142863;
   font-weight: 400;
 }
 body #container #content h3 {
   margin-bottom: 0;
   font-size: 24px;
-  font-size: 2.4000000000000004 rem;
+  font-size: 1.53rem;
   line-height: 2.3142857142857145;
   font-weight: 500;
   color: #27a41d;
 }
 body #container #content h4 {
   font-size: 18px;
-  font-size: 1.8 rem;
+  font-size: 1.1475rem;
   line-height: 1.5428571428571431;
   font-weight: 500;
   color: #27a41d;
@@ -286,7 +303,7 @@ body #container #content ul {
 body #container #content #issues, body #container #content #news {
   height: 100%;
   font-size: 9px;
-  font-size: 0.9 rem;
+  font-size: 0.57375rem;
   line-height: 0.9000000000000001;
 }
 body #container #content #news,
@@ -296,7 +313,7 @@ body #container #content #volunteers {
   padding-bottom: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
-  background: #5776cf url('../../images/cardboard_blue.png') repeat 0;
+  background: transparent url('../../images/cardboard_blue-.png') repeat 0;
   border-left: 1px solid #5776cf;
   border-left: 1px solid rgba(87, 118, 207, 0.3);
   border-bottom: 3px solid #5776cf;
@@ -313,6 +330,7 @@ body #container #content #volunteers li {
   width: 45%;
   padding-left: 2.5%;
   padding-right: 2.5%;
+  padding-bottom: 1em;
   float: left;
 }
 body #container #content #news li:nth-child(odd),
@@ -320,6 +338,38 @@ body #container #content #issues li:nth-child(odd),
 body #container #content #steering li:nth-child(odd),
 body #container #content #volunteers li:nth-child(odd) {
   clear: left;
+}
+body #container #content #news li h3,
+body #container #content #issues li h3,
+body #container #content #steering li h3,
+body #container #content #volunteers li h3 {
+  font-size: 18px;
+  font-size: 1.1475rem;
+  line-height: 1.5428571428571431;
+  font-weight: 500;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+body #container #content #news li h3 a,
+body #container #content #issues li h3 a,
+body #container #content #steering li h3 a,
+body #container #content #volunteers li h3 a {
+  color: #27a41d;
+  text-decoration: none;
+}
+body #container #content #news li blockquote,
+body #container #content #issues li blockquote,
+body #container #content #steering li blockquote,
+body #container #content #volunteers li blockquote {
+  margin: 0;
+  padding-left: .5em;
+  padding-right: .5em;
+  border-top: 3px dotted #5776cf;
+  border-bottom: 3px dotted #5776cf;
+  font-size: 18px;
+  font-size: 1.1475rem;
+  line-height: 1.5428571428571431;
+  color: #2c3b68;
 }
 body #container #content #news h3,
 body #container #content #issues h3,
@@ -331,7 +381,7 @@ body #container #content #steering h2,
 body #container #content #volunteers h2 {
   margin-bottom: 0;
   font-size: 24px;
-  font-size: 2.4000000000000004 rem;
+  font-size: 1.53rem;
   line-height: 2.3142857142857145;
 }
 body #container #content #news p,
@@ -339,7 +389,7 @@ body #container #content #issues p,
 body #container #content #steering p,
 body #container #content #volunteers p {
   font-size: 18px;
-  font-size: 1.8 rem;
+  font-size: 1.1475rem;
   line-height: 1.5428571428571431;
   margin-top: 0;
   padding-left: 0;
@@ -347,14 +397,14 @@ body #container #content #volunteers p {
 }
 body #container #content #steering p, body #container #content #volunteers p {
   font-size: 18px;
-  font-size: 1.8 rem;
+  font-size: 1.1475rem;
   line-height: 1.5428571428571431;
 }
 body #container #content #questions {
   margin-bottom: 25px;
   margin-top: 18px;
   font-size: 18px;
-  font-size: 1.8 rem;
+  font-size: 1.1475rem;
   line-height: 1.5428571428571431;
 }
 body #container #content #questions p {
@@ -373,13 +423,13 @@ body #container #content #questions ul {
   margin-bottom: 0px;
 }
 body #container #content form {
-  background: #5776cf url('../../images/cardboard_blue.png') repeat 0;
+  background: transparent url('../../images/cardboard_blue-.png') repeat 0;
   display: block;
   padding: 1em 0 2em;
   margin-top: 3em;
   margin-bottom: 24px;
   line-height: 2.0571428571428574;
-  background: #5776cf url('../../images/cardboard_blue.png') repeat 0;
+  background: transparent url('../../images/cardboard_blue-.png') repeat 0;
   border-left: 1px solid #5776cf;
   border-left: 1px solid rgba(87, 118, 207, 0.3);
   border-bottom: 3px solid #5776cf;
@@ -423,7 +473,7 @@ body #container #content form h3#google-checkout, body #container #content form 
   padding-left: 61px;
 }
 body #container #content form h3 input, body #container #content form fieldset input {
-  background: white url('../../images/cardboard_white.png') repeat -160px -50px;
+  background: #e5e5e5 url('../../images/cardboard_white-.png') repeat -160px -50px;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -472,9 +522,26 @@ body #container aside div {
   padding-bottom: 2px !important;
   margin-bottom: 5em;
   width: 100px !important;
-  border-left: 4px solid rgba(147, 55, 32, 0.3) !important;
+  border-left: 4px solid rgba(147, 55, 32, 0.7) !important;
   float: left;
   clear: both;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  /* For >= IE8 */
+
+}
+body #container aside div p {
+  margin: 0;
+  color: #333333;
+}
+body #container aside div a {
+  text-decoration: none;
+}
+body #container aside div:hover {
+  opacity: 1;
+  filter: alpha(opacity=50);
+  /* For >= IE8 */
+
 }
 body #container #push {
   position: relative;
@@ -501,7 +568,7 @@ body #container footer a {
   padding: 10px 10px 20px;
   height: 1.0em;
   display: block;
-  background: white url('../../images/cardboard_white.png') repeat -160px -50px;
+  background: #e5e5e5 url('../../images/cardboard_white-.png') repeat -160px -50px;
   border-radius: 0 0 15px 15px;
   -webkit-border-radius: 0 0 15px 15px;
   -moz-border-radius: 0 0 15px 15px;
@@ -510,6 +577,8 @@ body #container footer a {
   font-variant: small-caps;
   letter-spacing: .125em;
   text-decoration: none;
+  border-left: 1px solid rgba(182, 217, 134, 0.7);
+  border-bottom: 2px solid rgba(182, 217, 134, 0.7);
 }
 body,
 button,
@@ -844,7 +913,7 @@ td {
   }
   body #container #content #mission {
     font-size: 39px;
-    font-size: 3.9000000000000004 rem;
+    font-size: 2.48625rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -930,7 +999,7 @@ td {
   }
 }
 @media only screen and (max-width: 800px) {
-  body #container #content #steering li {
+  body #container #content #steering li, body #container #content #news li {
     clear: both;
     width: auto;
   }

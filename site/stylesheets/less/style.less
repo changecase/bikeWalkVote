@@ -21,7 +21,7 @@
 @baseFontFamily: "futura-pt", "Josefin Sans", Futura, "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
 .bwvFontSize (@capHeight: 9) {
 	font-size: @capHeight * 1px;
-	font-size: @capHeight * 0.1rem;
+	font-size: @capHeight * 0.06375rem;
 }
 .bwvLineHeight (@leading: 14) {
 	line-height: @leading * .0642857142857143;
@@ -36,10 +36,10 @@
 	-webkit-border-radius: @radius;
 	-moz-border-radius: @radius;
 }
-@whiteBackground: white url('../../images/cardboard_white.png') repeat -160px -50px;
-@greenBackgroundOnWhite: transparent url('../../images/cardboard_darkGreen.png') repeat-x -491px -111px;
-@blueBackground: #5776CF url('../../images/cardboard_blue.png') repeat 0;
-@redBackground: #933720 url('../../images/cardboard_red.png') repeat 0;
+@whiteBackground: #e5e5e5 url('../../images/cardboard_white-.png') repeat -160px -50px;
+@greenBackgroundOnWhite: transparent url('../../images/cardboard_darkGreen-.png') repeat-x -491px -111px;
+@blueBackground: transparent url('../../images/cardboard_blue-.png') repeat 0;
+@redBackground: transparent url('../../images/cardboard_red-.png') repeat 0;
 @blue: #5776CF;
 @transparentBlue: rgba(87, 118, 207, 0.3);
 @green: #8DC63F;
@@ -49,6 +49,10 @@
 @red: #933720;
 @transparentRed: rgba(147, 55, 32, 0.3);
 @testBorder: 3px solid red;
+.transparency (@level: 100) {
+	opacity: @level * .01;
+	filter: alpha(opacity= @level); /* For >= IE8 */
+}
 
 
 
@@ -257,6 +261,22 @@ body {
 					background: @blueBackground;
 					.rounded-corners(1em);
 				}
+				.notice {
+					float: left;
+					width:100%;
+					border-top: 2px solid @blue;
+					border-color: @blue;
+					
+					p {
+						width: 90%;
+						padding: 1em 4.5% 1.25em;
+						margin-left: .5%;
+						margin-right: .5%;
+						margin-top: 0;
+						.rounded-corners(0 0 1em 1em);
+						background: @blueBackground;
+					}
+				}
 				#thanks {
 					text-indent: 0;
 					margin-top: 1em;
@@ -322,9 +342,31 @@ body {
 						width: 45%;
 						padding-left: 2.5%;
 						padding-right: 2.5%;
+						padding-bottom: 1em;
 						float: left;
 						&:nth-child(odd) {
 							clear: left;
+						}
+						h3 {
+							.bwvFontSize(18);
+							.bwvLineHeight(24);
+							font-weight: 500;
+							margin-bottom: 0;
+							padding-bottom: 0;
+							a {
+								color: @darkGreen;
+								text-decoration: none;
+							}
+						}
+						blockquote {
+							margin: 0;
+							padding-left: .5em;
+							padding-right: .5em;
+							border-top: 3px dotted @blue; //should use quotes instead
+							border-bottom: 3px dotted @blue; //should use quotes instead
+							.bwvFontSize(18);
+							.bwvLineHeight(24);
+							color: @transparentBlue * .5;
 						}
 					}
 					h3, h2 {
@@ -452,15 +494,26 @@ body {
 				left: 0;
 				width: 160px;
 				margin-bottom: 1em;
-				div { //had to make several of the folowing !important so that FB and G+ buttons can be styled. The only reason for this is that both .js includes create inline styles. Annoying.
+				div { //had to make several of the following !important so that FB and G+ buttons can be styled. The only reason for this is that both .js includes create inline styles. Annoying.
 					padding: 0 0 0 40px !important;
 					padding-top: 2px !important;
 					padding-bottom: 2px !important;
 					margin-bottom: 5em;
 					width: 100px !important;
-					border-left: 4px solid @transparentRed !important;
+					border-left: 4px solid rgba(147, 55, 32, 0.7) !important;
 					float: left;
 					clear: both;
+					.transparency(50);
+					p {
+						margin: 0;
+						color: #333333;
+					}
+					a {
+						text-decoration: none;
+					}
+					&:hover {
+						.transparency(100);
+					}
 				}
 			}
 			#push {
@@ -492,6 +545,8 @@ body {
 					font-variant: small-caps;
 					letter-spacing: .125em;
 					text-decoration: none;
+					border-left: 1px solid @transparentLightGreen;
+					border-bottom: 2px solid @transparentLightGreen;
 				}
 			}
 		}
@@ -830,7 +885,7 @@ td { vertical-align: top; }
 	body {
 		#container {
 			#content {
-				#steering {
+				#steering, #news {
 					li {
 						clear: both;
 						width: auto;
