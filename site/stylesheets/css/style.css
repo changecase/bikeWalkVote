@@ -413,13 +413,13 @@ body #container #content #images p {
   border: none;
 }
 body #container #content #images {
-  width: 100%;
+  width: 98%;
+  padding-left: .75%;
+  padding-right: .75%;
 }
 body #container #content #images li {
   width: auto;
-  padding-right: 2%;
-  margin-left: auto;
-  margin-right: auto;
+  padding-right: .5%;
 }
 body #container #content #images li:nth-child(odd) {
   clear: none;
