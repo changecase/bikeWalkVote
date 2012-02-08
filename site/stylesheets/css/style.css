@@ -282,6 +282,37 @@ body #container #content h3 {
   font-weight: 500;
   color: #27a41d;
 }
+body #container #content h3#twitinfo {
+  postion: relative;
+  width: 100%;
+}
+body #container #content h3#twitinfo a {
+  font-size: 36px;
+  font-size: 2.295rem;
+  line-height: 1.1571428571428573;
+  position: relative;
+  top: .75em;
+  float: left;
+  padding-left: 2.5%;
+  text-decoration: none;
+}
+body #container #content h3#twitinfo a:last-child {
+  padding-left: 0;
+  padding-right: 2.5%;
+  float: right;
+}
+body #container #content h3#twitinfo a:link {
+  color: #8dc63f;
+}
+body #container #content h3#twitinfo a:visited {
+  color: rgba(87, 118, 207, 0.3);
+}
+body #container #content h3#twitinfo a:hover {
+  color: #5776cf;
+}
+body #container #content h3#twitinfo a:active {
+  color: #933720;
+}
 body #container #content h4 {
   font-size: 18px;
   font-size: 1.1475rem;
@@ -307,11 +338,62 @@ body #container #content #issues, body #container #content #stories {
   font-size: 0.57375rem;
   line-height: 0.9000000000000001;
 }
+body #container #content #tweets {
+  width: 95%;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  margin-top: 1em;
+  background: transparent url('../../images/cardboard_blue-.png') repeat 0;
+  border-left: 1px solid #5776cf;
+  border-left: 1px solid rgba(87, 118, 207, 0.3);
+  border-bottom: 3px solid #5776cf;
+  border-bottom: 3px solid rgba(87, 118, 207, 0.3);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  font-size: 18px;
+  font-size: 1.1475rem;
+  line-height: 1.5428571428571431;
+  float: left;
+}
+body #container #content #tweets .tweet {
+  padding-top: 1em;
+  float: left;
+}
+body #container #content #tweets .tweet:last-child {
+  padding-bottom: 1em;
+}
+body #container #content #tweets .tweet img {
+  margin-right: 2.5%;
+  margin-top: .1875em;
+  display: block;
+  float: left;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-bottom: 2.5px solid rgba(255, 255, 255, 0.5);
+  border-left: 1.5px solid rgba(255, 255, 255, 0.5);
+  border-top: 2.5px solid rgba(87, 118, 207, 0.3);
+  border-right: 1.5px solid rgba(87, 118, 207, 0.3);
+  opacity: 0.75;
+  filter: alpha(opacity=75);
+  /* For >= IE8 */
+
+}
+body #container #content #tweets .tweet img:hover {
+  opacity: 1;
+  filter: alpha(opacity=75);
+  /* For >= IE8 */
+
+}
+body #container #content #tweets .tweet .content {
+  display: table-cell;
+}
 body #container #content #stories,
 body #container #content #issues,
 body #container #content #steering,
 body #container #content #volunteers,
-body #container #content #images {
+body #container #content .images {
   padding-bottom: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -328,7 +410,7 @@ body #container #content #stories li,
 body #container #content #issues li,
 body #container #content #steering li,
 body #container #content #volunteers li,
-body #container #content #images li {
+body #container #content .images li {
   list-style: none;
   width: 45%;
   padding-left: 2.5%;
@@ -340,14 +422,14 @@ body #container #content #stories li:nth-child(odd),
 body #container #content #issues li:nth-child(odd),
 body #container #content #steering li:nth-child(odd),
 body #container #content #volunteers li:nth-child(odd),
-body #container #content #images li:nth-child(odd) {
+body #container #content .images li:nth-child(odd) {
   clear: left;
 }
 body #container #content #stories li h3,
 body #container #content #issues li h3,
 body #container #content #steering li h3,
 body #container #content #volunteers li h3,
-body #container #content #images li h3 {
+body #container #content .images li h3 {
   font-size: 18px;
   font-size: 1.1475rem;
   line-height: 1.5428571428571431;
@@ -359,7 +441,7 @@ body #container #content #stories li h3 a,
 body #container #content #issues li h3 a,
 body #container #content #steering li h3 a,
 body #container #content #volunteers li h3 a,
-body #container #content #images li h3 a {
+body #container #content .images li h3 a {
   color: #27a41d;
   text-decoration: none;
 }
@@ -367,14 +449,14 @@ body #container #content #stories li img,
 body #container #content #issues li img,
 body #container #content #steering li img,
 body #container #content #volunteers li img,
-body #container #content #images li img {
+body #container #content .images li img {
   margin-top: .5em;
 }
 body #container #content #stories li blockquote,
 body #container #content #issues li blockquote,
 body #container #content #steering li blockquote,
 body #container #content #volunteers li blockquote,
-body #container #content #images li blockquote {
+body #container #content .images li blockquote {
   margin: 0;
   padding-left: .5em;
   padding-right: .5em;
@@ -389,12 +471,12 @@ body #container #content #stories h3,
 body #container #content #issues h3,
 body #container #content #steering h3,
 body #container #content #volunteers h3,
-body #container #content #images h3,
+body #container #content .images h3,
 body #container #content #stories h2,
 body #container #content #issues h2,
 body #container #content #steering h2,
 body #container #content #volunteers h2,
-body #container #content #images h2 {
+body #container #content .images h2 {
   margin-bottom: 0;
   font-size: 24px;
   font-size: 1.53rem;
@@ -404,7 +486,7 @@ body #container #content #stories p,
 body #container #content #issues p,
 body #container #content #steering p,
 body #container #content #volunteers p,
-body #container #content #images p {
+body #container #content .images p {
   font-size: 18px;
   font-size: 1.1475rem;
   line-height: 1.5428571428571431;
@@ -412,19 +494,19 @@ body #container #content #images p {
   padding-left: 0;
   border: none;
 }
-body #container #content #images {
+body #container #content .images {
   width: 98%;
   padding-left: .75%;
   padding-right: .75%;
 }
-body #container #content #images li {
+body #container #content .images li {
   width: auto;
   padding-right: .5%;
 }
-body #container #content #images li:nth-child(odd) {
+body #container #content .images li:nth-child(odd) {
   clear: none;
 }
-body #container #content #images li a img {
+body #container #content .images li a img {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -437,7 +519,7 @@ body #container #content #images li a img {
   /* For >= IE8 */
 
 }
-body #container #content #images li a img:hover {
+body #container #content .images li a img:hover {
   opacity: 1;
   filter: alpha(opacity=75);
   /* For >= IE8 */
@@ -491,7 +573,7 @@ body #container #content form {
 body #container #content form #additional-name {
   width: 2rem;
 }
-body #container #content form h3 {
+body #container #content form h3, body #container #content form label {
   padding-left: 10%;
   padding-right: 10%;
   width: 80%;
@@ -510,17 +592,17 @@ body #container #content form fieldset p input {
 body #container #content form fieldset input {
   margin-left: 10%;
 }
-body #container #content form h3, body #container #content form fieldset {
+body #container #content form h3, body #container #content form fieldset, body #container #content form label {
   /*		padding-left: 80px;
 						padding-right: 80px;
 				*/
   float: left;
   clear: both;
 }
-body #container #content form h3#google-checkout, body #container #content form fieldset#google-checkout {
+body #container #content form h3#google-checkout, body #container #content form fieldset#google-checkout, body #container #content form label#google-checkout {
   padding-left: 61px;
 }
-body #container #content form h3 input, body #container #content form fieldset input {
+body #container #content form h3 input, body #container #content form fieldset input, body #container #content form label input {
   background: #e5e5e5 url('../../images/cardboard_white-.png') repeat -160px -50px;
   border-radius: 3px;
   -webkit-border-radius: 3px;
@@ -532,11 +614,11 @@ body #container #content form h3 input, body #container #content form fieldset i
   border-bottom: 2px solid #eeeeee;
   border-left: 2px solid #eeeeee;
 }
-body #container #content form h3 input p, body #container #content form fieldset input p {
+body #container #content form h3 input p, body #container #content form fieldset input p, body #container #content form label input p {
   padding-left: 20px;
   letter-spacing: 6px;
 }
-body #container #content form h3 input[type=submit], body #container #content form fieldset input[type=submit] {
+body #container #content form h3 input[type=submit], body #container #content form fieldset input[type=submit], body #container #content form label input[type=submit] {
   background: #8dc63f url('../../images/cardboard_green.png') repeat 0em;
   border-bottom: 2px solid #27a41d;
   border-left: 2px solid #27a41d;
@@ -549,7 +631,7 @@ body #container #content form h3 input[type=submit], body #container #content fo
   font-weight: 500;
   margin-top: 1em;
 }
-body #container #content form h3 input#contribute-button, body #container #content form fieldset input#contribute-button {
+body #container #content form h3 input#contribute-button, body #container #content form fieldset input#contribute-button, body #container #content form label input#contribute-button {
   background: inherit;
   border: none;
 }
@@ -650,6 +732,32 @@ textarea {
   background: #fe57a1;
   color: #fff;
   text-shadow: none;
+}
+/* =============================================================================
+   Modernizr
+   ========================================================================== */
+.backgroundclip h3#twitinfo a {
+  /*		&:link {
+					background: @greenBackground;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+				&:visited {
+					background: @blueBackground;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+				&:hover {
+					background: @blue;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+		*/
+}
+.backgroundclip h3#twitinfo a:active {
+  background: transparent url('../../images/cardboard_red-.png') repeat 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /* =============================================================================
    Links
@@ -1072,7 +1180,7 @@ td {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
   }
-  body #container #content #images li a + p {
+  body #container #content .images li a + p {
     display: none;
   }
 }

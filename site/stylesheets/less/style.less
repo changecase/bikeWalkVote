@@ -245,10 +245,6 @@ body {
 						margin: 0;
 					}	
 				}
-				.twtr-widget {
-					font-size: 50px!important;
-					}
-				}
 				#candidates, #mission, #thanks {
 					float: left;
 					font-weight: 400;
@@ -291,6 +287,7 @@ body {
 					.bwvLineHeight(48);
 					font-weight: 400;
 					clear: left;
+										
 				}
 				h3 {
 					margin-bottom: 0;
@@ -298,6 +295,36 @@ body {
 					.bwvLineHeight(36);
 					font-weight: 500;
 					color: @darkGreen;
+					&#twitinfo {
+						postion: relative;
+						width: 100%;
+						a {
+							.bwvFontSize(36);
+							.bwvLineHeight(18);
+							position: relative;
+							top: .75em;
+							float: left;
+							padding-left: 2.5%;
+							text-decoration: none;
+							&:last-child {
+								padding-left: 0;
+								padding-right: 2.5%;
+								float: right;
+							}
+							&:link {
+								color: @green;
+							}
+							&:visited {
+								color: @transparentBlue;
+							}
+							&:hover {
+								color: @blue;
+							}
+							&:active {
+								color: @red;
+							}
+						}
+					}
 				}
 				h4 {
 					.bwvFontSize(18);
@@ -329,7 +356,47 @@ body {
 					.bwvFontSize;
 					.bwvLineHeight;
 				}
-				#stories, #issues, #steering, #volunteers, #images {
+				#tweets {
+					width: 95%;
+					padding-left: 2.5%;
+					padding-right: 2.5%;
+					margin-top: 1em;
+					background: @blueBackground;
+					border-left: 1px solid @blue;
+					border-left: 1px solid @transparentBlue;
+					border-bottom: 3px solid @blue;
+					border-bottom: 3px solid @transparentBlue;
+					.rounded-corners(20px);
+					.bwvFontSize(18);
+					.bwvLineHeight(24);
+					float: left;
+					.tweet {
+						padding-top: 1em;
+						float: left;
+						&:last-child {
+							padding-bottom: 1em;
+						}
+						img {
+							margin-right: 2.5%;
+							margin-top: .1875em;
+							display: block;
+							float: left;
+							.rounded-corners(10px);
+							border-bottom: 2.5px solid @transparentWhite;
+							border-left: 1.5px solid @transparentWhite;
+							border-top: 2.5px solid @transparentBlue;
+							border-right: 1.5px solid @transparentBlue;
+							.transparency(75);
+							&:hover {
+								.transparency(100);
+							}
+						}
+						.content {
+							display: table-cell;
+						}
+					}
+				}
+				#stories, #issues, #steering, #volunteers, .images {
 					//	-moz-column-count: 2;
 					//	-webkit-column-count: 2;
 					//	-moz-column-gap: 59px;
@@ -391,7 +458,7 @@ body {
 						border: none;
 					}
 				}
-				#images {
+				.images {
 					width: 98%;
 					padding-left: .75%;
 					padding-right: .75%;
@@ -459,7 +526,7 @@ body {
 					#additional-name {
 						width: 2rem;
 					}
-					h3 {
+					h3, label {
 						padding-left: 10%;
 						padding-right: 10%;
 						width: 80%;
@@ -478,7 +545,7 @@ body {
 							margin-left: 10%;
 						}
 					}
-					h3, fieldset {
+					h3, fieldset, label {
 				/*		padding-left: 80px;
 						padding-right: 80px;
 				*/		float: left;
@@ -596,6 +663,42 @@ body, button, input, select, textarea { font-family: @baseFontFamily; color: #22
 
 ::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
 ::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+
+/* =============================================================================
+   Modernizr
+   ========================================================================== */
+
+
+.backgroundclip {
+	h3 {
+		&#twitinfo {
+		//	background: @blueBackground;
+			a {
+		/*		&:link {
+					background: @greenBackground;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+				&:visited {
+					background: @blueBackground;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+				&:hover {
+					background: @blue;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+		*/		&:active {
+					background: @redBackground;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+				}
+			}
+		}
+	} 
+}
 
 
 /* =============================================================================
@@ -945,7 +1048,7 @@ td { vertical-align: top; }
 						.rounded-corners(20px);
 					}
 				}
-				#images {
+				.images {
 					li {
 						a + p {
 							display: none;

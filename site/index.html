@@ -44,9 +44,20 @@
        Modernizr enables HTML5 elements & feature detects; Respond is a polyfill for min/max-width CSS3 Media Queries
        For optimal performance, use a custom Modernizr build: www.modernizr.com/download/ -->
   <script src="/js/libs/modernizr-2.0.6.min.js"></script>
+<script>
+	Modernizr.addTest('backgroundclip',function(){
+	  var div = document.createElement('div');
+	  if ('backgroundClip' in div.style) return true;
+	  'Webkit Moz O ms Khtml'.replace(/([A-Za-z]*)/g,function(val){
+	    if (val+'BackgroundClip' in div.style) return true;
+	  });
+	});
+</script>
   <script type="text/javascript" src="http://use.typekit.com/div8jmz.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script type="text/javascript" src="/js/google-analytics.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="/js/twitter.js"></script>
 </head>
 
 <body>
@@ -75,67 +86,32 @@
 				<!-- Do we need a "go" button?
 				<input type="submit" value="Search" />
 				</form> -->
-			<!-- <a href="/about.html" title="about bike walk vote">ABOUT</a> -->
+			<a href="/about.html" title="about bike walk vote">ABOUT</a>
 			<a href="/media.html" title="bike walk vote in the media">MEDIA</a>
 			<a id="contribute" href="/contribute.html" title="contribute to bike walk vote">CONTRIBUTE</a> 
 			<a href="/" title="back to the bike walk vote main page">HOME</a>
     </div>
 <section id="content">
-	<p id="mission">Elevating active transportation options in local&nbsp;politics.</p>
-	<!-- <div class="notice"><p>We had an awesome launch party. Thanks everyone!</p></div> -->
-	<h2 id="about">About Us</h2>
-	<h3>who we are</h3>
-	<p>Bike Walk Vote works to elect candidates who best support Oregon's bicyclists, pedestrians, and transit riders. We also work on ballot measures.</p>
-	<p>Formed in 2004, we have worked in elections in 2004, 2006, and 2008. Our endorsed candidates and measures won 15 of 19 elections.</p>
-	<p>After a hiatus in 2010, we have relaunched Bike Walk Vote. Our first action was endorsing Alissa Keny-Guyer for appointment to the Oregon legislature, an appointment she won. We are now ramping up for a busy 2012 election year.</p>
-	<h3>our unique value</h3>
-	<p>As a political action committee, Bike Walk Vote goes where most non-profits cannot - directly into candidate elections. We endorse candidates and work to elect our strongest allies. While advocacy, organizing, education and lobbying are all valuable activities, the most influential action is electing the right people in the first place.</p>
-	<h3>the people</h3>
-	<p>Bike Walk Vote is run by an eight person volunteer steering committee who represent a cross-section of skills and interests in the biking, walking, and transit community.</p>
-	<ul id="steering">
-		<li>
-			<h4>Evan Manvel, co-chair</h4>
-			<p>Evan served as Executive Director of the Bicycle Transportation Alliance from 2005 to 2007, and as the Legislative Director for the Oregon League of Conservation Voters in 2008 and 2009. He has also served as campaign manager for Robert Liberty and Paul van Orden. He is now the Principal of Manvel Public Affairs.</p>
-		</li>
-		<li>
-			<h4>Peter W, co-chair</h4>
-			<p>Peter loves bike touring and backpacking, but has just as much fun organizing for better walking and biking environments. </p>
-			<p>Outside of BWV, Peter enjoys web development and working on Open Source projects. </p>
-			<p>Peter's goal is for Bike Walk Vote to go global within 5 years.</p>
-		</li>
-		<li>
-			<h4>Jodi Jacobson-Swartfager, treasurer</h4>
-			<p>A Spokane native, Jodi moved to Portland in 2000 and immediately fell in love with Portland's bike scene.
-			She's currently enrolled in Portland State University's Masters of Urban and Regional Planning program.
-			She can't wait to see the world covered with bike lanes.</p>
-		</li>
-		<li>
-			<h4>Jeff Jacobson-Swartfager, graphic&nbsp;designer</h4>
-			<p>Jeff is the head of Press at an education and consultant company in Vancouver, WA. He also works as a freelance graphic designer.</p>
-			<p>Jeff loves his wife and his bike.</p>
-			<p>His mustache tickles.</p>
-		</li>
-		<li>
-			<h4>Steph Routh</h4>
-			<p>When not working with Bike Walk Vote, you can find Steph geeking out on transportation wonkery or leading the charge for pedestrian safety with the Willamette Pedestrian Coalition.  She has also been known to throw a mad dance party.  And she speaks Chinese fluently.</p>
-		</li>
-		<li>
-			<h4>Beth Flanagan</h4>
-			<p>Beth has a passion for design and legs of steel.  Seriously, if Bike Walk Vote had a cyclocross team, we'd make her our Captain.  When not racing or working with us, you can find her helping out at groups like OLCV and 1000 Friends of Oregon.</p>
-		</li>
-		<li>
-			<h4>Heidi Guenin</h4>
-			<p>Heidi is the Transportation Policy Coordinator for Upstream Public Health. She loves good company, good beer, and good bakeries. She's also a huge transportation wonk (possibly more so than Steph even, which is saying a lot). </p>
-		</li>
-		<li>
-			<h4>Michael O&rsquo;Leary</h4>
-			<p>Michael is a political consultant on climate change and fuel choice campaigns. Michael has taught youth bike safety education in Portland Public Schools and adult traffic safety for Multnomah County Circuit Court. Prior to working on environmental sustainability issues, Michael served as a union organizer for local janitors and healthcare workers.</p>
-		</li>
-	</ul>
-	
-	<h3>The Questionnaire</h3>
-	<p>We continually work to have our questionnaires inform candidates about the most current issues in the bike, walk, and transit communities. Each race may have a different questionnaire, which helps inform our endorsement decisions. We also sometimes supplement written questionnaires with in-person interviews.</p>
-	<p>Curious what issue's we're asking about?  We'll have <a href="/questions.pdf" title="questions for the next Mayor (PDF)">these Mayoral race questions</a> on display at the 2011 Launch Party.</p>
+	<h2>how are they stacking up?</h2>
+	<p>Portland Mayoral candidates <a href="http://www.eileenformayor.com/" title="Eileen Brady's website">Eileen Brady</a>, <a href="http://charliehales.com/" title="Charlie Hales' website">Charlie Hales</a>, and <a href="http://www.jeffersonsmith.com/" title="Jefferson Smith's website">Jefferson Smith</a> are discussing active transportation at <abbr title="Portland State University">PSU</abbr>&rsquo;s <a href="http://maps.google.com/maps?q=psu+lincoln+hall&hl=en&view=map&cid=7042644928022574566&t=m&z=16" title="Lincoln Hall's location">Lincoln Hall</a> Main Auditorium.</p>
+	<p>We&rsquo;ve interviewed the candidates.</p>
+	<p>Tonight, along with you, we&rsquo;re evaluating their debate.</p>
+	<p>Before we determine who we think will make the best Mayor of Portland we&rsquo;ll even commute to work with them.</p>
+	<p>Be the first to find out who we endorse, why and how we&rsquo;ll win. <a href="http://eepurl.com/hTCAw">Sign up here</a>.</p>
+		<!-- Begin MailChimp Signup Form -->
+		<div id="mc_embed_signup">
+		<form action="http://pdx.us1.list-manage.com/subscribe/post?u=c4d3147703bee687b89582662&amp;id=c2b6f3b8c5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+			<h3>subscribe to our mailing list</h3>
+			<fieldset>
+			<label for="mce-EMAIL">your email address</label>
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+			<div class="clear"><input type="submit" value="Subscribe!" name="subscribe" id="mc-embedded-subscribe" class="button"></div></fieldset>
+		</form>
+		</div>
+		
+		<!--End mc_embed_signup-->
+	<h3 id="twitinfo"><a href="http://twitter.com/#!/search/realtime/%23pdxmayor" title="the full #PDXMayor history">#PDXMayor</a> <a href="http://twitter.com/#!/bikewalkvote" title="follow us on twitter!">@bikewalkvote</a></h3>	
+	<div id="tweets"></div> <!-- all of the HTML we need for the tweets! -->
 	</section>
 	<aside>
 		<!-- BEGIN Facebook like button -->
@@ -154,7 +130,7 @@
 		<!-- <a href="legal.html">legal</a>
 		<a href="sitemap.html">site map</a> -->
 		<a href="/contribute.html">contribute</a>
-		<!-- <a href="/about.html">about us</a>	-->	
+		<a href="/about.html">about us</a>
     </footer>
   </div> <!--! end of #container -->
 
@@ -162,14 +138,16 @@
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+  <!-- I actually had to comment this out to make the twitter thing work. I'll have to figure out what's up with that later. This kludge should work for now. -->
+<!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.6.2.min.js"><\/script>')</script> -->
 
 
   <!-- scripts concatenated and minified via ant build script-->
   <script defer src="/js/plugins.js"></script>
   <script defer src="/js/script.js"></script>
   <script type="text/javascript" src="/js/google-plus-1-button.js"></script>
+  
   <!-- end scripts-->
 
 	
