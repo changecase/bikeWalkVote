@@ -3,10 +3,11 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site:
-  Twitter:
-  Location:
+  Designer: Jeff Jacobson-Swartfager
+  Twitter: @changecase
+  
+  Developer: Peter W
+  Twitter: @techieshark
 
 /* THANKS */
   Names (& URL):
@@ -14,7 +15,7 @@
 /* SITE */
   Standards: HTML5, CSS3
   Components: Modernizr, jQuery
-  Software:
+  Software: Frank (https://github.com/blahed/frank)
 
 
 
