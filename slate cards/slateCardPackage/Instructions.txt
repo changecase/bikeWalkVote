@@ -2,9 +2,9 @@ ADOBE INDESIGN PRINTING INSTRUCTIONS FOR SERVICE PROVIDER REPORT
 
 PUBLICATION NAME: slate01.indd
 
-PACKAGE DATE: 4/26/12 8:03 PM
-Creation Date: 4/10/12
-Modification Date: 4/11/12
+PACKAGE DATE: 4/26/12 8:21 PM
+Creation Date: 4/26/12
+Modification Date: 4/26/12
 
 CONTACT INFORMATION
 
@@ -33,7 +33,7 @@ Non Opaque Objects :On Page1
 FONTS
 2 Fonts Used; 0 Missing, 0 Embedded, 0 Incomplete, 0 Protected
 
-Fonts Packaged
+Fonts Not Packaged
 - Name: Futura-Bold; Type: Type 1, Status: OK
 - Name: Futura-Light; Type: Type 1, Status: OK
 
@@ -81,7 +81,3 @@ Flip Mode: Off
 FILE PACKAGE LIST
 
 1. slate01.indd; type: Adobe InDesign publication; size: 1390K
-2. FuturBol; type: Font file; size: 29K
-3. Futura Bold; type: Font file; size: 28K
-4. FuturLig; type: Font file; size: 27K
-5. Futura Light; type: Font file; size: 24K
