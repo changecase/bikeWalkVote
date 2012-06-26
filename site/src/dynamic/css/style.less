@@ -528,6 +528,21 @@ body {
           margin-bottom: 0px;
         }
       }
+      .question {
+        font-weight: 500;
+        float: left;
+        .questionTitle {
+          color: @darkGreen;
+        }
+      }
+      .answer {
+        .bwvFontSize(18);
+        .bwvLineHeight(24);
+        float: left;
+        ul {
+          padding: 0 0 0 40px;
+        }
+      }
       form {
         background: @blueBackgroundOnWhite;
         display: block;
@@ -1034,7 +1049,7 @@ td {
           left: 0;
           padding-left: 0;
           width: 100%;
-          background: @logo;
+          background: @green url('/images/bikeWalkVoteLogo_textured.png') no-repeat 0% 0%;
           background-color: transparent;
           text-decoration: none;
           height: 160px;
