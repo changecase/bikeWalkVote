@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
 }
 body {
@@ -45,7 +46,8 @@ header {
   z-index: 1;
   width: 75%;
 }
-#main a, #main form {
+#main a,
+#main form {
   float: right;
   margin-right: 2px;
   padding: 10px 10px 20px;
@@ -68,7 +70,7 @@ header {
 }
 #content {
   position: relative;
-  background: white url('../images/cardboard_white.png') repeat -160px 0px;
+  background: #ffffff url('../images/cardboard_white.png') repeat -160px 0px;
   clear: both;
   float: left;
   padding-left: -160px;
@@ -83,13 +85,15 @@ header {
   float: left;
   margin: 0 0 0 160px;
 }
-#candidates, #mission {
+#candidates,
+#mission {
   float: left;
   background: transparent url('../images/cardboard_darkGreen.png') repeat-x -160px -160px;
   width: 100%;
   padding-top: 20px;
 }
-#candidates li, #mission {
+#candidates li,
+#mission {
   display: block;
   float: left;
   padding-right: 10px;
@@ -98,10 +102,12 @@ header {
 #candidates img {
   background-color: #5776CF;
 }
-#issues, #news {
+#issues,
+#news {
   height: 100%;
 }
-#issues li, #news li {
+#issues li,
+#news li {
   width: 40%;
   margin-right: 2%;
   display: block;
@@ -140,7 +146,7 @@ footer a {
   padding: 10px 10px 20px;
   height: 1.0em;
   display: block;
-  background: white url('../images/cardboard_white.png') repeat -160px 0px;
+  background: #ffffff url('../images/cardboard_white.png') repeat -160px 0px;
   -moz-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
   color: #51791B;

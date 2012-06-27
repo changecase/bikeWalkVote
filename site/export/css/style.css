@@ -12,6 +12,9 @@
 /* =============================================================================
    Less variable definitions
    ===========================================================================*/
+/*  ----------------------------------------------------------------------------
+    colors 
+    ----------------------------------------------------------------------------*/
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -27,7 +30,9 @@ nav,
 section {
   display: block;
 }
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
   *display: inline;
   *zoom: 1;
@@ -65,13 +70,13 @@ body #container {
   position: relative;
   min-height: 100%;
   width: 100%;
-  background: #e5e5e5 url('../../images/cardboard_white-.png') repeat -160px -50px;
+  background: #ffffff url('../../images/cardboard_white.png') repeat -160px -50px;
   padding-bottom: 8em;
   padding-top: 6px;
 }
 body #container header {
   position: relative;
-  background: transparent url('../../images/cardboard_darkGreen-.png') repeat-x -491px -111px;
+  background: transparent url('../../images/cardboard_darkGreen.png') repeat-x -491px -111px;
   padding-bottom: 50px;
 }
 body #container header #logo {
@@ -101,9 +106,10 @@ body #container #main {
   z-index: 1;
   width: 75%;
   font-size: 14px;
-  font-size: 0.8925000000000001rem;
+  font-size: 0.875rem;
 }
-body #container #main a, body #container #main form {
+body #container #main a,
+body #container #main form {
   float: right;
   margin-right: 2px;
   padding: 15px 10px 20px;
@@ -115,10 +121,12 @@ body #container #main a, body #container #main form {
   height: 10px;
   height: 1rem;
 }
-body #container #main a:hover, body #container #main form:hover {
+body #container #main a:hover,
+body #container #main form:hover {
   background-color: #b6d986;
 }
-body #container #main a:active, body #container #main form:active {
+body #container #main a:active,
+body #container #main form:active {
   background-color: #ffffff;
   color: #8dc63f;
 }
@@ -138,6 +146,8 @@ body #container #main a#contribute:link {
   position: fixed;
   top: 280px;
   border-radius: 20px 0 0 20px;
+  -webkit-border-radius: 20px 0 0 20px;
+  -moz-border-radius: 20px 0 0 20px;
   border-left: 1px solid rgba(147, 55, 32, 0.3);
   border-bottom: 3px solid rgba(147, 55, 32, 0.3);
   right: 0;
@@ -151,6 +161,8 @@ body #container #main a#contribute:hover {
   position: fixed;
   top: 280px;
   border-radius: 20px 0 0 20px;
+  -webkit-border-radius: 20px 0 0 20px;
+  -moz-border-radius: 20px 0 0 20px;
   border-left: 1px solid rgba(147, 55, 32, 0.3);
   border-bottom: 3px solid rgba(147, 55, 32, 0.3);
   right: 0;
@@ -205,34 +217,28 @@ body #container #content {
   margin: 0 auto -4em;
   max-width: 40em;
   width: auto;
-  /*	#mission + p {
-					clear: left;
-					.bwvFontSize(48);
-					.bwvLineHeight(24);
-					min-width: 200px;
-					min-width: 20rem;
-				}
-			*/
 }
 body #container #content p {
   padding-bottom: 0;
   margin-bottom: 0;
   font-size: 18px;
-  font-size: 1.1475rem;
+  font-size: 1.125rem;
   line-height: 1.5428571428571431;
 }
-body #container #content p  + p {
+body #container #content p + p {
   text-indent: 1em;
   padding: 0;
   margin: 0;
 }
-body #container #content #candidates, body #container #content #mission, body #container #content #thanks {
+body #container #content #candidates,
+body #container #content #mission,
+body #container #content #thanks {
   float: left;
   font-weight: 400;
   margin: 0;
   clear: both;
   font-size: 48px;
-  font-size: 3.06rem;
+  font-size: 3rem;
   line-height: 1.5428571428571431;
   width: 90%;
   margin-bottom: 1em;
@@ -269,7 +275,7 @@ body #container #content #thanks {
 }
 body #container #content h2 {
   font-size: 36px;
-  font-size: 2.295rem;
+  font-size: 2.25rem;
   line-height: 1.9285714285714288;
   font-weight: 400;
   clear: left;
@@ -278,7 +284,7 @@ body #container #content h2 {
 body #container #content h3 {
   margin-bottom: 0;
   font-size: 24px;
-  font-size: 1.53rem;
+  font-size: 1.5rem;
   line-height: 2.3142857142857145;
   font-weight: 500;
   color: #27a41d;
@@ -290,7 +296,7 @@ body #container #content h3#twitinfo {
 }
 body #container #content h3#twitinfo a {
   font-size: 36px;
-  font-size: 2.295rem;
+  font-size: 2.25rem;
   line-height: 1.1571428571428573;
   position: relative;
   top: .75em;
@@ -317,7 +323,7 @@ body #container #content h3#twitinfo a:active {
 }
 body #container #content h4 {
   font-size: 18px;
-  font-size: 1.1475rem;
+  font-size: 1.125rem;
   line-height: 1.5428571428571431;
   font-weight: 500;
   color: #27a41d;
@@ -334,10 +340,11 @@ body #container #content ul {
   margin-top: 0;
   margin-bottom: 0;
 }
-body #container #content #issues, body #container #content #stories {
+body #container #content #issues,
+body #container #content #stories {
   height: 100%;
   font-size: 9px;
-  font-size: 0.57375rem;
+  font-size: 0.5625rem;
   line-height: 0.9000000000000001;
 }
 body #container #content .badge {
@@ -354,7 +361,7 @@ body #container #content .badge {
   text-align: center;
   line-height: 200px;
   font-size: 16px;
-  font-size: 1.02rem;
+  font-size: 1rem;
   letter-spacing: .125em;
 }
 body #container #content .badge p {
@@ -377,7 +384,7 @@ body #container #content #tweets {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   font-size: 18px;
-  font-size: 1.1475rem;
+  font-size: 1.125rem;
   line-height: 1.5428571428571431;
   float: left;
   clear: both;
@@ -401,18 +408,22 @@ body #container #content #tweets .tweet img {
   border-left: 1.5px solid rgba(255, 255, 255, 0.5);
   border-top: 2.5px solid rgba(87, 118, 207, 0.3);
   border-right: 1.5px solid rgba(87, 118, 207, 0.3);
+  /* creates variable for IE filter to use, not sure why I'm not able to do the operation inline */
+
   opacity: 0.75;
   filter: alpha(opacity=75);
   /* For >= IE8 */
 
 }
 body #container #content #tweets .tweet img:hover {
+  /* creates variable for IE filter to use, not sure why I'm not able to do the operation inline */
+
   opacity: 1;
   filter: alpha(opacity=75);
   /* For >= IE8 */
 
 }
-body #container #content #tweets .tweet .content {
+body #container #content #tweets .content {
   display: table-cell;
 }
 body #container #content #stories,
@@ -457,17 +468,17 @@ body #container #content #steering li h3,
 body #container #content #volunteers li h3,
 body #container #content .images li h3 {
   font-size: 18px;
-  font-size: 1.1475rem;
+  font-size: 1.125rem;
   line-height: 1.5428571428571431;
   font-weight: 500;
   margin-bottom: 0;
   padding-bottom: 0;
 }
-body #container #content #stories li h3 a,
-body #container #content #issues li h3 a,
-body #container #content #steering li h3 a,
-body #container #content #volunteers li h3 a,
-body #container #content .images li h3 a {
+body #container #content #stories li a,
+body #container #content #issues li a,
+body #container #content #steering li a,
+body #container #content #volunteers li a,
+body #container #content .images li a {
   color: #27a41d;
   text-decoration: none;
 }
@@ -489,32 +500,32 @@ body #container #content .images li blockquote {
   border-top: 3px dotted #5776cf;
   border-bottom: 3px dotted #5776cf;
   font-size: 18px;
-  font-size: 1.1475rem;
+  font-size: 1.125rem;
   line-height: 1.5428571428571431;
   color: #2c3b68;
 }
-body #container #content #stories h3,
-body #container #content #issues h3,
-body #container #content #steering h3,
-body #container #content #volunteers h3,
-body #container #content .images h3,
-body #container #content #stories h2,
-body #container #content #issues h2,
-body #container #content #steering h2,
-body #container #content #volunteers h2,
-body #container #content .images h2 {
+body #container #content #stories li h3,
+body #container #content #issues li h3,
+body #container #content #steering li h3,
+body #container #content #volunteers li h3,
+body #container #content .images li h3,
+body #container #content #stories li h2,
+body #container #content #issues li h2,
+body #container #content #steering li h2,
+body #container #content #volunteers li h2,
+body #container #content .images li h2 {
   margin-bottom: 0;
   font-size: 24px;
-  font-size: 1.53rem;
-  line-height: 2.3142857142857145;
+  font-size: 1.5rem;
+  line-height: 1.1571428571428573;
 }
-body #container #content #stories p,
-body #container #content #issues p,
-body #container #content #steering p,
-body #container #content #volunteers p,
-body #container #content .images p {
+body #container #content #stories li p,
+body #container #content #issues li p,
+body #container #content #steering li p,
+body #container #content #volunteers li p,
+body #container #content .images li p {
   font-size: 18px;
-  font-size: 1.1475rem;
+  font-size: 1.125rem;
   line-height: 1.5428571428571431;
   margin-top: 0;
   padding-left: 0;
@@ -532,7 +543,7 @@ body #container #content .images li {
 body #container #content .images li:nth-child(odd) {
   clear: none;
 }
-body #container #content .images li a img {
+body #container #content .images a img {
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -540,27 +551,32 @@ body #container #content .images li a img {
   border-left: 1.5px solid rgba(255, 255, 255, 0.5);
   border-top: 2.5px solid rgba(87, 118, 207, 0.3);
   border-right: 1.5px solid rgba(87, 118, 207, 0.3);
+  /* creates variable for IE filter to use, not sure why I'm not able to do the operation inline */
+
   opacity: 0.75;
   filter: alpha(opacity=75);
   /* For >= IE8 */
 
 }
-body #container #content .images li a img:hover {
+body #container #content .images a img:hover {
+  /* creates variable for IE filter to use, not sure why I'm not able to do the operation inline */
+
   opacity: 1;
   filter: alpha(opacity=75);
   /* For >= IE8 */
 
 }
-body #container #content #steering p, body #container #content #volunteers p {
+body #container #content #steering p,
+body #container #content #volunteers p {
   font-size: 18px;
-  font-size: 1.1475rem;
+  font-size: 1.125rem;
   line-height: 1.5428571428571431;
 }
 body #container #content #questions {
   margin-bottom: 25px;
   margin-top: 18px;
   font-size: 18px;
-  font-size: 1.1475rem;
+  font-size: 1.125rem;
   line-height: 1.5428571428571431;
 }
 body #container #content #questions p {
@@ -578,6 +594,22 @@ body #container #content #questions ul {
   float: none;
   margin-bottom: 0px;
 }
+body #container #content .question {
+  font-weight: 500;
+  float: left;
+}
+body #container #content .question .questionTitle {
+  color: #27a41d;
+}
+body #container #content .answer {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.5428571428571431;
+  float: left;
+}
+body #container #content .answer ul {
+  padding: 0 0 0 40px;
+}
 body #container #content form {
   background: transparent url('../../images/cardboard_blue-.png') repeat 0;
   display: block;
@@ -591,6 +623,7 @@ body #container #content form {
   border-bottom: 3px solid #5776cf;
   border-bottom: 3px solid rgba(87, 118, 207, 0.3);
   border-radius: 20px;
+  border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   float: left;
@@ -599,7 +632,9 @@ body #container #content form {
 body #container #content form #additional-name {
   width: 2rem;
 }
-body #container #content form h3, body #container #content form p, body #container #content form label {
+body #container #content form h3,
+body #container #content form p,
+body #container #content form label {
   padding-left: 10%;
   padding-right: 10%;
   width: 80%;
@@ -618,18 +653,21 @@ body #container #content form fieldset p input {
 body #container #content form fieldset input {
   margin-left: 10%;
 }
-body #container #content form h3, body #container #content form fieldset, body #container #content form label {
-  /*		padding-left: 80px;
-						padding-right: 80px;
-				*/
+body #container #content form h3,
+body #container #content form fieldset,
+body #container #content form label {
   float: left;
   clear: both;
 }
-body #container #content form h3#google-checkout, body #container #content form fieldset#google-checkout, body #container #content form label#google-checkout {
+body #container #content form h3 #google-checkout,
+body #container #content form fieldset #google-checkout,
+body #container #content form label #google-checkout {
   padding-left: 61px;
 }
-body #container #content form h3 input, body #container #content form fieldset input, body #container #content form label input {
-  background: #e5e5e5 url('../../images/cardboard_white-.png') repeat -160px -50px;
+body #container #content form h3 input,
+body #container #content form fieldset input,
+body #container #content form label input {
+  background: #ffffff url('../../images/cardboard_white.png') repeat -160px -50px;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -640,11 +678,15 @@ body #container #content form h3 input, body #container #content form fieldset i
   border-bottom: 2px solid #eeeeee;
   border-left: 2px solid #eeeeee;
 }
-body #container #content form h3 input p, body #container #content form fieldset input p, body #container #content form label input p {
+body #container #content form h3 input p,
+body #container #content form fieldset input p,
+body #container #content form label input p {
   padding-left: 20px;
   letter-spacing: 6px;
 }
-body #container #content form h3 input[type=submit], body #container #content form fieldset input[type=submit], body #container #content form label input[type=submit] {
+body #container #content form h3 input[type=submit],
+body #container #content form fieldset input[type=submit],
+body #container #content form label input[type=submit] {
   background: #8dc63f url('../../images/cardboard_green.png') repeat 0em;
   border-bottom: 2px solid #27a41d;
   border-left: 2px solid #27a41d;
@@ -657,7 +699,9 @@ body #container #content form h3 input[type=submit], body #container #content fo
   font-weight: 500;
   margin-top: 1em;
 }
-body #container #content form h3 input#contribute-button, body #container #content form fieldset input#contribute-button, body #container #content form label input#contribute-button {
+body #container #content form h3 input #contribute-button,
+body #container #content form fieldset input #contribute-button,
+body #container #content form label input #contribute-button {
   background: inherit;
   border: none;
 }
@@ -681,6 +725,8 @@ body #container aside div {
   border-left: 4px solid rgba(147, 55, 32, 0.7) !important;
   float: left;
   clear: both;
+  /* creates variable for IE filter to use, not sure why I'm not able to do the operation inline */
+
   opacity: 0.5;
   filter: alpha(opacity=75);
   /* For >= IE8 */
@@ -694,6 +740,8 @@ body #container aside div a {
   text-decoration: none;
 }
 body #container aside div:hover {
+  /* creates variable for IE filter to use, not sure why I'm not able to do the operation inline */
+
   opacity: 1;
   filter: alpha(opacity=75);
   /* For >= IE8 */
@@ -724,7 +772,7 @@ body #container footer a {
   padding: 10px 10px 20px;
   height: 1.0em;
   display: block;
-  background: #e5e5e5 url('../../images/cardboard_white-.png') repeat -160px -50px;
+  background: #ffffff url('../../images/cardboard_white.png') repeat -160px -50px;
   border-radius: 0 0 15px 15px;
   -webkit-border-radius: 0 0 15px 15px;
   -moz-border-radius: 0 0 15px 15px;
@@ -782,6 +830,7 @@ textarea {
 					-webkit-text-fill-color: transparent;
 				}
 		*/
+
 }
 .backgroundclip h3#twitinfo a:active {
   background: transparent url('../../images/cardboard_red-.png') repeat 0;
@@ -804,7 +853,8 @@ a:focus {
   outline: thin dotted;
 }
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
-a:hover, a:active {
+a:hover,
+a:active {
   outline: 0;
 }
 /* =============================================================================
@@ -813,7 +863,8 @@ a:hover, a:active {
 abbr[title] {
   border-bottom: 1px dotted;
 }
-b, strong {
+b,
+strong {
   font-weight: bold;
   font-weight: 600;
 }
@@ -860,7 +911,8 @@ pre {
 q {
   quotes: none;
 }
-q:before, q:after {
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -868,7 +920,8 @@ small {
   font-size: 85%;
 }
 /* Position subscript and superscript content without affecting line-height: h5bp.com/k */
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -883,14 +936,16 @@ sub {
 /* =============================================================================
    Lists
    ========================================================================== */
-ul, ol {
+ul,
+ol {
   margin: 1em 0;
   padding: 0 0 0 40px;
 }
 dd {
   margin: 0 0 0 40px;
 }
-nav ul, nav ol {
+nav ul,
+nav ol {
   list-style: none;
   list-style-image: none;
   margin: 0;
@@ -962,14 +1017,16 @@ textarea {
  * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
  * 2. Correct inner spacing displayed oddly in IE6/7
  */
-button, input {
+button,
+input {
   line-height: normal;
   *overflow: visible;
 }
 /*
  * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
  */
-table button, table input {
+table button,
+table input {
   *overflow: auto;
 }
 /*
@@ -986,7 +1043,8 @@ input[type="submit"] {
 /*
  * Consistent box sizing and appearance
  */
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
 }
 input[type="search"] {
@@ -1001,7 +1059,8 @@ input[type="search"]::-webkit-search-decoration {
 /* 
  * Remove inner padding and border in FF3/4: h5bp.com/l 
  */
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -1015,7 +1074,8 @@ textarea {
   resize: vertical;
 }
 /* Colors for form validity */
-input:invalid, textarea:invalid {
+input:invalid,
+textarea:invalid {
   background-color: #f0dddd;
 }
 /* =============================================================================
@@ -1065,7 +1125,8 @@ td {
   width: 1px;
 }
 /* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -1077,7 +1138,8 @@ td {
 .invisible {
   visibility: hidden;
 }
-/* Contain floats: h5bp.com/q */.clearfix:before, .clearfix:after {
+/* Contain floats: h5bp.com/q */.clearfix:before,
+.clearfix:after {
   content: "";
   display: table;
 }
@@ -1097,9 +1159,9 @@ td {
   body {
     width: 100%;
   }
-  body #container #content #mission {
+  body #container #content #mision {
     font-size: 39px;
-    font-size: 2.48625rem;
+    font-size: 2.4375rem;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1111,17 +1173,11 @@ td {
     margin-top: 0;
   }
   body #container header #logo a {
-    /*	padding-right: 100%;
-  								left: -100%;
-  								padding-left: 0;
-  								width: 100%;
-  								background: transparent url('../../images/bikeWalkVoteLogo_miniTextured.png') no-repeat 50% 0%; */
-  
     padding-right: 0;
     left: 0;
     padding-left: 0;
     width: 100%;
-    background: transparent url('/images/bikeWalkVoteLogo_textured.png') no-repeat 0% 0%;
+    background: #8dc63f url('/images/bikeWalkVoteLogo_textured.png') no-repeat 0% 0%;
     background-color: transparent;
     text-decoration: none;
     height: 160px;
@@ -1194,7 +1250,8 @@ td {
   }
 }
 @media only screen and (max-width: 800px) {
-  body #container #content #steering li, body #container #content #stories li {
+  body #container #content #steering li,
+  body #container #content #stories li {
     clear: both;
     width: auto;
   }
@@ -1215,7 +1272,7 @@ td {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
   }
-  body #container #content .images li a + p {
+  body #container #content #stories li a + p {
     display: none;
   }
 }
@@ -1232,7 +1289,8 @@ td {
     -ms-filter: none !important;
   }
   /* Black prints faster: h5bp.com/s */
-  a, a:visited {
+  a,
+  a:visited {
     text-decoration: underline;
   }
   a[href]:after {
@@ -1241,11 +1299,14 @@ td {
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
     content: "";
   }
   /* Don't show links for images, or javascript/internal links */
-  pre, blockquote {
+  pre,
+  blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
@@ -1253,7 +1314,8 @@ td {
     display: table-header-group;
   }
   /* h5bp.com/t */
-  tr, img {
+  tr,
+  img {
     page-break-inside: avoid;
   }
   img {
@@ -1262,17 +1324,18 @@ td {
   @page  {
     margin: 0.5cm;
   }
-  p, h2, h3 {
+  p,
+  h2,
+  h3 {
     orphans: 3;
     widows: 3;
   }
-  h2, h3 {
+  h2,
+  h3 {
     page-break-after: avoid;
   }
 }
-
-
 body #container #content ul.simple {
-  float:none;
-  list-style:none;
+  float: none;
+  list-style: none;
 }
