@@ -294,6 +294,7 @@ body {
         .bwvLineHeight(36);
         font-weight: 500;
         color: @darkGreen;
+        float: left;
         &#twitinfo {
           postion: relative;
           width: 100%;
@@ -418,7 +419,7 @@ body {
           display: table-cell;
         }
       }
-      #stories, #issues, #steering, #volunteers, .images {
+      #stories, #issues, #steering, #volunteers, .images, .people {
         padding-bottom: 1em;
         margin-top: 1em;
         margin-bottom: 1em;
@@ -527,6 +528,9 @@ body {
           float: none;
           margin-bottom: 0px;
         }
+      }
+      .question, .answer {
+        width: 100%;
       }
       .question {
         font-weight: 500;
@@ -1124,10 +1128,11 @@ td {
   body {
     #container {
       #content {
-        #steering, #stories {
+        #steering, #stories, .people {
+          width: 100%;
           li {
             clear: both;
-            width: auto;
+            width: 95%;
           }
         }
         #stories {

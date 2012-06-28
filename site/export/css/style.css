@@ -288,6 +288,7 @@ body #container #content h3 {
   line-height: 2.3142857142857145;
   font-weight: 500;
   color: #27a41d;
+  float: left;
 }
 body #container #content h3#twitinfo {
   postion: relative;
@@ -430,7 +431,8 @@ body #container #content #stories,
 body #container #content #issues,
 body #container #content #steering,
 body #container #content #volunteers,
-body #container #content .images {
+body #container #content .images,
+body #container #content .people {
   padding-bottom: 1em;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -447,7 +449,8 @@ body #container #content #stories li,
 body #container #content #issues li,
 body #container #content #steering li,
 body #container #content #volunteers li,
-body #container #content .images li {
+body #container #content .images li,
+body #container #content .people li {
   list-style: none;
   width: 45%;
   padding-left: 2.5%;
@@ -459,14 +462,16 @@ body #container #content #stories li:nth-child(odd),
 body #container #content #issues li:nth-child(odd),
 body #container #content #steering li:nth-child(odd),
 body #container #content #volunteers li:nth-child(odd),
-body #container #content .images li:nth-child(odd) {
+body #container #content .images li:nth-child(odd),
+body #container #content .people li:nth-child(odd) {
   clear: left;
 }
 body #container #content #stories li h3,
 body #container #content #issues li h3,
 body #container #content #steering li h3,
 body #container #content #volunteers li h3,
-body #container #content .images li h3 {
+body #container #content .images li h3,
+body #container #content .people li h3 {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.5428571428571431;
@@ -478,7 +483,8 @@ body #container #content #stories li a,
 body #container #content #issues li a,
 body #container #content #steering li a,
 body #container #content #volunteers li a,
-body #container #content .images li a {
+body #container #content .images li a,
+body #container #content .people li a {
   color: #27a41d;
   text-decoration: none;
 }
@@ -486,14 +492,16 @@ body #container #content #stories li img,
 body #container #content #issues li img,
 body #container #content #steering li img,
 body #container #content #volunteers li img,
-body #container #content .images li img {
+body #container #content .images li img,
+body #container #content .people li img {
   margin-top: .5em;
 }
 body #container #content #stories li blockquote,
 body #container #content #issues li blockquote,
 body #container #content #steering li blockquote,
 body #container #content #volunteers li blockquote,
-body #container #content .images li blockquote {
+body #container #content .images li blockquote,
+body #container #content .people li blockquote {
   margin: 0;
   padding-left: .5em;
   padding-right: .5em;
@@ -509,11 +517,13 @@ body #container #content #issues li h3,
 body #container #content #steering li h3,
 body #container #content #volunteers li h3,
 body #container #content .images li h3,
+body #container #content .people li h3,
 body #container #content #stories li h2,
 body #container #content #issues li h2,
 body #container #content #steering li h2,
 body #container #content #volunteers li h2,
-body #container #content .images li h2 {
+body #container #content .images li h2,
+body #container #content .people li h2 {
   margin-bottom: 0;
   font-size: 24px;
   font-size: 1.5rem;
@@ -523,7 +533,8 @@ body #container #content #stories li p,
 body #container #content #issues li p,
 body #container #content #steering li p,
 body #container #content #volunteers li p,
-body #container #content .images li p {
+body #container #content .images li p,
+body #container #content .people li p {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.5428571428571431;
@@ -593,6 +604,10 @@ body #container #content #questions ul {
   height: auto;
   float: none;
   margin-bottom: 0px;
+}
+body #container #content .question,
+body #container #content .answer {
+  width: 100%;
 }
 body #container #content .question {
   font-weight: 500;
@@ -1250,10 +1265,16 @@ td {
   }
 }
 @media only screen and (max-width: 800px) {
+  body #container #content #steering,
+  body #container #content #stories,
+  body #container #content .people {
+    width: 100%;
+  }
   body #container #content #steering li,
-  body #container #content #stories li {
+  body #container #content #stories li,
+  body #container #content .people li {
     clear: both;
-    width: auto;
+    width: 95%;
   }
   body #container #content #stories {
     background: none;
