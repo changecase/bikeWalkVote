@@ -237,6 +237,8 @@ body {
         margin-bottom: 0;
         .bwvFontSize(18);
         .bwvLineHeight(24);
+        float: left;
+        width: 100%;
         &+ p {
           text-indent: 1em;
           padding: 0;
@@ -295,6 +297,7 @@ body {
         font-weight: 500;
         color: @darkGreen;
         float: left;
+        width: 100%;
         &#twitinfo {
           postion: relative;
           width: 100%;
@@ -420,7 +423,7 @@ body {
         }
       }
       #stories, #issues, #steering, #volunteers, .images, .people {
-        padding-bottom: 1em;
+        padding: 0 0 1em 0;
         margin-top: 1em;
         margin-bottom: 1em;
         background: @blueBackgroundOnWhite;
@@ -530,11 +533,31 @@ body {
         }
       }
       .question, .answer {
-        width: 100%;
+//        width: 100%;
+//        float: left;
+        clear: left;
+        p {
+//          float: left;
+        }
+        ul, ol {
+//          float: left;
+          clear: left;
+          padding-top: .25em;
+          width: auto;
+          li {
+//            float: left;
+//            width: 100%;
+            clear: left;
+            p {
+//              float: left;
+              float: none;
+            }
+          }
+        }
       }
       .question {
         font-weight: 500;
-        float: left;
+//        float: left;
         .questionTitle {
           color: @darkGreen;
         }
@@ -542,9 +565,9 @@ body {
       .answer {
         .bwvFontSize(18);
         .bwvLineHeight(24);
-        float: left;
+//        float: left;
         ul {
-          padding: 0 0 0 40px;
+          padding: inherit 0 0 40px;
         }
       }
       form {
@@ -625,6 +648,11 @@ body {
           letter-spacing: .125rem;
           font-weight: 400;
         }
+      }
+      ul {
+        padding: 0 0 0 40px;
+        width: 100%;
+        .bwvFontSize(18);
       }
     }
     aside {
