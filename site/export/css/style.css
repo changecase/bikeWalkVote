@@ -646,6 +646,9 @@ body #container #content .answer {
 body #container #content .answer ul {
   padding: inherit 0 0 40px;
 }
+body #container #content .answer strong {
+  font-weight: 500;
+}
 body #container #content form {
   background: transparent url('../../images/cardboard_blue-.png') repeat 0;
   display: block;
