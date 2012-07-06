@@ -491,6 +491,39 @@ body #container #content .people li a {
   color: #27a41d;
   text-decoration: none;
 }
+body #container #content #stories li a:link,
+body #container #content #issues li a:link,
+body #container #content #steering li a:link,
+body #container #content #volunteers li a:link,
+body #container #content .images li a:link,
+body #container #content .people li a:link {
+  color: #27a41d;
+}
+body #container #content #stories li a:visited,
+body #container #content #issues li a:visited,
+body #container #content #steering li a:visited,
+body #container #content #volunteers li a:visited,
+body #container #content .images li a:visited,
+body #container #content .people li a:visited {
+  color: #5776cf;
+}
+body #container #content #stories li a:hover,
+body #container #content #issues li a:hover,
+body #container #content #steering li a:hover,
+body #container #content #volunteers li a:hover,
+body #container #content .images li a:hover,
+body #container #content .people li a:hover {
+  color: #5776cf;
+}
+body #container #content #stories li a:active,
+body #container #content #issues li a:active,
+body #container #content #steering li a:active,
+body #container #content #volunteers li a:active,
+body #container #content .images li a:active,
+body #container #content .people li a:active {
+  color: #dfdfdf;
+  background-color: #5776cf;
+}
 body #container #content #stories li img,
 body #container #content #issues li img,
 body #container #content #steering li img,
@@ -514,6 +547,7 @@ body #container #content .people li blockquote {
   font-size: 1.125rem;
   line-height: 1.5428571428571431;
   color: #2c3b68;
+  clear: left;
 }
 body #container #content #stories li h3,
 body #container #content #issues li h3,

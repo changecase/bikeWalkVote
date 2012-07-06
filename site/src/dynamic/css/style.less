@@ -38,6 +38,7 @@
   @red: #933720;
   @lightGreen: #b6d986;
   @darkGreen: @green - #662222;
+  @white: #dfdfdf;
 
 @greenBackground: @green url('../../images/cardboard_green.png') repeat 0em;
 @logo: transparent url('../../images/bikeWalkVoteLogo_longTextured.png') no-repeat top right; 
@@ -452,6 +453,19 @@ body {
             a {
               color: @darkGreen;
               text-decoration: none;
+              &:link {
+                color: @darkGreen;
+              }
+              &:visited {
+                color: @blue;
+              }
+              &:hover {
+                color: @blue;
+              }
+              &:active {
+                color: @white;
+                background-color: @blue;
+              }
             }
           img {
               margin-top: .5em;
@@ -465,6 +479,7 @@ body {
             .bwvFontSize(18);
             .bwvLineHeight(24);
             color: #2c3b68;
+            clear: left;
           }
           h3, h2 {
             margin-bottom: 0;
