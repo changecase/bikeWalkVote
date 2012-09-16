@@ -826,6 +826,9 @@ body #container aside div:hover {
   /* For >= IE8 */
 
 }
+body #container aside #___plusone_0 {
+  margin-bottom: 80px !important;
+}
 body #container #push {
   position: relative;
   display: block;

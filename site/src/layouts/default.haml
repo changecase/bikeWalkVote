@@ -94,10 +94,6 @@
     -# -------------------------END PAGE CONTENT --------------------------------------
   
     %aside
-      / BEGIN Facebook like button
-      .fb-like{"data-href" => "http://www.bikewalkvote.org/", "data-send" => "true", "data-layout" => "box_count", "data-width" => "100", "data-show-faces" => "false",  "data-font" => "trebuchet ms"}
-      / END Facebook like button
-    
       / BEGIN Facebook page link 
       %div 
         %a{:href => "http://www.facebook.com/pages/Bike-Walk-Vote/231653533537755", :title => "the bike walk vote facebook page"}
@@ -115,6 +111,10 @@
       .g-plusone{ "data-size" => "tall", "datadata-href" => "http://www.bikewalkvote.org/"}
       / END Google +1 button
 
+      / BEGIN Facebook like button
+      .fb-like{"data-href" => "http://www.bikewalkvote.org/", "data-send" => "true", "data-layout" => "box_count", "data-width" => "100", "data-show-faces" => "false",  "data-font" => "trebuchet ms"}
+      / END Facebook like button
+    
     #push
     %footer
       %a{:href => "/responses.html"}= 'responses'
