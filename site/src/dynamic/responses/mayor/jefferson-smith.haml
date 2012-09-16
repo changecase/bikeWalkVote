@@ -6,6 +6,18 @@ author: Bike Walk Vote PAC
 %h2 Jefferson Smith
 :markdown
 	Download a [PDF of Jefferson Smith's responses](/responses/mayor/smith.pdf "A PDF Jefferson Smith's responses to the bike walk vote questionnaire").
+//	:ruby
+//		require 'titlecase' # using Sam Souder's titlecase converter (available at https://github.com/samsouder/titlecase)
+//		candidates_array = Array.new
+//		Dir.foreach("./dynamic/responses/mayor/") {|f| candidates_array.push(f)}
+//		candidates_array = candidates_array.slice(2, candidates_array.length)
+//		candidates_array.each do |candidateSource| 
+//			candidateName = candidateSource.gsub(/-/, ' ')
+//			candidateName = candidateName.sub(/\.haml/, '')
+//			candidateResponse = candidateSource.gsub(/\.haml/, '.html')
+//			puts "<p><a href=\"" + candidateResponse + "\" title=\"Read " + candidateName.titlecase + "'s responses to this questionaire\">" + candidateName.titlecase + "</a></p><p>" + File.dirname(".") + "</p>"
+//		end
+
 
 %h3 general approach
 .question 
