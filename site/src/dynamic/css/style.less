@@ -170,7 +170,8 @@ body {
               border-bottom: 3px solid rgba(147, 55, 32, 0.3);
               right: 0;
               margin: 0;
-              width: 100px;
+              min-width: 100px;
+              max-width: 150px;
               height: 2.6em;
               background: transparent url('../../images/cardboard_red-.png') repeat 0;
           }
@@ -1109,6 +1110,7 @@ td {
      //   .rounded-corners(0 0 15px 15px);
         &#contribute {
           color: @red;
+          min-width: auto;
           max-width: auto;
         //  background-color: rgba(147, 55, 32, 0.7);
           &:link {

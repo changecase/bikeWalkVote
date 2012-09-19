@@ -149,7 +149,8 @@ body #container #main a#contribute:link {
   border-bottom: 3px solid rgba(147, 55, 32, 0.3);
   right: 0;
   margin: 0;
-  width: 100px;
+  min-width: 100px;
+  max-width: 150px;
   height: 2.6em;
   background: transparent url('../../images/cardboard_red-.png') repeat 0;
 }
@@ -1260,6 +1261,7 @@ td {
   }
   body #container #main a#contribute {
     color: #933720;
+    min-width: auto;
     max-width: auto;
   }
   body #container #main a#contribute:link {
