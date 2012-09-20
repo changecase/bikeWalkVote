@@ -442,6 +442,7 @@ body #container #content .people {
   border-left: 1px solid rgba(87, 118, 207, 0.3);
   border-bottom: 3px solid #5776cf;
   border-bottom: 3px solid rgba(87, 118, 207, 0.3);
+  width: auto;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -1261,6 +1262,7 @@ td {
   }
   body #container #main a#contribute {
     color: #933720;
+    width: auto;
     min-width: auto;
     max-width: auto;
   }
@@ -1268,7 +1270,7 @@ td {
     position: static;
     color: #933720;
     top: auto;
-    padding-bottom: 0;
+    padding-bottom: .25em;
     border-radius: 0 0 0 0;
     -webkit-border-radius: 0 0 0 0;
     -moz-border-radius: 0 0 0 0;
@@ -1279,6 +1281,7 @@ td {
   body #container #main a#contribute:hover {
     border-bottom: .25em solid transparent;
     color: #dfdfdf;
+    padding-bottom: .25em;
   }
   body #container #main a#contribute:active {
     border: none;
