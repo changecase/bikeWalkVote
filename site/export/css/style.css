@@ -111,23 +111,19 @@ body #container #main {
 body #container #main a,
 body #container #main form {
   float: right;
-  margin-right: 2px;
-  padding: 15px 10px 20px;
+  margin-left: 5px;
+  padding: 15px 5px 20px;
   display: block;
-  background-color: rgba(182, 217, 134, 0.7);
-  border-radius: 0 0 15px 15px;
-  -webkit-border-radius: 0 0 15px 15px;
-  -moz-border-radius: 0 0 15px 15px;
   height: 10px;
   height: 1rem;
+  border-bottom: .25em solid transparent;
 }
 body #container #main a:hover,
 body #container #main form:hover {
-  background-color: #b6d986;
+  border-bottom: 0.25em solid #dfdfdf;
 }
 body #container #main a:active,
 body #container #main form:active {
-  background-color: #ffffff;
   color: #8dc63f;
 }
 body #container #main a {
@@ -137,6 +133,7 @@ body #container #main a {
   letter-spacing: .2em;
   text-decoration: none;
   margin-bottom: 8px;
+  padding-bottom: .25em;
 }
 body #container #main a#contribute {
   color: #933720;
@@ -152,7 +149,8 @@ body #container #main a#contribute:link {
   border-bottom: 3px solid rgba(147, 55, 32, 0.3);
   right: 0;
   margin: 0;
-  width: 100px;
+  min-width: 100px;
+  max-width: 150px;
   height: 2.6em;
   background: transparent url('../../images/cardboard_red-.png') repeat 0;
 }
@@ -444,6 +442,7 @@ body #container #content .people {
   border-left: 1px solid rgba(87, 118, 207, 0.3);
   border-bottom: 3px solid #5776cf;
   border-bottom: 3px solid rgba(87, 118, 207, 0.3);
+  width: auto;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -548,6 +547,7 @@ body #container #content .people li blockquote {
   line-height: 1.5428571428571431;
   color: #2c3b68;
   clear: left;
+  float: left;
 }
 body #container #content #stories li h3,
 body #container #content #issues li h3,
@@ -578,6 +578,7 @@ body #container #content .people li p {
   margin-top: 0;
   padding-left: 0;
   border: none;
+  float: left;
 }
 body #container #content .images {
   width: 98%;
@@ -784,7 +785,7 @@ body #container #content form h3 {
 }
 body #container #content ul {
   padding: 0 0 0 40px;
-  width: 100%;
+  width: 60%;
   font-size: 18px;
   font-size: 1.125rem;
 }
@@ -825,6 +826,9 @@ body #container aside div:hover {
   filter: alpha(opacity=75);
   /* For >= IE8 */
 
+}
+body #container aside #___plusone_0 {
+  margin-bottom: 80px !important;
 }
 body #container #push {
   position: relative;
@@ -1248,57 +1252,36 @@ td {
   body #container {
     padding-top: 0;
   }
-  body #container header #logo {
-    margin-top: 0;
-  }
-  body #container header #logo a {
-    padding-right: 0;
-    left: 0;
-    padding-left: 0;
-    width: 100%;
-    background: #8dc63f url('/images/bikeWalkVoteLogo_textured.png') no-repeat 0% 0%;
-    background-color: transparent;
-    text-decoration: none;
-    height: 160px;
-    color: transparent;
-    font-weight: 500;
-    padding-top: 0;
-  }
   body #container #main {
     width: 100%;
+    max-width: 205px;
   }
   body #container #main a {
     float: right;
     clear: left;
-    margin-top: 160px;
-    border-radius: 0 0 15px 15px;
-    -webkit-border-radius: 0 0 15px 15px;
-    -moz-border-radius: 0 0 15px 15px;
   }
   body #container #main a#contribute {
-    color: #FFFFFF;
-    background-color: rgba(147, 55, 32, 0.7);
+    color: #933720;
+    width: auto;
+    min-width: auto;
+    max-width: auto;
   }
   body #container #main a#contribute:link {
-    color: #FFFFFF;
-    bottom: 0;
+    position: static;
+    color: #933720;
     top: auto;
-    right: auto;
-    height: 1em;
-    width: 80%;
-    padding-right: 10%;
-    padding-left: 10%;
-    border-radius: 15px 15px 0 0;
-    -webkit-border-radius: 15px 15px 0 0;
-    -moz-border-radius: 15px 15px 0 0;
+    padding-bottom: .25em;
+    border-radius: 0 0 0 0;
+    -webkit-border-radius: 0 0 0 0;
+    -moz-border-radius: 0 0 0 0;
     background: none;
     background-image: none;
-    background-color: rgba(147, 55, 32, 0.7);
     border: none;
   }
   body #container #main a#contribute:hover {
-    border: none;
-    background-color: #933720;
+    border-bottom: .25em solid transparent;
+    color: #dfdfdf;
+    padding-bottom: .25em;
   }
   body #container #main a#contribute:active {
     border: none;
@@ -1329,6 +1312,22 @@ td {
   }
 }
 @media only screen and (max-width: 800px) {
+  body #container header #logo {
+    margin-top: 0;
+  }
+  body #container header #logo a {
+    padding-right: 0;
+    left: 0;
+    padding-left: 0;
+    width: 100%;
+    background: #8dc63f url('/images/bikeWalkVoteLogo_textured.png') no-repeat 0% 0%;
+    background-color: transparent;
+    text-decoration: none;
+    height: 160px;
+    color: transparent;
+    font-weight: 500;
+    padding-top: 0;
+  }
   body #container #content #steering,
   body #container #content #stories,
   body #container #content .people {

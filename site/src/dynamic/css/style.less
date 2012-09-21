@@ -134,18 +134,20 @@ body {
       .bwvFontSize(14);
       a, form {
           float: right;
-          margin-right: 2px;
-          padding: 15px 10px 20px;
+          margin-left: 5px;
+          padding: 15px 5px 20px;
           display: block;
-          background-color: rgba(182, 217, 134, 0.7);
-          .rounded-corners(0 0 15px 15px);
+      //    background-color: rgba(182, 217, 134, 0.7);
+      //    .rounded-corners(0 0 15px 15px);
           height: 10px;
           height: 1rem;
+          border-bottom: .25em solid transparent;
           &:hover {
-            background-color: @lightGreen;
+            border-bottom: .25em solid @white;
+      //      background-color: @lightGreen;
           }
           &:active {
-            background-color: #ffffff;
+      //      background-color: #ffffff;
             color: @green;
           }
       }
@@ -156,6 +158,7 @@ body {
         letter-spacing: .2em;
         text-decoration: none;
         margin-bottom: 8px;
+        padding-bottom: .25em;
         &#contribute {
           color: @red;
           &:link {
@@ -167,7 +170,8 @@ body {
               border-bottom: 3px solid rgba(147, 55, 32, 0.3);
               right: 0;
               margin: 0;
-              width: 100px;
+              min-width: 100px;
+              max-width: 150px;
               height: 2.6em;
               background: transparent url('../../images/cardboard_red-.png') repeat 0;
           }
@@ -432,6 +436,7 @@ body {
         border-left: 1px solid rgba(87, 118, 207, 0.3);
         border-bottom: 3px solid @blue;
         border-bottom: 3px solid rgba(87, 118, 207, 0.3);
+        width: auto;
         .rounded-corners(20px);
         li {
           list-style: none;
@@ -480,6 +485,7 @@ body {
             .bwvLineHeight(24);
             color: #2c3b68;
             clear: left;
+            float: left;
           }
           h3, h2 {
             margin-bottom: 0;
@@ -492,6 +498,7 @@ body {
             margin-top: 0;
             padding-left: 0;
             border: none;
+            float: left;
           }
         }
       }
@@ -669,7 +676,7 @@ body {
       }
       ul {
         padding: 0 0 0 40px;
-        width: 100%;
+        width: 100% - 40px;
         .bwvFontSize(18);
       }
     }
@@ -699,6 +706,9 @@ body {
         &:hover {
           .makeTransparent(1);
         }
+      }
+      #___plusone_0 {
+        margin-bottom: 80px !important;
       }
     }
     #push {
@@ -1091,52 +1101,45 @@ td {
   /* Style adjustments for viewports 768px and over go here */
   body #container {
     padding-top: 0;
-    header {
-      #logo {
-        margin-top: 0;
-        a {
-          padding-right: 0;
-          left: 0;
-          padding-left: 0;
-          width: 100%;
-          background: @green url('/images/bikeWalkVoteLogo_textured.png') no-repeat 0% 0%;
-          background-color: transparent;
-          text-decoration: none;
-          height: 160px;
-          color: transparent;
-          font-weight: 500;
-          padding-top: 0;
-        }
-      }
-    }
     #main {
       width: 100%;
+      max-width: 205px;
       a {
         float: right;
         clear: left;
-        margin-top: 160px;
-        .rounded-corners(0 0 15px 15px);
+     //   margin-top: 160px;
+     //   .rounded-corners(0 0 15px 15px);
         &#contribute {
-          color: #FFFFFF;
-          background-color: rgba(147, 55, 32, 0.7);
+          color: @red;
+          width: auto;
+          min-width: auto;
+          max-width: auto;
+        //  background-color: rgba(147, 55, 32, 0.7);
           &:link {
-            color: #FFFFFF;
-            bottom: 0;
+            position: static;
+            color: @red;
+          //  bottom: 0;
             top: auto;
-            right: auto;
-            height: 1em;
-            width: 80%;
-            padding-right: 10%;
-            padding-left: 10%;
-            .rounded-corners(15px 15px 0 0);
+          //  right: auto;
+          //  height: 1em;
+          //  width: 80%;
+          //  padding-right: 10%;
+          //  padding-left: 10%;
+          //  padding-bottom: .25em;
+          //  .rounded-corners(15px 15px 0 0);
+            padding-bottom: .25em;
+            .rounded-corners(0 0 0 0);
             background: none;
             background-image: none;
-            background-color: rgba(147, 55, 32, 0.7);
+          //  background-color: rgba(147, 55, 32, 0.7);
             border: none;
           }
           &:hover {
-            border: none;
-            background-color: @red;
+          //  border: none;
+            border-bottom: .25em solid transparent;
+          //  background-color: @red;
+            color: @white;
+            padding-bottom: .25em;
           }
           &:active {
             border: none;
@@ -1173,6 +1176,24 @@ td {
 @media only screen and (max-width: 800px) {
   body {
     #container {
+      header {
+        #logo {
+          margin-top: 0;
+          a {
+            padding-right: 0;
+            left: 0;
+            padding-left: 0;
+            width: 100%;
+            background: @green url('/images/bikeWalkVoteLogo_textured.png') no-repeat 0% 0%;
+            background-color: transparent;
+            text-decoration: none;
+            height: 160px;
+            color: transparent;
+            font-weight: 500;
+            padding-top: 0;
+          }
+        }
+      }
       #content {
         #steering, #stories, .people {
           width: 100%;
