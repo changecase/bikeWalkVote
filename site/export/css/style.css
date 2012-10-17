@@ -789,6 +789,14 @@ body #container #content ul {
   font-size: 18px;
   font-size: 1.125rem;
 }
+body #container #content #galleria {
+  height: 600px;
+  width: 100%;
+  float: left;
+}
+body #container #content #galleria .galleria-container {
+  background: transparent;
+}
 body #container aside {
   position: absolute;
   top: 280px;
